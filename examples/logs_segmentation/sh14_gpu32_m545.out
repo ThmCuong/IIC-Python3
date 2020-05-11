@@ -42,7 +42,7 @@ jitter_hue: 0.1
 no_pre_eval: False
 no_sobel: True
 half_T_side_dense: 10
-fine_to_coarse_dict: /users/xuji/iid/iid_private/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
+fine_to_coarse_dict: /users/xuji/iid/iid_private/code_icc/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
 input_sz: 200
 dataset_root: /scratch/local/ssd/xuji/POTSDAM
 arch: SegmentationNet10aTwoHead

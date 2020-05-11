@@ -42,7 +42,7 @@ jitter_hue: 0.125
 no_pre_eval: False
 no_sobel: False
 half_T_side_dense: 10
-fine_to_coarse_dict: /users/xuji/iid/iid_private/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
+fine_to_coarse_dict: /users/xuji/iid/iid_private/code_icc/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
 input_sz: 128
 dataset_root: /scratch/local/ssd/xuji/COCO/CocoStuff164k
 arch: SegmentationNet10aTwoHead
@@ -479,8 +479,8 @@ Traceback (most recent call last):
     "__main__", fname, loader, pkg_name)
   File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
     exec code in run_globals
-  File "/users/xuji/iid/iid_private/code/scripts/segmentation/IID_segmentation_multioutput_twohead.py", line 376, in <module>
+  File "/users/xuji/iid/iid_private/code_icc/scripts/segmentation/IID_segmentation_multioutput_twohead.py", line 376, in <module>
     half_T_side_sparse_max=config.half_T_side_sparse_max)
-  File "code/utils/segmentation/IID_losses.py", line 128, in IID_segmentation_loss_uncollapsed
+  File "code_icc/utils/segmentation/IID_losses.py", line 128, in IID_segmentation_loss_uncollapsed
     half_T_side_dense))
 RuntimeError: CUDA error: out of memory

@@ -14,13 +14,13 @@ import torch
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-import code.archs as archs
-# from code.utils.cluster.general import config_to_str, get_opt, update_lr, nice
-from code.utils.cluster.general import *
-from code.utils.cluster.transforms import sobel_process
-from code.utils.cluster.cluster_eval import cluster_eval, get_subhead_using_loss
-from code.utils.cluster.data import cluster_twohead_create_dataloaders
-from code.utils.cluster.IID_losses import IID_loss
+import code_icc.archs as archs
+# from code_icc.utils.cluster.general import config_to_str, get_opt, update_lr, nice
+from code_icc.utils.cluster.general import *
+from code_icc.utils.cluster.transforms import sobel_process
+from code_icc.utils.cluster.cluster_eval import cluster_eval, get_subhead_using_loss
+from code_icc.utils.cluster.data import cluster_twohead_create_dataloaders
+from code_icc.utils.cluster.IID_losses import IID_loss
 
 """
   Fully unsupervised clustering ("IIC" = "IID").
