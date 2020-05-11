@@ -1,0 +1,1599 @@
+Given config: Config: -----
+use_random_affine: False
+batchnorm_track: True
+pre_scale_factor: 0.33
+jitter_saturation: 0.4
+eval_mode: hung
+out_dir: /scratch/shared/slow/xuji/iid_private/714
+flip_p: 0.5
+incl_animal_things: False
+use_random_scale: False
+use_coarse_labels: True
+dataset: Coco164kCuratedFew
+using_IR: False
+include_rgb: True
+num_epochs: 4800
+lr_schedule: []
+use_uncollapsed_loss: True
+half_T_side_sparse_min: 0
+lamb_B: 1.0
+lamb_A: 1.0
+output_k_B: 3
+save_freq: 5
+coco_164k_curated_version: 6
+output_k_A: 15
+lr_mult: 0.1
+aff_max_scale: 1.2
+dataloader_batch_sz: 120
+in_channels: 5
+lr: 0.0001
+aff_min_scale: 0.8
+aff_min_shear: -10.0
+gt_k: 3
+opt: Adam
+jitter_brightness: 0.4
+output_k: 3
+num_dataloaders: 1
+half_T_side_sparse_max: 0
+aff_min_rot: -30.0
+include_things_labels: False
+jitter_hue: 0.125
+num_sub_heads: 1
+test_code: False
+half_T_side_dense: 10
+fine_to_coarse_dict: /users/xuji/iid/iid_private/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
+input_sz: 128
+dataset_root: /scratch/local/ssd/xuji/COCO/CocoStuff164k
+arch: SegmentationNet10aTwoHead
+head_A_first: False
+restart: False
+batch_sz: 120
+pre_scale_all: True
+scale_min: 0.6
+out_root: /scratch/shared/slow/xuji/iid_private
+model_ind: 714
+aff_max_shear: 10.0
+scale_max: 1.4
+use_doersch_datasets: False
+mask_input: False
+mode: IID
+aff_max_rot: 30.0
+jitter_contrast: 0.4
+no_sobel: False
+----------
+Creating paired dataloader 0 out of 1 time 2019-03-16 15:09:25.464090
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+Length of paired datasets vector 1
+Number of batches per epoch: 306
+/users/xuji/iid/iid_env/lib/python2.7/site-packages/torch/nn/functional.py:1961: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+label_orig_coarse_inds for this dataset: 
+[23, 22, 21]
+Specific type of _Coco164kCuratedFew dataset: Coco164kFew_Stuff_6
+Pre: time 2019-03-16 15:15:21.443828: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 2), (1, 0), (2, 1)]
+	test_accs: [0.368393]
+	train_accs: [0.368393]
+	best_train_sub_head: 0
+	worst: 0.368393
+	avg: 0.368393
+	best: 0.368393
+
+using uncollapsed loss!
+Starting e_i: 1 2019-03-16 15:15:21.536178
+Model ind 714 epoch 1 head B batch: 0 avg loss -0.000205 avg loss no lamb -0.000205 time 2019-03-16 15:15:23.943015
+Model ind 714 epoch 1 head B batch: 1 avg loss -0.027429 avg loss no lamb -0.027429 time 2019-03-16 15:15:27.891467
+Model ind 714 epoch 1 head B batch: 2 avg loss -0.075424 avg loss no lamb -0.075424 time 2019-03-16 15:15:31.808639
+Model ind 714 epoch 1 head B batch: 3 avg loss -0.105741 avg loss no lamb -0.105741 time 2019-03-16 15:15:35.705429
+Model ind 714 epoch 1 head B batch: 4 avg loss -0.115152 avg loss no lamb -0.115152 time 2019-03-16 15:15:39.614039
+Model ind 714 epoch 1 head B batch: 5 avg loss -0.194690 avg loss no lamb -0.194690 time 2019-03-16 15:15:43.538816
+Model ind 714 epoch 1 head B batch: 6 avg loss -0.208869 avg loss no lamb -0.208869 time 2019-03-16 15:15:47.445398
+Model ind 714 epoch 1 head B batch: 7 avg loss -0.220115 avg loss no lamb -0.220115 time 2019-03-16 15:15:51.368529
+Model ind 714 epoch 1 head B batch: 8 avg loss -0.270471 avg loss no lamb -0.270471 time 2019-03-16 15:15:55.257727
+Model ind 714 epoch 1 head B batch: 9 avg loss -0.273099 avg loss no lamb -0.273099 time 2019-03-16 15:15:59.183793
+Model ind 714 epoch 1 head B batch: 10 avg loss -0.309816 avg loss no lamb -0.309816 time 2019-03-16 15:16:03.094421
+Model ind 714 epoch 1 head B batch: 11 avg loss -0.312376 avg loss no lamb -0.312376 time 2019-03-16 15:16:07.015395
+Model ind 714 epoch 1 head B batch: 12 avg loss -0.340286 avg loss no lamb -0.340286 time 2019-03-16 15:16:10.939087
+Model ind 714 epoch 1 head B batch: 13 avg loss -0.338606 avg loss no lamb -0.338606 time 2019-03-16 15:16:14.834563
+Model ind 714 epoch 1 head B batch: 14 avg loss -0.352318 avg loss no lamb -0.352318 time 2019-03-16 15:16:18.710919
+Model ind 714 epoch 1 head B batch: 15 avg loss -0.382571 avg loss no lamb -0.382571 time 2019-03-16 15:16:22.626690
+Model ind 714 epoch 1 head B batch: 16 avg loss -0.403871 avg loss no lamb -0.403871 time 2019-03-16 15:16:26.536598
+Model ind 714 epoch 1 head B batch: 17 avg loss -0.413421 avg loss no lamb -0.413421 time 2019-03-16 15:16:30.435602
+Model ind 714 epoch 1 head B batch: 18 avg loss -0.372374 avg loss no lamb -0.372374 time 2019-03-16 15:16:34.339078
+Model ind 714 epoch 1 head B batch: 19 avg loss -0.429958 avg loss no lamb -0.429958 time 2019-03-16 15:16:38.286110
+Model ind 714 epoch 1 head B batch: 20 avg loss -0.411070 avg loss no lamb -0.411070 time 2019-03-16 15:16:42.210486
+Model ind 714 epoch 1 head B batch: 21 avg loss -0.414379 avg loss no lamb -0.414379 time 2019-03-16 15:16:46.140166
+Model ind 714 epoch 1 head B batch: 22 avg loss -0.454441 avg loss no lamb -0.454441 time 2019-03-16 15:16:50.057900
+Model ind 714 epoch 1 head B batch: 23 avg loss -0.435525 avg loss no lamb -0.435525 time 2019-03-16 15:16:53.950154
+Model ind 714 epoch 1 head B batch: 24 avg loss -0.458494 avg loss no lamb -0.458494 time 2019-03-16 15:16:57.874597
+Model ind 714 epoch 1 head B batch: 25 avg loss -0.513350 avg loss no lamb -0.513350 time 2019-03-16 15:17:01.757159
+Model ind 714 epoch 1 head B batch: 26 avg loss -0.470054 avg loss no lamb -0.470054 time 2019-03-16 15:17:05.655074
+Model ind 714 epoch 1 head B batch: 27 avg loss -0.504879 avg loss no lamb -0.504879 time 2019-03-16 15:17:09.580743
+Model ind 714 epoch 1 head B batch: 28 avg loss -0.434137 avg loss no lamb -0.434137 time 2019-03-16 15:17:13.520360
+Model ind 714 epoch 1 head B batch: 29 avg loss -0.459143 avg loss no lamb -0.459143 time 2019-03-16 15:17:17.435058
+Model ind 714 epoch 1 head B batch: 30 avg loss -0.510644 avg loss no lamb -0.510644 time 2019-03-16 15:17:21.324576
+Model ind 714 epoch 1 head B batch: 31 avg loss -0.472415 avg loss no lamb -0.472415 time 2019-03-16 15:17:25.255722
+Model ind 714 epoch 1 head B batch: 32 avg loss -0.467679 avg loss no lamb -0.467679 time 2019-03-16 15:17:29.171613
+Model ind 714 epoch 1 head B batch: 33 avg loss -0.510409 avg loss no lamb -0.510409 time 2019-03-16 15:17:33.087393
+Model ind 714 epoch 1 head B batch: 34 avg loss -0.479303 avg loss no lamb -0.479303 time 2019-03-16 15:17:37.013794
+Model ind 714 epoch 1 head B batch: 35 avg loss -0.492789 avg loss no lamb -0.492789 time 2019-03-16 15:17:40.933238
+Model ind 714 epoch 1 head B batch: 36 avg loss -0.502910 avg loss no lamb -0.502910 time 2019-03-16 15:17:44.853102
+Model ind 714 epoch 1 head B batch: 37 avg loss -0.505854 avg loss no lamb -0.505854 time 2019-03-16 15:17:48.780553
+Model ind 714 epoch 1 head B batch: 38 avg loss -0.504504 avg loss no lamb -0.504504 time 2019-03-16 15:17:52.654876
+Model ind 714 epoch 1 head B batch: 39 avg loss -0.507038 avg loss no lamb -0.507038 time 2019-03-16 15:17:56.565885
+Model ind 714 epoch 1 head B batch: 40 avg loss -0.483602 avg loss no lamb -0.483602 time 2019-03-16 15:18:00.485583
+Model ind 714 epoch 1 head B batch: 41 avg loss -0.509927 avg loss no lamb -0.509927 time 2019-03-16 15:18:04.400980
+Model ind 714 epoch 1 head B batch: 42 avg loss -0.494008 avg loss no lamb -0.494008 time 2019-03-16 15:18:08.344019
+Model ind 714 epoch 1 head B batch: 43 avg loss -0.504264 avg loss no lamb -0.504264 time 2019-03-16 15:18:12.264430
+Model ind 714 epoch 1 head B batch: 44 avg loss -0.486842 avg loss no lamb -0.486842 time 2019-03-16 15:18:16.166801
+Model ind 714 epoch 1 head B batch: 45 avg loss -0.533247 avg loss no lamb -0.533247 time 2019-03-16 15:18:20.078322
+Model ind 714 epoch 1 head B batch: 46 avg loss -0.519145 avg loss no lamb -0.519145 time 2019-03-16 15:18:24.016192
+Model ind 714 epoch 1 head B batch: 47 avg loss -0.510950 avg loss no lamb -0.510950 time 2019-03-16 15:18:27.924840
+Model ind 714 epoch 1 head B batch: 48 avg loss -0.483450 avg loss no lamb -0.483450 time 2019-03-16 15:18:31.853231
+Model ind 714 epoch 1 head B batch: 49 avg loss -0.480025 avg loss no lamb -0.480025 time 2019-03-16 15:18:35.770005
+Model ind 714 epoch 1 head B batch: 50 avg loss -0.538445 avg loss no lamb -0.538445 time 2019-03-16 15:18:39.722674
+Model ind 714 epoch 1 head B batch: 51 avg loss -0.512781 avg loss no lamb -0.512781 time 2019-03-16 15:18:43.668066
+Model ind 714 epoch 1 head B batch: 52 avg loss -0.491370 avg loss no lamb -0.491370 time 2019-03-16 15:18:47.622040
+Model ind 714 epoch 1 head B batch: 53 avg loss -0.551348 avg loss no lamb -0.551348 time 2019-03-16 15:18:51.551008
+Model ind 714 epoch 1 head B batch: 54 avg loss -0.558784 avg loss no lamb -0.558784 time 2019-03-16 15:18:55.461213
+Model ind 714 epoch 1 head B batch: 55 avg loss -0.495570 avg loss no lamb -0.495570 time 2019-03-16 15:18:59.416756
+Model ind 714 epoch 1 head B batch: 56 avg loss -0.559734 avg loss no lamb -0.559734 time 2019-03-16 15:19:03.361946
+Model ind 714 epoch 1 head B batch: 57 avg loss -0.501188 avg loss no lamb -0.501188 time 2019-03-16 15:19:07.306449
+Model ind 714 epoch 1 head B batch: 58 avg loss -0.527607 avg loss no lamb -0.527607 time 2019-03-16 15:19:11.202232
+Model ind 714 epoch 1 head B batch: 59 avg loss -0.526671 avg loss no lamb -0.526671 time 2019-03-16 15:19:15.118769
+Model ind 714 epoch 1 head B batch: 60 avg loss -0.505797 avg loss no lamb -0.505797 time 2019-03-16 15:19:19.008337
+Model ind 714 epoch 1 head B batch: 61 avg loss -0.578068 avg loss no lamb -0.578068 time 2019-03-16 15:19:22.911630
+Model ind 714 epoch 1 head B batch: 62 avg loss -0.522111 avg loss no lamb -0.522111 time 2019-03-16 15:19:26.819538
+Model ind 714 epoch 1 head B batch: 63 avg loss -0.506525 avg loss no lamb -0.506525 time 2019-03-16 15:19:30.756258
+Model ind 714 epoch 1 head B batch: 64 avg loss -0.494115 avg loss no lamb -0.494115 time 2019-03-16 15:19:34.677182
+Model ind 714 epoch 1 head B batch: 65 avg loss -0.556733 avg loss no lamb -0.556733 time 2019-03-16 15:19:38.592354
+Model ind 714 epoch 1 head B batch: 66 avg loss -0.530001 avg loss no lamb -0.530001 time 2019-03-16 15:19:42.490212
+Model ind 714 epoch 1 head B batch: 67 avg loss -0.554145 avg loss no lamb -0.554145 time 2019-03-16 15:19:46.402243
+Model ind 714 epoch 1 head B batch: 68 avg loss -0.543753 avg loss no lamb -0.543753 time 2019-03-16 15:19:50.311858
+Model ind 714 epoch 1 head B batch: 69 avg loss -0.500457 avg loss no lamb -0.500457 time 2019-03-16 15:19:54.239289
+Model ind 714 epoch 1 head B batch: 70 avg loss -0.521441 avg loss no lamb -0.521441 time 2019-03-16 15:19:58.162176
+Model ind 714 epoch 1 head B batch: 71 avg loss -0.519691 avg loss no lamb -0.519691 time 2019-03-16 15:20:02.112479
+Model ind 714 epoch 1 head B batch: 72 avg loss -0.525141 avg loss no lamb -0.525141 time 2019-03-16 15:20:06.018136
+Model ind 714 epoch 1 head B batch: 73 avg loss -0.596349 avg loss no lamb -0.596349 time 2019-03-16 15:20:09.971381
+Model ind 714 epoch 1 head B batch: 74 avg loss -0.541055 avg loss no lamb -0.541055 time 2019-03-16 15:20:13.870564
+Model ind 714 epoch 1 head B batch: 75 avg loss -0.524563 avg loss no lamb -0.524563 time 2019-03-16 15:20:17.796771
+Model ind 714 epoch 1 head B batch: 76 avg loss -0.499420 avg loss no lamb -0.499420 time 2019-03-16 15:20:21.721670
+Model ind 714 epoch 1 head B batch: 77 avg loss -0.518433 avg loss no lamb -0.518433 time 2019-03-16 15:20:25.631193
+Model ind 714 epoch 1 head B batch: 78 avg loss -0.528095 avg loss no lamb -0.528095 time 2019-03-16 15:20:29.528205
+Model ind 714 epoch 1 head B batch: 79 avg loss -0.534739 avg loss no lamb -0.534739 time 2019-03-16 15:20:33.454787
+Model ind 714 epoch 1 head B batch: 80 avg loss -0.545172 avg loss no lamb -0.545172 time 2019-03-16 15:20:37.365236
+Model ind 714 epoch 1 head B batch: 81 avg loss -0.516330 avg loss no lamb -0.516330 time 2019-03-16 15:20:41.284554
+Model ind 714 epoch 1 head B batch: 82 avg loss -0.506482 avg loss no lamb -0.506482 time 2019-03-16 15:20:45.224441
+Model ind 714 epoch 1 head B batch: 83 avg loss -0.608316 avg loss no lamb -0.608316 time 2019-03-16 15:20:49.093506
+Model ind 714 epoch 1 head B batch: 84 avg loss -0.551023 avg loss no lamb -0.551023 time 2019-03-16 15:20:53.029365
+Model ind 714 epoch 1 head B batch: 85 avg loss -0.567611 avg loss no lamb -0.567611 time 2019-03-16 15:20:56.939999
+Model ind 714 epoch 1 head B batch: 86 avg loss -0.538656 avg loss no lamb -0.538656 time 2019-03-16 15:21:00.834022
+Model ind 714 epoch 1 head B batch: 87 avg loss -0.537674 avg loss no lamb -0.537674 time 2019-03-16 15:21:04.745468
+Model ind 714 epoch 1 head B batch: 88 avg loss -0.545215 avg loss no lamb -0.545215 time 2019-03-16 15:21:08.644936
+Model ind 714 epoch 1 head B batch: 89 avg loss -0.556384 avg loss no lamb -0.556384 time 2019-03-16 15:21:12.552856
+Model ind 714 epoch 1 head B batch: 90 avg loss -0.543212 avg loss no lamb -0.543212 time 2019-03-16 15:21:16.443370
+Model ind 714 epoch 1 head B batch: 91 avg loss -0.516107 avg loss no lamb -0.516107 time 2019-03-16 15:21:20.339030
+Model ind 714 epoch 1 head B batch: 92 avg loss -0.569588 avg loss no lamb -0.569588 time 2019-03-16 15:21:24.258145
+Model ind 714 epoch 1 head B batch: 93 avg loss -0.536633 avg loss no lamb -0.536633 time 2019-03-16 15:21:28.175417
+Model ind 714 epoch 1 head B batch: 94 avg loss -0.576416 avg loss no lamb -0.576416 time 2019-03-16 15:21:32.100001
+Model ind 714 epoch 1 head B batch: 95 avg loss -0.538185 avg loss no lamb -0.538185 time 2019-03-16 15:21:36.037651
+Model ind 714 epoch 1 head B batch: 96 avg loss -0.546982 avg loss no lamb -0.546982 time 2019-03-16 15:21:39.956998
+Model ind 714 epoch 1 head B batch: 97 avg loss -0.562861 avg loss no lamb -0.562861 time 2019-03-16 15:21:43.879830
+Model ind 714 epoch 1 head B batch: 98 avg loss -0.560302 avg loss no lamb -0.560302 time 2019-03-16 15:21:47.789820
+Model ind 714 epoch 1 head B batch: 99 avg loss -0.563287 avg loss no lamb -0.563287 time 2019-03-16 15:21:51.717640
+Model ind 714 epoch 1 head B batch: 100 avg loss -0.537683 avg loss no lamb -0.537683 time 2019-03-16 15:21:55.585410
+Model ind 714 epoch 1 head B batch: 101 avg loss -0.527307 avg loss no lamb -0.527307 time 2019-03-16 15:21:59.515705
+Model ind 714 epoch 1 head B batch: 102 avg loss -0.551859 avg loss no lamb -0.551859 time 2019-03-16 15:22:03.434089
+Model ind 714 epoch 1 head B batch: 103 avg loss -0.550618 avg loss no lamb -0.550618 time 2019-03-16 15:22:07.368740
+Model ind 714 epoch 1 head B batch: 104 avg loss -0.536843 avg loss no lamb -0.536843 time 2019-03-16 15:22:11.269806
+Model ind 714 epoch 1 head B batch: 105 avg loss -0.489117 avg loss no lamb -0.489117 time 2019-03-16 15:22:15.180587
+Model ind 714 epoch 1 head B batch: 106 avg loss -0.541484 avg loss no lamb -0.541484 time 2019-03-16 15:22:19.056230
+Model ind 714 epoch 1 head B batch: 107 avg loss -0.534200 avg loss no lamb -0.534200 time 2019-03-16 15:22:22.946066
+Model ind 714 epoch 1 head B batch: 108 avg loss -0.548352 avg loss no lamb -0.548352 time 2019-03-16 15:22:26.896118
+Model ind 714 epoch 1 head B batch: 109 avg loss -0.566691 avg loss no lamb -0.566691 time 2019-03-16 15:22:30.806651
+Model ind 714 epoch 1 head B batch: 110 avg loss -0.534712 avg loss no lamb -0.534712 time 2019-03-16 15:22:34.731982
+Model ind 714 epoch 1 head B batch: 111 avg loss -0.587159 avg loss no lamb -0.587159 time 2019-03-16 15:22:38.689516
+Model ind 714 epoch 1 head B batch: 112 avg loss -0.588586 avg loss no lamb -0.588586 time 2019-03-16 15:22:42.607013
+Model ind 714 epoch 1 head B batch: 113 avg loss -0.524958 avg loss no lamb -0.524958 time 2019-03-16 15:22:46.497230
+Model ind 714 epoch 1 head B batch: 114 avg loss -0.564473 avg loss no lamb -0.564473 time 2019-03-16 15:22:50.414232
+Model ind 714 epoch 1 head B batch: 115 avg loss -0.587804 avg loss no lamb -0.587804 time 2019-03-16 15:22:54.349900
+Model ind 714 epoch 1 head B batch: 116 avg loss -0.514847 avg loss no lamb -0.514847 time 2019-03-16 15:22:58.242911
+Model ind 714 epoch 1 head B batch: 117 avg loss -0.552286 avg loss no lamb -0.552286 time 2019-03-16 15:23:02.132303
+Model ind 714 epoch 1 head B batch: 118 avg loss -0.487949 avg loss no lamb -0.487949 time 2019-03-16 15:23:06.062745
+Model ind 714 epoch 1 head B batch: 119 avg loss -0.554666 avg loss no lamb -0.554666 time 2019-03-16 15:23:10.009725
+Model ind 714 epoch 1 head B batch: 120 avg loss -0.555100 avg loss no lamb -0.555100 time 2019-03-16 15:23:13.929629
+Model ind 714 epoch 1 head B batch: 121 avg loss -0.551750 avg loss no lamb -0.551750 time 2019-03-16 15:23:17.836982
+Model ind 714 epoch 1 head B batch: 122 avg loss -0.521519 avg loss no lamb -0.521519 time 2019-03-16 15:23:21.729134
+Model ind 714 epoch 1 head B batch: 123 avg loss -0.554173 avg loss no lamb -0.554173 time 2019-03-16 15:23:25.638117
+Model ind 714 epoch 1 head B batch: 124 avg loss -0.574617 avg loss no lamb -0.574617 time 2019-03-16 15:23:29.512902
+Model ind 714 epoch 1 head B batch: 125 avg loss -0.582700 avg loss no lamb -0.582700 time 2019-03-16 15:23:33.443584
+Model ind 714 epoch 1 head B batch: 126 avg loss -0.567788 avg loss no lamb -0.567788 time 2019-03-16 15:23:37.395404
+Model ind 714 epoch 1 head B batch: 127 avg loss -0.587892 avg loss no lamb -0.587892 time 2019-03-16 15:23:41.333502
+Model ind 714 epoch 1 head B batch: 128 avg loss -0.537190 avg loss no lamb -0.537190 time 2019-03-16 15:23:45.217185
+Model ind 714 epoch 1 head B batch: 129 avg loss -0.516096 avg loss no lamb -0.516096 time 2019-03-16 15:23:49.111686
+Model ind 714 epoch 1 head B batch: 130 avg loss -0.550727 avg loss no lamb -0.550727 time 2019-03-16 15:23:53.044030
+Model ind 714 epoch 1 head B batch: 131 avg loss -0.554671 avg loss no lamb -0.554671 time 2019-03-16 15:23:56.930505
+Model ind 714 epoch 1 head B batch: 132 avg loss -0.498462 avg loss no lamb -0.498462 time 2019-03-16 15:24:00.842712
+Model ind 714 epoch 1 head B batch: 133 avg loss -0.541906 avg loss no lamb -0.541906 time 2019-03-16 15:24:04.784069
+Model ind 714 epoch 1 head B batch: 134 avg loss -0.551728 avg loss no lamb -0.551728 time 2019-03-16 15:24:08.707092
+Model ind 714 epoch 1 head B batch: 135 avg loss -0.564060 avg loss no lamb -0.564060 time 2019-03-16 15:24:12.634449
+Model ind 714 epoch 1 head B batch: 136 avg loss -0.540882 avg loss no lamb -0.540882 time 2019-03-16 15:24:16.546695
+Model ind 714 epoch 1 head B batch: 137 avg loss -0.547472 avg loss no lamb -0.547472 time 2019-03-16 15:24:20.460900
+Model ind 714 epoch 1 head B batch: 138 avg loss -0.571611 avg loss no lamb -0.571611 time 2019-03-16 15:24:24.419964
+Model ind 714 epoch 1 head B batch: 139 avg loss -0.544805 avg loss no lamb -0.544805 time 2019-03-16 15:24:28.344520
+Model ind 714 epoch 1 head B batch: 140 avg loss -0.526561 avg loss no lamb -0.526561 time 2019-03-16 15:24:32.281800
+Model ind 714 epoch 1 head B batch: 141 avg loss -0.557477 avg loss no lamb -0.557477 time 2019-03-16 15:24:36.186252
+Model ind 714 epoch 1 head B batch: 142 avg loss -0.598253 avg loss no lamb -0.598253 time 2019-03-16 15:24:40.079850
+Model ind 714 epoch 1 head B batch: 143 avg loss -0.553684 avg loss no lamb -0.553684 time 2019-03-16 15:24:43.995674
+Model ind 714 epoch 1 head B batch: 144 avg loss -0.529350 avg loss no lamb -0.529350 time 2019-03-16 15:24:47.907070
+Model ind 714 epoch 1 head B batch: 145 avg loss -0.562854 avg loss no lamb -0.562854 time 2019-03-16 15:24:51.845983
+Model ind 714 epoch 1 head B batch: 146 avg loss -0.580107 avg loss no lamb -0.580107 time 2019-03-16 15:24:55.753341
+Model ind 714 epoch 1 head B batch: 147 avg loss -0.570875 avg loss no lamb -0.570875 time 2019-03-16 15:24:59.666651
+Model ind 714 epoch 1 head B batch: 148 avg loss -0.584910 avg loss no lamb -0.584910 time 2019-03-16 15:25:03.600983
+Model ind 714 epoch 1 head B batch: 149 avg loss -0.539388 avg loss no lamb -0.539388 time 2019-03-16 15:25:07.520907
+Model ind 714 epoch 1 head B batch: 150 avg loss -0.515557 avg loss no lamb -0.515557 time 2019-03-16 15:25:11.455888
+Model ind 714 epoch 1 head B batch: 151 avg loss -0.550940 avg loss no lamb -0.550940 time 2019-03-16 15:25:15.341524
+Model ind 714 epoch 1 head B batch: 152 avg loss -0.569770 avg loss no lamb -0.569770 time 2019-03-16 15:25:19.248946
+Model ind 714 epoch 1 head B batch: 153 avg loss -0.574314 avg loss no lamb -0.574314 time 2019-03-16 15:25:23.169545
+Model ind 714 epoch 1 head B batch: 154 avg loss -0.596043 avg loss no lamb -0.596043 time 2019-03-16 15:25:27.081570
+Model ind 714 epoch 1 head B batch: 155 avg loss -0.549146 avg loss no lamb -0.549146 time 2019-03-16 15:25:31.007657
+Model ind 714 epoch 1 head B batch: 156 avg loss -0.582127 avg loss no lamb -0.582127 time 2019-03-16 15:25:34.938151
+Model ind 714 epoch 1 head B batch: 157 avg loss -0.590433 avg loss no lamb -0.590433 time 2019-03-16 15:25:38.896131
+Model ind 714 epoch 1 head B batch: 158 avg loss -0.547383 avg loss no lamb -0.547383 time 2019-03-16 15:25:42.808297
+Model ind 714 epoch 1 head B batch: 159 avg loss -0.580986 avg loss no lamb -0.580986 time 2019-03-16 15:25:46.751408
+Model ind 714 epoch 1 head B batch: 160 avg loss -0.571676 avg loss no lamb -0.571676 time 2019-03-16 15:25:50.658788
+Model ind 714 epoch 1 head B batch: 161 avg loss -0.611748 avg loss no lamb -0.611748 time 2019-03-16 15:25:54.586039
+Model ind 714 epoch 1 head B batch: 162 avg loss -0.591991 avg loss no lamb -0.591991 time 2019-03-16 15:25:58.470905
+Model ind 714 epoch 1 head B batch: 163 avg loss -0.547910 avg loss no lamb -0.547910 time 2019-03-16 15:26:02.368418
+Model ind 714 epoch 1 head B batch: 164 avg loss -0.553781 avg loss no lamb -0.553781 time 2019-03-16 15:26:06.242678
+Model ind 714 epoch 1 head B batch: 165 avg loss -0.484384 avg loss no lamb -0.484384 time 2019-03-16 15:26:10.148727
+Model ind 714 epoch 1 head B batch: 166 avg loss -0.532631 avg loss no lamb -0.532631 time 2019-03-16 15:26:14.080144
+Model ind 714 epoch 1 head B batch: 167 avg loss -0.538755 avg loss no lamb -0.538755 time 2019-03-16 15:26:18.007738
+Model ind 714 epoch 1 head B batch: 168 avg loss -0.585465 avg loss no lamb -0.585465 time 2019-03-16 15:26:21.896888
+Model ind 714 epoch 1 head B batch: 169 avg loss -0.559200 avg loss no lamb -0.559200 time 2019-03-16 15:26:25.782638
+Model ind 714 epoch 1 head B batch: 170 avg loss -0.595534 avg loss no lamb -0.595534 time 2019-03-16 15:26:29.789542
+Model ind 714 epoch 1 head B batch: 171 avg loss -0.546083 avg loss no lamb -0.546083 time 2019-03-16 15:26:33.694143
+Model ind 714 epoch 1 head B batch: 172 avg loss -0.583741 avg loss no lamb -0.583741 time 2019-03-16 15:26:37.616032
+Model ind 714 epoch 1 head B batch: 173 avg loss -0.558825 avg loss no lamb -0.558825 time 2019-03-16 15:26:41.523186
+Model ind 714 epoch 1 head B batch: 174 avg loss -0.577474 avg loss no lamb -0.577474 time 2019-03-16 15:26:45.428159
+Model ind 714 epoch 1 head B batch: 175 avg loss -0.584522 avg loss no lamb -0.584522 time 2019-03-16 15:26:49.345382
+Model ind 714 epoch 1 head B batch: 176 avg loss -0.560928 avg loss no lamb -0.560928 time 2019-03-16 15:26:53.280144
+Model ind 714 epoch 1 head B batch: 177 avg loss -0.602829 avg loss no lamb -0.602829 time 2019-03-16 15:26:57.169307
+Model ind 714 epoch 1 head B batch: 178 avg loss -0.591390 avg loss no lamb -0.591390 time 2019-03-16 15:27:01.072846
+Model ind 714 epoch 1 head B batch: 179 avg loss -0.582857 avg loss no lamb -0.582857 time 2019-03-16 15:27:04.998020
+Model ind 714 epoch 1 head B batch: 180 avg loss -0.540794 avg loss no lamb -0.540794 time 2019-03-16 15:27:08.888760
+Model ind 714 epoch 1 head B batch: 181 avg loss -0.534755 avg loss no lamb -0.534755 time 2019-03-16 15:27:12.833767
+Model ind 714 epoch 1 head B batch: 182 avg loss -0.553077 avg loss no lamb -0.553077 time 2019-03-16 15:27:16.758152
+Model ind 714 epoch 1 head B batch: 183 avg loss -0.560850 avg loss no lamb -0.560850 time 2019-03-16 15:27:20.736925
+Model ind 714 epoch 1 head B batch: 184 avg loss -0.532209 avg loss no lamb -0.532209 time 2019-03-16 15:27:24.684375
+Model ind 714 epoch 1 head B batch: 185 avg loss -0.561184 avg loss no lamb -0.561184 time 2019-03-16 15:27:28.616739
+Model ind 714 epoch 1 head B batch: 186 avg loss -0.575128 avg loss no lamb -0.575128 time 2019-03-16 15:27:32.515714
+Model ind 714 epoch 1 head B batch: 187 avg loss -0.572418 avg loss no lamb -0.572418 time 2019-03-16 15:27:36.416556
+Model ind 714 epoch 1 head B batch: 188 avg loss -0.567953 avg loss no lamb -0.567953 time 2019-03-16 15:27:40.301058
+Model ind 714 epoch 1 head B batch: 189 avg loss -0.571336 avg loss no lamb -0.571336 time 2019-03-16 15:27:44.173302
+Model ind 714 epoch 1 head B batch: 190 avg loss -0.558351 avg loss no lamb -0.558351 time 2019-03-16 15:27:48.087847
+Model ind 714 epoch 1 head B batch: 191 avg loss -0.555354 avg loss no lamb -0.555354 time 2019-03-16 15:27:52.006329
+Model ind 714 epoch 1 head B batch: 192 avg loss -0.599695 avg loss no lamb -0.599695 time 2019-03-16 15:27:55.906822
+Model ind 714 epoch 1 head B batch: 193 avg loss -0.561731 avg loss no lamb -0.561731 time 2019-03-16 15:27:59.840278
+Model ind 714 epoch 1 head B batch: 194 avg loss -0.555594 avg loss no lamb -0.555594 time 2019-03-16 15:28:03.733596
+Model ind 714 epoch 1 head B batch: 195 avg loss -0.542622 avg loss no lamb -0.542622 time 2019-03-16 15:28:07.640930
+Model ind 714 epoch 1 head B batch: 196 avg loss -0.581652 avg loss no lamb -0.581652 time 2019-03-16 15:28:11.537267
+Model ind 714 epoch 1 head B batch: 197 avg loss -0.551109 avg loss no lamb -0.551109 time 2019-03-16 15:28:15.460320
+Model ind 714 epoch 1 head B batch: 198 avg loss -0.563877 avg loss no lamb -0.563877 time 2019-03-16 15:28:19.363203
+Model ind 714 epoch 1 head B batch: 199 avg loss -0.564515 avg loss no lamb -0.564515 time 2019-03-16 15:28:23.269819
+Model ind 714 epoch 1 head B batch: 200 avg loss -0.523350 avg loss no lamb -0.523350 time 2019-03-16 15:28:27.153335
+Model ind 714 epoch 1 head B batch: 201 avg loss -0.566753 avg loss no lamb -0.566753 time 2019-03-16 15:28:31.070356
+Model ind 714 epoch 1 head B batch: 202 avg loss -0.592265 avg loss no lamb -0.592265 time 2019-03-16 15:28:35.001833
+Model ind 714 epoch 1 head B batch: 203 avg loss -0.565443 avg loss no lamb -0.565443 time 2019-03-16 15:28:38.905529
+Model ind 714 epoch 1 head B batch: 204 avg loss -0.568635 avg loss no lamb -0.568635 time 2019-03-16 15:28:42.820359
+Model ind 714 epoch 1 head B batch: 205 avg loss -0.551577 avg loss no lamb -0.551577 time 2019-03-16 15:28:46.742211
+Model ind 714 epoch 1 head B batch: 206 avg loss -0.616820 avg loss no lamb -0.616820 time 2019-03-16 15:28:50.681572
+Model ind 714 epoch 1 head B batch: 207 avg loss -0.548304 avg loss no lamb -0.548304 time 2019-03-16 15:28:54.605413
+Model ind 714 epoch 1 head B batch: 208 avg loss -0.568222 avg loss no lamb -0.568222 time 2019-03-16 15:28:58.527384
+Model ind 714 epoch 1 head B batch: 209 avg loss -0.554449 avg loss no lamb -0.554449 time 2019-03-16 15:29:02.433368
+Model ind 714 epoch 1 head B batch: 210 avg loss -0.529965 avg loss no lamb -0.529965 time 2019-03-16 15:29:06.310831
+Model ind 714 epoch 1 head B batch: 211 avg loss -0.579248 avg loss no lamb -0.579248 time 2019-03-16 15:29:10.242222
+Model ind 714 epoch 1 head B batch: 212 avg loss -0.550611 avg loss no lamb -0.550611 time 2019-03-16 15:29:14.137142
+Model ind 714 epoch 1 head B batch: 213 avg loss -0.549008 avg loss no lamb -0.549008 time 2019-03-16 15:29:18.057252
+Model ind 714 epoch 1 head B batch: 214 avg loss -0.554945 avg loss no lamb -0.554945 time 2019-03-16 15:29:21.984571
+Model ind 714 epoch 1 head B batch: 215 avg loss -0.581207 avg loss no lamb -0.581207 time 2019-03-16 15:29:25.902052
+Model ind 714 epoch 1 head B batch: 216 avg loss -0.531690 avg loss no lamb -0.531690 time 2019-03-16 15:29:29.788266
+Model ind 714 epoch 1 head B batch: 217 avg loss -0.576315 avg loss no lamb -0.576315 time 2019-03-16 15:29:33.714019
+Model ind 714 epoch 1 head B batch: 218 avg loss -0.591454 avg loss no lamb -0.591454 time 2019-03-16 15:29:37.606316
+Model ind 714 epoch 1 head B batch: 219 avg loss -0.550309 avg loss no lamb -0.550309 time 2019-03-16 15:29:41.500614
+Model ind 714 epoch 1 head B batch: 220 avg loss -0.561784 avg loss no lamb -0.561784 time 2019-03-16 15:29:45.439747
+Model ind 714 epoch 1 head B batch: 221 avg loss -0.641209 avg loss no lamb -0.641209 time 2019-03-16 15:29:49.386557
+Model ind 714 epoch 1 head B batch: 222 avg loss -0.591290 avg loss no lamb -0.591290 time 2019-03-16 15:29:53.274931
+Model ind 714 epoch 1 head B batch: 223 avg loss -0.616771 avg loss no lamb -0.616771 time 2019-03-16 15:29:57.202430
+Model ind 714 epoch 1 head B batch: 224 avg loss -0.538196 avg loss no lamb -0.538196 time 2019-03-16 15:30:01.112286
+Model ind 714 epoch 1 head B batch: 225 avg loss -0.590586 avg loss no lamb -0.590586 time 2019-03-16 15:30:05.003059
+Model ind 714 epoch 1 head B batch: 226 avg loss -0.580943 avg loss no lamb -0.580943 time 2019-03-16 15:30:08.861804
+Model ind 714 epoch 1 head B batch: 227 avg loss -0.560076 avg loss no lamb -0.560076 time 2019-03-16 15:30:12.773448
+Model ind 714 epoch 1 head B batch: 228 avg loss -0.615119 avg loss no lamb -0.615119 time 2019-03-16 15:30:16.665021
+Model ind 714 epoch 1 head B batch: 229 avg loss -0.562802 avg loss no lamb -0.562802 time 2019-03-16 15:30:20.604796
+Model ind 714 epoch 1 head B batch: 230 avg loss -0.583539 avg loss no lamb -0.583539 time 2019-03-16 15:30:24.527915
+Model ind 714 epoch 1 head B batch: 231 avg loss -0.573615 avg loss no lamb -0.573615 time 2019-03-16 15:30:28.461821
+Model ind 714 epoch 1 head B batch: 232 avg loss -0.534122 avg loss no lamb -0.534122 time 2019-03-16 15:30:32.364041
+Model ind 714 epoch 1 head B batch: 233 avg loss -0.608858 avg loss no lamb -0.608858 time 2019-03-16 15:30:36.254907
+Model ind 714 epoch 1 head B batch: 234 avg loss -0.584232 avg loss no lamb -0.584232 time 2019-03-16 15:30:40.146044
+Model ind 714 epoch 1 head B batch: 235 avg loss -0.605136 avg loss no lamb -0.605136 time 2019-03-16 15:30:44.046306
+Model ind 714 epoch 1 head B batch: 236 avg loss -0.540785 avg loss no lamb -0.540785 time 2019-03-16 15:30:47.970622
+Model ind 714 epoch 1 head B batch: 237 avg loss -0.580334 avg loss no lamb -0.580334 time 2019-03-16 15:30:51.843401
+Model ind 714 epoch 1 head B batch: 238 avg loss -0.608975 avg loss no lamb -0.608975 time 2019-03-16 15:30:55.765139
+Model ind 714 epoch 1 head B batch: 239 avg loss -0.514646 avg loss no lamb -0.514646 time 2019-03-16 15:30:59.676595
+Model ind 714 epoch 1 head B batch: 240 avg loss -0.557226 avg loss no lamb -0.557226 time 2019-03-16 15:31:03.578671
+Model ind 714 epoch 1 head B batch: 241 avg loss -0.585563 avg loss no lamb -0.585563 time 2019-03-16 15:31:07.486144
+Model ind 714 epoch 1 head B batch: 242 avg loss -0.573745 avg loss no lamb -0.573745 time 2019-03-16 15:31:11.386808
+Model ind 714 epoch 1 head B batch: 243 avg loss -0.599086 avg loss no lamb -0.599086 time 2019-03-16 15:31:15.282141
+Model ind 714 epoch 1 head B batch: 244 avg loss -0.531993 avg loss no lamb -0.531993 time 2019-03-16 15:31:19.187217
+Model ind 714 epoch 1 head B batch: 245 avg loss -0.589513 avg loss no lamb -0.589513 time 2019-03-16 15:31:23.123953
+Model ind 714 epoch 1 head B batch: 246 avg loss -0.578294 avg loss no lamb -0.578294 time 2019-03-16 15:31:27.017892
+Model ind 714 epoch 1 head B batch: 247 avg loss -0.574816 avg loss no lamb -0.574816 time 2019-03-16 15:31:30.953015
+Model ind 714 epoch 1 head B batch: 248 avg loss -0.590446 avg loss no lamb -0.590446 time 2019-03-16 15:31:34.837028
+Model ind 714 epoch 1 head B batch: 249 avg loss -0.596983 avg loss no lamb -0.596983 time 2019-03-16 15:31:38.741911
+Model ind 714 epoch 1 head B batch: 250 avg loss -0.567315 avg loss no lamb -0.567315 time 2019-03-16 15:31:42.645284
+Model ind 714 epoch 1 head B batch: 251 avg loss -0.617121 avg loss no lamb -0.617121 time 2019-03-16 15:31:46.574609
+Model ind 714 epoch 1 head B batch: 252 avg loss -0.513639 avg loss no lamb -0.513639 time 2019-03-16 15:31:50.532933
+Model ind 714 epoch 1 head B batch: 253 avg loss -0.600910 avg loss no lamb -0.600910 time 2019-03-16 15:31:54.437663
+Model ind 714 epoch 1 head B batch: 254 avg loss -0.569819 avg loss no lamb -0.569819 time 2019-03-16 15:31:58.365009
+Model ind 714 epoch 1 head B batch: 255 avg loss -0.611638 avg loss no lamb -0.611638 time 2019-03-16 15:32:02.275388
+Model ind 714 epoch 1 head B batch: 256 avg loss -0.583070 avg loss no lamb -0.583070 time 2019-03-16 15:32:06.176838
+Model ind 714 epoch 1 head B batch: 257 avg loss -0.568044 avg loss no lamb -0.568044 time 2019-03-16 15:32:10.103926
+Model ind 714 epoch 1 head B batch: 258 avg loss -0.561968 avg loss no lamb -0.561968 time 2019-03-16 15:32:14.046288
+Model ind 714 epoch 1 head B batch: 259 avg loss -0.557276 avg loss no lamb -0.557276 time 2019-03-16 15:32:17.994056
+Model ind 714 epoch 1 head B batch: 260 avg loss -0.577606 avg loss no lamb -0.577606 time 2019-03-16 15:32:21.915562
+Model ind 714 epoch 1 head B batch: 261 avg loss -0.582569 avg loss no lamb -0.582569 time 2019-03-16 15:32:25.812335
+Model ind 714 epoch 1 head B batch: 262 avg loss -0.605147 avg loss no lamb -0.605147 time 2019-03-16 15:32:29.720556
+Model ind 714 epoch 1 head B batch: 263 avg loss -0.565843 avg loss no lamb -0.565843 time 2019-03-16 15:32:33.699435
+Model ind 714 epoch 1 head B batch: 264 avg loss -0.551903 avg loss no lamb -0.551903 time 2019-03-16 15:32:37.630116
+Model ind 714 epoch 1 head B batch: 265 avg loss -0.571008 avg loss no lamb -0.571008 time 2019-03-16 15:32:41.564680
+Model ind 714 epoch 1 head B batch: 266 avg loss -0.547285 avg loss no lamb -0.547285 time 2019-03-16 15:32:45.479587
+Model ind 714 epoch 1 head B batch: 267 avg loss -0.568091 avg loss no lamb -0.568091 time 2019-03-16 15:32:49.410454
+Model ind 714 epoch 1 head B batch: 268 avg loss -0.536964 avg loss no lamb -0.536964 time 2019-03-16 15:32:53.319363
+Model ind 714 epoch 1 head B batch: 269 avg loss -0.566027 avg loss no lamb -0.566027 time 2019-03-16 15:32:57.283321
+Model ind 714 epoch 1 head B batch: 270 avg loss -0.592606 avg loss no lamb -0.592606 time 2019-03-16 15:33:01.229302
+Model ind 714 epoch 1 head B batch: 271 avg loss -0.552503 avg loss no lamb -0.552503 time 2019-03-16 15:33:05.161146
+Model ind 714 epoch 1 head B batch: 272 avg loss -0.599443 avg loss no lamb -0.599443 time 2019-03-16 15:33:09.081392
+Model ind 714 epoch 1 head B batch: 273 avg loss -0.579780 avg loss no lamb -0.579780 time 2019-03-16 15:33:13.016066
+Model ind 714 epoch 1 head B batch: 274 avg loss -0.541729 avg loss no lamb -0.541729 time 2019-03-16 15:33:16.922681
+Model ind 714 epoch 1 head B batch: 275 avg loss -0.601232 avg loss no lamb -0.601232 time 2019-03-16 15:33:20.883002
+Model ind 714 epoch 1 head B batch: 276 avg loss -0.547988 avg loss no lamb -0.547988 time 2019-03-16 15:33:24.804431
+Model ind 714 epoch 1 head B batch: 277 avg loss -0.603417 avg loss no lamb -0.603417 time 2019-03-16 15:33:28.697567
+Model ind 714 epoch 1 head B batch: 278 avg loss -0.586909 avg loss no lamb -0.586909 time 2019-03-16 15:33:32.582894
+Model ind 714 epoch 1 head B batch: 279 avg loss -0.572590 avg loss no lamb -0.572590 time 2019-03-16 15:33:36.537509
+Model ind 714 epoch 1 head B batch: 280 avg loss -0.563893 avg loss no lamb -0.563893 time 2019-03-16 15:33:40.492559
+Model ind 714 epoch 1 head B batch: 281 avg loss -0.559497 avg loss no lamb -0.559497 time 2019-03-16 15:33:44.492904
+Model ind 714 epoch 1 head B batch: 282 avg loss -0.600941 avg loss no lamb -0.600941 time 2019-03-16 15:33:48.418847
+Model ind 714 epoch 1 head B batch: 283 avg loss -0.589203 avg loss no lamb -0.589203 time 2019-03-16 15:33:52.361605
+Model ind 714 epoch 1 head B batch: 284 avg loss -0.591804 avg loss no lamb -0.591804 time 2019-03-16 15:33:56.278848
+Model ind 714 epoch 1 head B batch: 285 avg loss -0.562666 avg loss no lamb -0.562666 time 2019-03-16 15:34:00.218751
+Model ind 714 epoch 1 head B batch: 286 avg loss -0.600479 avg loss no lamb -0.600479 time 2019-03-16 15:34:04.145176
+Model ind 714 epoch 1 head B batch: 287 avg loss -0.599634 avg loss no lamb -0.599634 time 2019-03-16 15:34:08.092847
+Model ind 714 epoch 1 head B batch: 288 avg loss -0.547259 avg loss no lamb -0.547259 time 2019-03-16 15:34:12.001128
+Model ind 714 epoch 1 head B batch: 289 avg loss -0.576071 avg loss no lamb -0.576071 time 2019-03-16 15:34:15.946586
+Model ind 714 epoch 1 head B batch: 290 avg loss -0.605642 avg loss no lamb -0.605642 time 2019-03-16 15:34:19.857398
+Model ind 714 epoch 1 head B batch: 291 avg loss -0.565416 avg loss no lamb -0.565416 time 2019-03-16 15:34:23.759634
+Model ind 714 epoch 1 head B batch: 292 avg loss -0.561844 avg loss no lamb -0.561844 time 2019-03-16 15:34:27.691478
+Model ind 714 epoch 1 head B batch: 293 avg loss -0.598912 avg loss no lamb -0.598912 time 2019-03-16 15:34:31.633183
+Model ind 714 epoch 1 head B batch: 294 avg loss -0.557231 avg loss no lamb -0.557231 time 2019-03-16 15:34:35.568725
+Model ind 714 epoch 1 head B batch: 295 avg loss -0.572298 avg loss no lamb -0.572298 time 2019-03-16 15:34:39.501160
+Model ind 714 epoch 1 head B batch: 296 avg loss -0.537892 avg loss no lamb -0.537892 time 2019-03-16 15:34:43.415323
+Model ind 714 epoch 1 head B batch: 297 avg loss -0.510821 avg loss no lamb -0.510821 time 2019-03-16 15:34:47.350576
+Model ind 714 epoch 1 head B batch: 298 avg loss -0.559357 avg loss no lamb -0.559357 time 2019-03-16 15:34:51.330653
+Model ind 714 epoch 1 head B batch: 299 avg loss -0.541356 avg loss no lamb -0.541356 time 2019-03-16 15:34:55.261074
+Model ind 714 epoch 1 head B batch: 300 avg loss -0.609713 avg loss no lamb -0.609713 time 2019-03-16 15:34:59.207322
+Model ind 714 epoch 1 head B batch: 301 avg loss -0.579878 avg loss no lamb -0.579878 time 2019-03-16 15:35:03.117294
+Model ind 714 epoch 1 head B batch: 302 avg loss -0.566451 avg loss no lamb -0.566451 time 2019-03-16 15:35:07.029597
+Model ind 714 epoch 1 head B batch: 303 avg loss -0.541472 avg loss no lamb -0.541472 time 2019-03-16 15:35:10.960067
+Model ind 714 epoch 1 head B batch: 304 avg loss -0.614555 avg loss no lamb -0.614555 time 2019-03-16 15:35:14.860740
+last batch sz 60
+Model ind 714 epoch 1 head B batch: 305 avg loss -0.591981 avg loss no lamb -0.591981 time 2019-03-16 15:35:17.634005
+Model ind 714 epoch 1 head A batch: 0 avg loss -0.008021 avg loss no lamb -0.008021 time 2019-03-16 15:35:20.532325
+Model ind 714 epoch 1 head A batch: 1 avg loss -0.018065 avg loss no lamb -0.018065 time 2019-03-16 15:35:24.211155
+Model ind 714 epoch 1 head A batch: 2 avg loss -0.071102 avg loss no lamb -0.071102 time 2019-03-16 15:35:27.856462
+Model ind 714 epoch 1 head A batch: 3 avg loss -0.188549 avg loss no lamb -0.188549 time 2019-03-16 15:35:31.491712
+Model ind 714 epoch 1 head A batch: 4 avg loss -0.296248 avg loss no lamb -0.296248 time 2019-03-16 15:35:35.087466
+Model ind 714 epoch 1 head A batch: 5 avg loss -0.381177 avg loss no lamb -0.381177 time 2019-03-16 15:35:38.781595
+Model ind 714 epoch 1 head A batch: 6 avg loss -0.510212 avg loss no lamb -0.510212 time 2019-03-16 15:35:42.436268
+Model ind 714 epoch 1 head A batch: 7 avg loss -0.508287 avg loss no lamb -0.508287 time 2019-03-16 15:35:46.073710
+Model ind 714 epoch 1 head A batch: 8 avg loss -0.590448 avg loss no lamb -0.590448 time 2019-03-16 15:35:49.715280
+Model ind 714 epoch 1 head A batch: 9 avg loss -0.582500 avg loss no lamb -0.582500 time 2019-03-16 15:35:53.351259
+Model ind 714 epoch 1 head A batch: 10 avg loss -0.574872 avg loss no lamb -0.574872 time 2019-03-16 15:35:56.981208
+Model ind 714 epoch 1 head A batch: 11 avg loss -0.655046 avg loss no lamb -0.655046 time 2019-03-16 15:36:00.674159
+Model ind 714 epoch 1 head A batch: 12 avg loss -0.625048 avg loss no lamb -0.625048 time 2019-03-16 15:36:04.344119
+Model ind 714 epoch 1 head A batch: 13 avg loss -0.662981 avg loss no lamb -0.662981 time 2019-03-16 15:36:07.980783
+Model ind 714 epoch 1 head A batch: 14 avg loss -0.673454 avg loss no lamb -0.673454 time 2019-03-16 15:36:11.653759
+Model ind 714 epoch 1 head A batch: 15 avg loss -0.669823 avg loss no lamb -0.669823 time 2019-03-16 15:36:15.314501
+Model ind 714 epoch 1 head A batch: 16 avg loss -0.722843 avg loss no lamb -0.722843 time 2019-03-16 15:36:18.964476
+Model ind 714 epoch 1 head A batch: 17 avg loss -0.676651 avg loss no lamb -0.676651 time 2019-03-16 15:36:22.611711
+Model ind 714 epoch 1 head A batch: 18 avg loss -0.728131 avg loss no lamb -0.728131 time 2019-03-16 15:36:26.255906
+Model ind 714 epoch 1 head A batch: 19 avg loss -0.739392 avg loss no lamb -0.739392 time 2019-03-16 15:36:29.914257
+Model ind 714 epoch 1 head A batch: 20 avg loss -0.711635 avg loss no lamb -0.711635 time 2019-03-16 15:36:33.570986
+Model ind 714 epoch 1 head A batch: 21 avg loss -0.739994 avg loss no lamb -0.739994 time 2019-03-16 15:36:37.222241
+Model ind 714 epoch 1 head A batch: 22 avg loss -0.688064 avg loss no lamb -0.688064 time 2019-03-16 15:36:40.865790
+Model ind 714 epoch 1 head A batch: 23 avg loss -0.738731 avg loss no lamb -0.738731 time 2019-03-16 15:36:44.501928
+Model ind 714 epoch 1 head A batch: 24 avg loss -0.791409 avg loss no lamb -0.791409 time 2019-03-16 15:36:48.119571
+Model ind 714 epoch 1 head A batch: 25 avg loss -0.767363 avg loss no lamb -0.767363 time 2019-03-16 15:36:51.789691
+Model ind 714 epoch 1 head A batch: 26 avg loss -0.771990 avg loss no lamb -0.771990 time 2019-03-16 15:36:55.446895
+Model ind 714 epoch 1 head A batch: 27 avg loss -0.758732 avg loss no lamb -0.758732 time 2019-03-16 15:36:59.120959
+Model ind 714 epoch 1 head A batch: 28 avg loss -0.772604 avg loss no lamb -0.772604 time 2019-03-16 15:37:02.761605
+Model ind 714 epoch 1 head A batch: 29 avg loss -0.786765 avg loss no lamb -0.786765 time 2019-03-16 15:37:06.423648
+Model ind 714 epoch 1 head A batch: 30 avg loss -0.824338 avg loss no lamb -0.824338 time 2019-03-16 15:37:10.081135
+Model ind 714 epoch 1 head A batch: 31 avg loss -0.825276 avg loss no lamb -0.825276 time 2019-03-16 15:37:13.730467
+Model ind 714 epoch 1 head A batch: 32 avg loss -0.819720 avg loss no lamb -0.819720 time 2019-03-16 15:37:17.365973
+Model ind 714 epoch 1 head A batch: 33 avg loss -0.837096 avg loss no lamb -0.837096 time 2019-03-16 15:37:21.000269
+Model ind 714 epoch 1 head A batch: 34 avg loss -0.802173 avg loss no lamb -0.802173 time 2019-03-16 15:37:24.661899
+Model ind 714 epoch 1 head A batch: 35 avg loss -0.843700 avg loss no lamb -0.843700 time 2019-03-16 15:37:28.299522
+Model ind 714 epoch 1 head A batch: 36 avg loss -0.838145 avg loss no lamb -0.838145 time 2019-03-16 15:37:31.952625
+Model ind 714 epoch 1 head A batch: 37 avg loss -0.863794 avg loss no lamb -0.863794 time 2019-03-16 15:37:35.594190
+Model ind 714 epoch 1 head A batch: 38 avg loss -0.858103 avg loss no lamb -0.858103 time 2019-03-16 15:37:39.245598
+Model ind 714 epoch 1 head A batch: 39 avg loss -0.887466 avg loss no lamb -0.887466 time 2019-03-16 15:37:42.885266
+Model ind 714 epoch 1 head A batch: 40 avg loss -0.912394 avg loss no lamb -0.912394 time 2019-03-16 15:37:46.547266
+Model ind 714 epoch 1 head A batch: 41 avg loss -0.861929 avg loss no lamb -0.861929 time 2019-03-16 15:37:50.183946
+Model ind 714 epoch 1 head A batch: 42 avg loss -0.837187 avg loss no lamb -0.837187 time 2019-03-16 15:37:53.817218
+Model ind 714 epoch 1 head A batch: 43 avg loss -0.845748 avg loss no lamb -0.845748 time 2019-03-16 15:37:57.487707
+Model ind 714 epoch 1 head A batch: 44 avg loss -0.894222 avg loss no lamb -0.894222 time 2019-03-16 15:38:01.110053
+Model ind 714 epoch 1 head A batch: 45 avg loss -0.900361 avg loss no lamb -0.900361 time 2019-03-16 15:38:04.741513
+Model ind 714 epoch 1 head A batch: 46 avg loss -0.916706 avg loss no lamb -0.916706 time 2019-03-16 15:38:08.361108
+Model ind 714 epoch 1 head A batch: 47 avg loss -0.916688 avg loss no lamb -0.916688 time 2019-03-16 15:38:12.043247
+Model ind 714 epoch 1 head A batch: 48 avg loss -0.909848 avg loss no lamb -0.909848 time 2019-03-16 15:38:15.677527
+Model ind 714 epoch 1 head A batch: 49 avg loss -0.932185 avg loss no lamb -0.932185 time 2019-03-16 15:38:19.302754
+Model ind 714 epoch 1 head A batch: 50 avg loss -0.908862 avg loss no lamb -0.908862 time 2019-03-16 15:38:22.932004
+Model ind 714 epoch 1 head A batch: 51 avg loss -0.936573 avg loss no lamb -0.936573 time 2019-03-16 15:38:26.574289
+Model ind 714 epoch 1 head A batch: 52 avg loss -0.915345 avg loss no lamb -0.915345 time 2019-03-16 15:38:30.202296
+Model ind 714 epoch 1 head A batch: 53 avg loss -0.955644 avg loss no lamb -0.955644 time 2019-03-16 15:38:33.834244
+Model ind 714 epoch 1 head A batch: 54 avg loss -0.873584 avg loss no lamb -0.873584 time 2019-03-16 15:38:37.480425
+Model ind 714 epoch 1 head A batch: 55 avg loss -0.924285 avg loss no lamb -0.924285 time 2019-03-16 15:38:41.118467
+Model ind 714 epoch 1 head A batch: 56 avg loss -0.922909 avg loss no lamb -0.922909 time 2019-03-16 15:38:44.747008
+Model ind 714 epoch 1 head A batch: 57 avg loss -0.987658 avg loss no lamb -0.987658 time 2019-03-16 15:38:48.400248
+Model ind 714 epoch 1 head A batch: 58 avg loss -0.954251 avg loss no lamb -0.954251 time 2019-03-16 15:38:51.977238
+Model ind 714 epoch 1 head A batch: 59 avg loss -0.963664 avg loss no lamb -0.963664 time 2019-03-16 15:38:55.527933
+Model ind 714 epoch 1 head A batch: 60 avg loss -1.005764 avg loss no lamb -1.005764 time 2019-03-16 15:38:59.155659
+Model ind 714 epoch 1 head A batch: 61 avg loss -1.003545 avg loss no lamb -1.003545 time 2019-03-16 15:39:02.786893
+Model ind 714 epoch 1 head A batch: 62 avg loss -0.934197 avg loss no lamb -0.934197 time 2019-03-16 15:39:06.413705
+Model ind 714 epoch 1 head A batch: 63 avg loss -0.968317 avg loss no lamb -0.968317 time 2019-03-16 15:39:10.053236
+Model ind 714 epoch 1 head A batch: 64 avg loss -0.964238 avg loss no lamb -0.964238 time 2019-03-16 15:39:13.713506
+Model ind 714 epoch 1 head A batch: 65 avg loss -1.007225 avg loss no lamb -1.007225 time 2019-03-16 15:39:17.345176
+Model ind 714 epoch 1 head A batch: 66 avg loss -0.947020 avg loss no lamb -0.947020 time 2019-03-16 15:39:20.979923
+Model ind 714 epoch 1 head A batch: 67 avg loss -0.971393 avg loss no lamb -0.971393 time 2019-03-16 15:39:24.631321
+Model ind 714 epoch 1 head A batch: 68 avg loss -0.999236 avg loss no lamb -0.999236 time 2019-03-16 15:39:28.277087
+Model ind 714 epoch 1 head A batch: 69 avg loss -0.983188 avg loss no lamb -0.983188 time 2019-03-16 15:39:31.918153
+Model ind 714 epoch 1 head A batch: 70 avg loss -0.989554 avg loss no lamb -0.989554 time 2019-03-16 15:39:35.499437
+Model ind 714 epoch 1 head A batch: 71 avg loss -1.012309 avg loss no lamb -1.012309 time 2019-03-16 15:39:39.156273
+Model ind 714 epoch 1 head A batch: 72 avg loss -0.936999 avg loss no lamb -0.936999 time 2019-03-16 15:39:42.827124
+Model ind 714 epoch 1 head A batch: 73 avg loss -0.987744 avg loss no lamb -0.987744 time 2019-03-16 15:39:46.466788
+Model ind 714 epoch 1 head A batch: 74 avg loss -0.999911 avg loss no lamb -0.999911 time 2019-03-16 15:39:50.093602
+Model ind 714 epoch 1 head A batch: 75 avg loss -0.996240 avg loss no lamb -0.996240 time 2019-03-16 15:39:53.718180
+Model ind 714 epoch 1 head A batch: 76 avg loss -0.981698 avg loss no lamb -0.981698 time 2019-03-16 15:39:57.368296
+Model ind 714 epoch 1 head A batch: 77 avg loss -0.947289 avg loss no lamb -0.947289 time 2019-03-16 15:40:01.022529
+Model ind 714 epoch 1 head A batch: 78 avg loss -1.016935 avg loss no lamb -1.016935 time 2019-03-16 15:40:04.654321
+Model ind 714 epoch 1 head A batch: 79 avg loss -0.973542 avg loss no lamb -0.973542 time 2019-03-16 15:40:08.299310
+Model ind 714 epoch 1 head A batch: 80 avg loss -0.986630 avg loss no lamb -0.986630 time 2019-03-16 15:40:11.970885
+Model ind 714 epoch 1 head A batch: 81 avg loss -0.999164 avg loss no lamb -0.999164 time 2019-03-16 15:40:15.616000
+Model ind 714 epoch 1 head A batch: 82 avg loss -0.967669 avg loss no lamb -0.967669 time 2019-03-16 15:40:19.233385
+Model ind 714 epoch 1 head A batch: 83 avg loss -1.006475 avg loss no lamb -1.006475 time 2019-03-16 15:40:22.907967
+Model ind 714 epoch 1 head A batch: 84 avg loss -0.989064 avg loss no lamb -0.989064 time 2019-03-16 15:40:26.545159
+Model ind 714 epoch 1 head A batch: 85 avg loss -1.001200 avg loss no lamb -1.001200 time 2019-03-16 15:40:30.204192
+Model ind 714 epoch 1 head A batch: 86 avg loss -1.006801 avg loss no lamb -1.006801 time 2019-03-16 15:40:33.855081
+Model ind 714 epoch 1 head A batch: 87 avg loss -1.006965 avg loss no lamb -1.006965 time 2019-03-16 15:40:37.548566
+Model ind 714 epoch 1 head A batch: 88 avg loss -1.020887 avg loss no lamb -1.020887 time 2019-03-16 15:40:41.188284
+Model ind 714 epoch 1 head A batch: 89 avg loss -1.011303 avg loss no lamb -1.011303 time 2019-03-16 15:40:44.825932
+Model ind 714 epoch 1 head A batch: 90 avg loss -0.921002 avg loss no lamb -0.921002 time 2019-03-16 15:40:48.448062
+Model ind 714 epoch 1 head A batch: 91 avg loss -0.976638 avg loss no lamb -0.976638 time 2019-03-16 15:40:52.098875
+Model ind 714 epoch 1 head A batch: 92 avg loss -0.957658 avg loss no lamb -0.957658 time 2019-03-16 15:40:55.739652
+Model ind 714 epoch 1 head A batch: 93 avg loss -0.975107 avg loss no lamb -0.975107 time 2019-03-16 15:40:59.418336
+Model ind 714 epoch 1 head A batch: 94 avg loss -0.986414 avg loss no lamb -0.986414 time 2019-03-16 15:41:03.039715
+Model ind 714 epoch 1 head A batch: 95 avg loss -0.993361 avg loss no lamb -0.993361 time 2019-03-16 15:41:06.682151
+Model ind 714 epoch 1 head A batch: 96 avg loss -0.938609 avg loss no lamb -0.938609 time 2019-03-16 15:41:10.403787
+Model ind 714 epoch 1 head A batch: 97 avg loss -1.036440 avg loss no lamb -1.036440 time 2019-03-16 15:41:14.078908
+Model ind 714 epoch 1 head A batch: 98 avg loss -1.000917 avg loss no lamb -1.000917 time 2019-03-16 15:41:17.704533
+Model ind 714 epoch 1 head A batch: 99 avg loss -1.008541 avg loss no lamb -1.008541 time 2019-03-16 15:41:21.335968
+Model ind 714 epoch 1 head A batch: 100 avg loss -0.972923 avg loss no lamb -0.972923 time 2019-03-16 15:41:25.002759
+Model ind 714 epoch 1 head A batch: 101 avg loss -1.029676 avg loss no lamb -1.029676 time 2019-03-16 15:41:28.652278
+Model ind 714 epoch 1 head A batch: 102 avg loss -1.037958 avg loss no lamb -1.037958 time 2019-03-16 15:41:32.301200
+Model ind 714 epoch 1 head A batch: 103 avg loss -0.992350 avg loss no lamb -0.992350 time 2019-03-16 15:41:35.950565
+Model ind 714 epoch 1 head A batch: 104 avg loss -1.036564 avg loss no lamb -1.036564 time 2019-03-16 15:41:39.613108
+Model ind 714 epoch 1 head A batch: 105 avg loss -1.055243 avg loss no lamb -1.055243 time 2019-03-16 15:41:43.246212
+Model ind 714 epoch 1 head A batch: 106 avg loss -1.021446 avg loss no lamb -1.021446 time 2019-03-16 15:41:46.872455
+Model ind 714 epoch 1 head A batch: 107 avg loss -0.982488 avg loss no lamb -0.982488 time 2019-03-16 15:41:50.491931
+Model ind 714 epoch 1 head A batch: 108 avg loss -0.970007 avg loss no lamb -0.970007 time 2019-03-16 15:41:54.140974
+Model ind 714 epoch 1 head A batch: 109 avg loss -1.031547 avg loss no lamb -1.031547 time 2019-03-16 15:41:57.807386
+Model ind 714 epoch 1 head A batch: 110 avg loss -1.014110 avg loss no lamb -1.014110 time 2019-03-16 15:42:01.447605
+Model ind 714 epoch 1 head A batch: 111 avg loss -1.004730 avg loss no lamb -1.004730 time 2019-03-16 15:42:05.088948
+Model ind 714 epoch 1 head A batch: 112 avg loss -1.024533 avg loss no lamb -1.024533 time 2019-03-16 15:42:08.718158
+Model ind 714 epoch 1 head A batch: 113 avg loss -0.996870 avg loss no lamb -0.996870 time 2019-03-16 15:42:12.362982
+Model ind 714 epoch 1 head A batch: 114 avg loss -1.026597 avg loss no lamb -1.026597 time 2019-03-16 15:42:15.997566
+Model ind 714 epoch 1 head A batch: 115 avg loss -1.039546 avg loss no lamb -1.039546 time 2019-03-16 15:42:19.623537
+Model ind 714 epoch 1 head A batch: 116 avg loss -1.023821 avg loss no lamb -1.023821 time 2019-03-16 15:42:23.281581
+Model ind 714 epoch 1 head A batch: 117 avg loss -0.972273 avg loss no lamb -0.972273 time 2019-03-16 15:42:26.945687
+Model ind 714 epoch 1 head A batch: 118 avg loss -1.024767 avg loss no lamb -1.024767 time 2019-03-16 15:42:30.554292
+Model ind 714 epoch 1 head A batch: 119 avg loss -0.950455 avg loss no lamb -0.950455 time 2019-03-16 15:42:34.175787
+Model ind 714 epoch 1 head A batch: 120 avg loss -0.971104 avg loss no lamb -0.971104 time 2019-03-16 15:42:37.807158
+Model ind 714 epoch 1 head A batch: 121 avg loss -0.999699 avg loss no lamb -0.999699 time 2019-03-16 15:42:41.472169
+Model ind 714 epoch 1 head A batch: 122 avg loss -1.072100 avg loss no lamb -1.072100 time 2019-03-16 15:42:45.098343
+Model ind 714 epoch 1 head A batch: 123 avg loss -1.019251 avg loss no lamb -1.019251 time 2019-03-16 15:42:48.755223
+Model ind 714 epoch 1 head A batch: 124 avg loss -0.998604 avg loss no lamb -0.998604 time 2019-03-16 15:42:52.384915
+Model ind 714 epoch 1 head A batch: 125 avg loss -1.032327 avg loss no lamb -1.032327 time 2019-03-16 15:42:56.025419
+Model ind 714 epoch 1 head A batch: 126 avg loss -1.061939 avg loss no lamb -1.061939 time 2019-03-16 15:42:59.697480
+Model ind 714 epoch 1 head A batch: 127 avg loss -1.002802 avg loss no lamb -1.002802 time 2019-03-16 15:43:03.317941
+Model ind 714 epoch 1 head A batch: 128 avg loss -1.017419 avg loss no lamb -1.017419 time 2019-03-16 15:43:06.928116
+Model ind 714 epoch 1 head A batch: 129 avg loss -1.059816 avg loss no lamb -1.059816 time 2019-03-16 15:43:10.564768
+Model ind 714 epoch 1 head A batch: 130 avg loss -1.036977 avg loss no lamb -1.036977 time 2019-03-16 15:43:14.199942
+Model ind 714 epoch 1 head A batch: 131 avg loss -1.053573 avg loss no lamb -1.053573 time 2019-03-16 15:43:17.844726
+Model ind 714 epoch 1 head A batch: 132 avg loss -0.959810 avg loss no lamb -0.959810 time 2019-03-16 15:43:21.489834
+Model ind 714 epoch 1 head A batch: 133 avg loss -1.010160 avg loss no lamb -1.010160 time 2019-03-16 15:43:25.186636
+Model ind 714 epoch 1 head A batch: 134 avg loss -1.048093 avg loss no lamb -1.048093 time 2019-03-16 15:43:28.796924
+Model ind 714 epoch 1 head A batch: 135 avg loss -0.999858 avg loss no lamb -0.999858 time 2019-03-16 15:43:32.421810
+Model ind 714 epoch 1 head A batch: 136 avg loss -1.017482 avg loss no lamb -1.017482 time 2019-03-16 15:43:36.046565
+Model ind 714 epoch 1 head A batch: 137 avg loss -1.031445 avg loss no lamb -1.031445 time 2019-03-16 15:43:39.665385
+Model ind 714 epoch 1 head A batch: 138 avg loss -1.016632 avg loss no lamb -1.016632 time 2019-03-16 15:43:43.289481
+Model ind 714 epoch 1 head A batch: 139 avg loss -1.002299 avg loss no lamb -1.002299 time 2019-03-16 15:43:46.929380
+Model ind 714 epoch 1 head A batch: 140 avg loss -1.044030 avg loss no lamb -1.044030 time 2019-03-16 15:43:50.593811
+Model ind 714 epoch 1 head A batch: 141 avg loss -1.045292 avg loss no lamb -1.045292 time 2019-03-16 15:43:54.247632
+Model ind 714 epoch 1 head A batch: 142 avg loss -0.974203 avg loss no lamb -0.974203 time 2019-03-16 15:43:57.883758
+Model ind 714 epoch 1 head A batch: 143 avg loss -0.994169 avg loss no lamb -0.994169 time 2019-03-16 15:44:01.507018
+Model ind 714 epoch 1 head A batch: 144 avg loss -1.056458 avg loss no lamb -1.056458 time 2019-03-16 15:44:05.138239
+Model ind 714 epoch 1 head A batch: 145 avg loss -1.041299 avg loss no lamb -1.041299 time 2019-03-16 15:44:08.783294
+Model ind 714 epoch 1 head A batch: 146 avg loss -1.039746 avg loss no lamb -1.039746 time 2019-03-16 15:44:12.427443
+Model ind 714 epoch 1 head A batch: 147 avg loss -1.027424 avg loss no lamb -1.027424 time 2019-03-16 15:44:16.053999
+Model ind 714 epoch 1 head A batch: 148 avg loss -1.028475 avg loss no lamb -1.028475 time 2019-03-16 15:44:19.701740
+Model ind 714 epoch 1 head A batch: 149 avg loss -1.040554 avg loss no lamb -1.040554 time 2019-03-16 15:44:23.329258
+Model ind 714 epoch 1 head A batch: 150 avg loss -1.055326 avg loss no lamb -1.055326 time 2019-03-16 15:44:26.965161
+Model ind 714 epoch 1 head A batch: 151 avg loss -1.038145 avg loss no lamb -1.038145 time 2019-03-16 15:44:30.613368
+Model ind 714 epoch 1 head A batch: 152 avg loss -1.024082 avg loss no lamb -1.024082 time 2019-03-16 15:44:34.236103
+Model ind 714 epoch 1 head A batch: 153 avg loss -0.974278 avg loss no lamb -0.974278 time 2019-03-16 15:44:37.859637
+Model ind 714 epoch 1 head A batch: 154 avg loss -1.018417 avg loss no lamb -1.018417 time 2019-03-16 15:44:41.500118
+Model ind 714 epoch 1 head A batch: 155 avg loss -0.959815 avg loss no lamb -0.959815 time 2019-03-16 15:44:45.152451
+Model ind 714 epoch 1 head A batch: 156 avg loss -0.973826 avg loss no lamb -0.973826 time 2019-03-16 15:44:48.790674
+Model ind 714 epoch 1 head A batch: 157 avg loss -1.043111 avg loss no lamb -1.043111 time 2019-03-16 15:44:52.391035
+Model ind 714 epoch 1 head A batch: 158 avg loss -1.015828 avg loss no lamb -1.015828 time 2019-03-16 15:44:56.029841
+Model ind 714 epoch 1 head A batch: 159 avg loss -0.992781 avg loss no lamb -0.992781 time 2019-03-16 15:44:59.659106
+Model ind 714 epoch 1 head A batch: 160 avg loss -1.060620 avg loss no lamb -1.060620 time 2019-03-16 15:45:03.290058
+Model ind 714 epoch 1 head A batch: 161 avg loss -1.003258 avg loss no lamb -1.003258 time 2019-03-16 15:45:06.898940
+Model ind 714 epoch 1 head A batch: 162 avg loss -1.046885 avg loss no lamb -1.046885 time 2019-03-16 15:45:10.538839
+Model ind 714 epoch 1 head A batch: 163 avg loss -1.019884 avg loss no lamb -1.019884 time 2019-03-16 15:45:14.173485
+Model ind 714 epoch 1 head A batch: 164 avg loss -1.036011 avg loss no lamb -1.036011 time 2019-03-16 15:45:17.814687
+Model ind 714 epoch 1 head A batch: 165 avg loss -1.021553 avg loss no lamb -1.021553 time 2019-03-16 15:45:21.462395
+Model ind 714 epoch 1 head A batch: 166 avg loss -0.988701 avg loss no lamb -0.988701 time 2019-03-16 15:45:25.081168
+Model ind 714 epoch 1 head A batch: 167 avg loss -0.980288 avg loss no lamb -0.980288 time 2019-03-16 15:45:28.702764
+Model ind 714 epoch 1 head A batch: 168 avg loss -1.003412 avg loss no lamb -1.003412 time 2019-03-16 15:45:32.312800
+Model ind 714 epoch 1 head A batch: 169 avg loss -1.067005 avg loss no lamb -1.067005 time 2019-03-16 15:45:35.951668
+Model ind 714 epoch 1 head A batch: 170 avg loss -0.993913 avg loss no lamb -0.993913 time 2019-03-16 15:45:39.591649
+Model ind 714 epoch 1 head A batch: 171 avg loss -0.971689 avg loss no lamb -0.971689 time 2019-03-16 15:45:43.265987
+Model ind 714 epoch 1 head A batch: 172 avg loss -0.988733 avg loss no lamb -0.988733 time 2019-03-16 15:45:46.905346
+Model ind 714 epoch 1 head A batch: 173 avg loss -0.993414 avg loss no lamb -0.993414 time 2019-03-16 15:45:50.539627
+Model ind 714 epoch 1 head A batch: 174 avg loss -0.997208 avg loss no lamb -0.997208 time 2019-03-16 15:45:54.164005
+Model ind 714 epoch 1 head A batch: 175 avg loss -1.050089 avg loss no lamb -1.050089 time 2019-03-16 15:45:57.810152
+Model ind 714 epoch 1 head A batch: 176 avg loss -1.069849 avg loss no lamb -1.069849 time 2019-03-16 15:46:01.406095
+Model ind 714 epoch 1 head A batch: 177 avg loss -1.025530 avg loss no lamb -1.025530 time 2019-03-16 15:46:04.990849
+Model ind 714 epoch 1 head A batch: 178 avg loss -1.050267 avg loss no lamb -1.050267 time 2019-03-16 15:46:08.624997
+Model ind 714 epoch 1 head A batch: 179 avg loss -1.051931 avg loss no lamb -1.051931 time 2019-03-16 15:46:12.266787
+Model ind 714 epoch 1 head A batch: 180 avg loss -0.973000 avg loss no lamb -0.973000 time 2019-03-16 15:46:15.904393
+Model ind 714 epoch 1 head A batch: 181 avg loss -1.024633 avg loss no lamb -1.024633 time 2019-03-16 15:46:19.556088
+Model ind 714 epoch 1 head A batch: 182 avg loss -0.998038 avg loss no lamb -0.998038 time 2019-03-16 15:46:23.146791
+Model ind 714 epoch 1 head A batch: 183 avg loss -1.059623 avg loss no lamb -1.059623 time 2019-03-16 15:46:26.758771
+Model ind 714 epoch 1 head A batch: 184 avg loss -1.022661 avg loss no lamb -1.022661 time 2019-03-16 15:46:30.414290
+Model ind 714 epoch 1 head A batch: 185 avg loss -1.040046 avg loss no lamb -1.040046 time 2019-03-16 15:46:34.044990
+Model ind 714 epoch 1 head A batch: 186 avg loss -1.071805 avg loss no lamb -1.071805 time 2019-03-16 15:46:37.693299
+Model ind 714 epoch 1 head A batch: 187 avg loss -1.059150 avg loss no lamb -1.059150 time 2019-03-16 15:46:41.326314
+Model ind 714 epoch 1 head A batch: 188 avg loss -1.031627 avg loss no lamb -1.031627 time 2019-03-16 15:46:44.970951
+Model ind 714 epoch 1 head A batch: 189 avg loss -1.032899 avg loss no lamb -1.032899 time 2019-03-16 15:46:48.640971
+Model ind 714 epoch 1 head A batch: 190 avg loss -1.019715 avg loss no lamb -1.019715 time 2019-03-16 15:46:52.253023
+Model ind 714 epoch 1 head A batch: 191 avg loss -1.064499 avg loss no lamb -1.064499 time 2019-03-16 15:46:55.893515
+Model ind 714 epoch 1 head A batch: 192 avg loss -1.002705 avg loss no lamb -1.002705 time 2019-03-16 15:46:59.514789
+Model ind 714 epoch 1 head A batch: 193 avg loss -1.041951 avg loss no lamb -1.041951 time 2019-03-16 15:47:03.151481
+Model ind 714 epoch 1 head A batch: 194 avg loss -1.046351 avg loss no lamb -1.046351 time 2019-03-16 15:47:06.767712
+Model ind 714 epoch 1 head A batch: 195 avg loss -1.051574 avg loss no lamb -1.051574 time 2019-03-16 15:47:10.402222
+Model ind 714 epoch 1 head A batch: 196 avg loss -1.020985 avg loss no lamb -1.020985 time 2019-03-16 15:47:14.037784
+Model ind 714 epoch 1 head A batch: 197 avg loss -0.986631 avg loss no lamb -0.986631 time 2019-03-16 15:47:17.756260
+Model ind 714 epoch 1 head A batch: 198 avg loss -1.011794 avg loss no lamb -1.011794 time 2019-03-16 15:47:21.383442
+Model ind 714 epoch 1 head A batch: 199 avg loss -1.046053 avg loss no lamb -1.046053 time 2019-03-16 15:47:25.025692
+Model ind 714 epoch 1 head A batch: 200 avg loss -1.064462 avg loss no lamb -1.064462 time 2019-03-16 15:47:28.653392
+Model ind 714 epoch 1 head A batch: 201 avg loss -1.064808 avg loss no lamb -1.064808 time 2019-03-16 15:47:32.290632
+Model ind 714 epoch 1 head A batch: 202 avg loss -1.063730 avg loss no lamb -1.063730 time 2019-03-16 15:47:35.938665
+Model ind 714 epoch 1 head A batch: 203 avg loss -1.073435 avg loss no lamb -1.073435 time 2019-03-16 15:47:39.586593
+Model ind 714 epoch 1 head A batch: 204 avg loss -1.020798 avg loss no lamb -1.020798 time 2019-03-16 15:47:43.239637
+Model ind 714 epoch 1 head A batch: 205 avg loss -1.032649 avg loss no lamb -1.032649 time 2019-03-16 15:47:46.896884
+Model ind 714 epoch 1 head A batch: 206 avg loss -1.072398 avg loss no lamb -1.072398 time 2019-03-16 15:47:50.540891
+Model ind 714 epoch 1 head A batch: 207 avg loss -1.031189 avg loss no lamb -1.031189 time 2019-03-16 15:47:54.174604
+Model ind 714 epoch 1 head A batch: 208 avg loss -1.038935 avg loss no lamb -1.038935 time 2019-03-16 15:47:57.795758
+Model ind 714 epoch 1 head A batch: 209 avg loss -1.076916 avg loss no lamb -1.076916 time 2019-03-16 15:48:01.396316
+Model ind 714 epoch 1 head A batch: 210 avg loss -1.038542 avg loss no lamb -1.038542 time 2019-03-16 15:48:05.003461
+Model ind 714 epoch 1 head A batch: 211 avg loss -1.117269 avg loss no lamb -1.117269 time 2019-03-16 15:48:08.650956
+Model ind 714 epoch 1 head A batch: 212 avg loss -1.049927 avg loss no lamb -1.049927 time 2019-03-16 15:48:12.266494
+Model ind 714 epoch 1 head A batch: 213 avg loss -1.015257 avg loss no lamb -1.015257 time 2019-03-16 15:48:15.875092
+Model ind 714 epoch 1 head A batch: 214 avg loss -1.017611 avg loss no lamb -1.017611 time 2019-03-16 15:48:19.500364
+Model ind 714 epoch 1 head A batch: 215 avg loss -1.014577 avg loss no lamb -1.014577 time 2019-03-16 15:48:23.133239
+Model ind 714 epoch 1 head A batch: 216 avg loss -1.064678 avg loss no lamb -1.064678 time 2019-03-16 15:48:26.759866
+Model ind 714 epoch 1 head A batch: 217 avg loss -1.011950 avg loss no lamb -1.011950 time 2019-03-16 15:48:30.411040
+Model ind 714 epoch 1 head A batch: 218 avg loss -1.091199 avg loss no lamb -1.091199 time 2019-03-16 15:48:34.014341
+Model ind 714 epoch 1 head A batch: 219 avg loss -1.056921 avg loss no lamb -1.056921 time 2019-03-16 15:48:37.648344
+Model ind 714 epoch 1 head A batch: 220 avg loss -1.061697 avg loss no lamb -1.061697 time 2019-03-16 15:48:41.271020
+Model ind 714 epoch 1 head A batch: 221 avg loss -0.969088 avg loss no lamb -0.969088 time 2019-03-16 15:48:44.897115
+Model ind 714 epoch 1 head A batch: 222 avg loss -1.000957 avg loss no lamb -1.000957 time 2019-03-16 15:48:48.542038
+Model ind 714 epoch 1 head A batch: 223 avg loss -1.027334 avg loss no lamb -1.027334 time 2019-03-16 15:48:52.206234
+Model ind 714 epoch 1 head A batch: 224 avg loss -1.066839 avg loss no lamb -1.066839 time 2019-03-16 15:48:55.848554
+Model ind 714 epoch 1 head A batch: 225 avg loss -1.028659 avg loss no lamb -1.028659 time 2019-03-16 15:48:59.473071
+Model ind 714 epoch 1 head A batch: 226 avg loss -1.037955 avg loss no lamb -1.037955 time 2019-03-16 15:49:03.067884
+Model ind 714 epoch 1 head A batch: 227 avg loss -1.030845 avg loss no lamb -1.030845 time 2019-03-16 15:49:06.718697
+Model ind 714 epoch 1 head A batch: 228 avg loss -1.048544 avg loss no lamb -1.048544 time 2019-03-16 15:49:10.341524
+Model ind 714 epoch 1 head A batch: 229 avg loss -0.948842 avg loss no lamb -0.948842 time 2019-03-16 15:49:13.993317
+Model ind 714 epoch 1 head A batch: 230 avg loss -1.017291 avg loss no lamb -1.017291 time 2019-03-16 15:49:17.615279
+Model ind 714 epoch 1 head A batch: 231 avg loss -1.100836 avg loss no lamb -1.100836 time 2019-03-16 15:49:21.268027
+Model ind 714 epoch 1 head A batch: 232 avg loss -1.055044 avg loss no lamb -1.055044 time 2019-03-16 15:49:24.929829
+Model ind 714 epoch 1 head A batch: 233 avg loss -1.033084 avg loss no lamb -1.033084 time 2019-03-16 15:49:28.594963
+Model ind 714 epoch 1 head A batch: 234 avg loss -1.016974 avg loss no lamb -1.016974 time 2019-03-16 15:49:32.209528
+Model ind 714 epoch 1 head A batch: 235 avg loss -1.056188 avg loss no lamb -1.056188 time 2019-03-16 15:49:35.813121
+Model ind 714 epoch 1 head A batch: 236 avg loss -1.049890 avg loss no lamb -1.049890 time 2019-03-16 15:49:39.465853
+Model ind 714 epoch 1 head A batch: 237 avg loss -1.037706 avg loss no lamb -1.037706 time 2019-03-16 15:49:43.103767
+Model ind 714 epoch 1 head A batch: 238 avg loss -1.057744 avg loss no lamb -1.057744 time 2019-03-16 15:49:46.742748
+Model ind 714 epoch 1 head A batch: 239 avg loss -1.048933 avg loss no lamb -1.048933 time 2019-03-16 15:49:50.399192
+Model ind 714 epoch 1 head A batch: 240 avg loss -1.057909 avg loss no lamb -1.057909 time 2019-03-16 15:49:54.087340
+Model ind 714 epoch 1 head A batch: 241 avg loss -1.090808 avg loss no lamb -1.090808 time 2019-03-16 15:49:57.762879
+Model ind 714 epoch 1 head A batch: 242 avg loss -1.011569 avg loss no lamb -1.011569 time 2019-03-16 15:50:01.403488
+Model ind 714 epoch 1 head A batch: 243 avg loss -1.030573 avg loss no lamb -1.030573 time 2019-03-16 15:50:05.002688
+Model ind 714 epoch 1 head A batch: 244 avg loss -1.061345 avg loss no lamb -1.061345 time 2019-03-16 15:50:08.614596
+Model ind 714 epoch 1 head A batch: 245 avg loss -1.009837 avg loss no lamb -1.009837 time 2019-03-16 15:50:12.267130
+Model ind 714 epoch 1 head A batch: 246 avg loss -1.002720 avg loss no lamb -1.002720 time 2019-03-16 15:50:15.914878
+Model ind 714 epoch 1 head A batch: 247 avg loss -1.049333 avg loss no lamb -1.049333 time 2019-03-16 15:50:19.553625
+Model ind 714 epoch 1 head A batch: 248 avg loss -1.045366 avg loss no lamb -1.045366 time 2019-03-16 15:50:23.179634
+Model ind 714 epoch 1 head A batch: 249 avg loss -1.054338 avg loss no lamb -1.054338 time 2019-03-16 15:50:26.789426
+Model ind 714 epoch 1 head A batch: 250 avg loss -1.046952 avg loss no lamb -1.046952 time 2019-03-16 15:50:30.410974
+Model ind 714 epoch 1 head A batch: 251 avg loss -1.071553 avg loss no lamb -1.071553 time 2019-03-16 15:50:34.056073
+Model ind 714 epoch 1 head A batch: 252 avg loss -1.069189 avg loss no lamb -1.069189 time 2019-03-16 15:50:37.703568
+Model ind 714 epoch 1 head A batch: 253 avg loss -1.018960 avg loss no lamb -1.018960 time 2019-03-16 15:50:41.299594
+Model ind 714 epoch 1 head A batch: 254 avg loss -1.007969 avg loss no lamb -1.007969 time 2019-03-16 15:50:44.946115
+Model ind 714 epoch 1 head A batch: 255 avg loss -1.080658 avg loss no lamb -1.080658 time 2019-03-16 15:50:48.547442
+Model ind 714 epoch 1 head A batch: 256 avg loss -1.023399 avg loss no lamb -1.023399 time 2019-03-16 15:50:52.173118
+Model ind 714 epoch 1 head A batch: 257 avg loss -1.039388 avg loss no lamb -1.039388 time 2019-03-16 15:50:55.804557
+Model ind 714 epoch 1 head A batch: 258 avg loss -1.094831 avg loss no lamb -1.094831 time 2019-03-16 15:50:59.442994
+Model ind 714 epoch 1 head A batch: 259 avg loss -1.032063 avg loss no lamb -1.032063 time 2019-03-16 15:51:03.080648
+Model ind 714 epoch 1 head A batch: 260 avg loss -1.094707 avg loss no lamb -1.094707 time 2019-03-16 15:51:06.691921
+Model ind 714 epoch 1 head A batch: 261 avg loss -1.071100 avg loss no lamb -1.071100 time 2019-03-16 15:51:10.394501
+Model ind 714 epoch 1 head A batch: 262 avg loss -0.997803 avg loss no lamb -0.997803 time 2019-03-16 15:51:14.059204
+Model ind 714 epoch 1 head A batch: 263 avg loss -1.029002 avg loss no lamb -1.029002 time 2019-03-16 15:51:17.698301
+Model ind 714 epoch 1 head A batch: 264 avg loss -1.079174 avg loss no lamb -1.079174 time 2019-03-16 15:51:21.342446
+Model ind 714 epoch 1 head A batch: 265 avg loss -1.044130 avg loss no lamb -1.044130 time 2019-03-16 15:51:24.987489
+Model ind 714 epoch 1 head A batch: 266 avg loss -1.056189 avg loss no lamb -1.056189 time 2019-03-16 15:51:28.614219
+Model ind 714 epoch 1 head A batch: 267 avg loss -1.078659 avg loss no lamb -1.078659 time 2019-03-16 15:51:32.221316
+Model ind 714 epoch 1 head A batch: 268 avg loss -1.066711 avg loss no lamb -1.066711 time 2019-03-16 15:51:35.863598
+Model ind 714 epoch 1 head A batch: 269 avg loss -1.040400 avg loss no lamb -1.040400 time 2019-03-16 15:51:39.541983
+Model ind 714 epoch 1 head A batch: 270 avg loss -1.087970 avg loss no lamb -1.087970 time 2019-03-16 15:51:43.164043
+Model ind 714 epoch 1 head A batch: 271 avg loss -1.055006 avg loss no lamb -1.055006 time 2019-03-16 15:51:46.783913
+Model ind 714 epoch 1 head A batch: 272 avg loss -1.005584 avg loss no lamb -1.005584 time 2019-03-16 15:51:50.431556
+Model ind 714 epoch 1 head A batch: 273 avg loss -1.088224 avg loss no lamb -1.088224 time 2019-03-16 15:51:54.138145
+Model ind 714 epoch 1 head A batch: 274 avg loss -1.019395 avg loss no lamb -1.019395 time 2019-03-16 15:51:57.751099
+Model ind 714 epoch 1 head A batch: 275 avg loss -1.125644 avg loss no lamb -1.125644 time 2019-03-16 15:52:01.400896
+Model ind 714 epoch 1 head A batch: 276 avg loss -1.058320 avg loss no lamb -1.058320 time 2019-03-16 15:52:05.046963
+Model ind 714 epoch 1 head A batch: 277 avg loss -1.082570 avg loss no lamb -1.082570 time 2019-03-16 15:52:08.728456
+Model ind 714 epoch 1 head A batch: 278 avg loss -1.005394 avg loss no lamb -1.005394 time 2019-03-16 15:52:12.343137
+Model ind 714 epoch 1 head A batch: 279 avg loss -1.062695 avg loss no lamb -1.062695 time 2019-03-16 15:52:15.980981
+Model ind 714 epoch 1 head A batch: 280 avg loss -1.071062 avg loss no lamb -1.071062 time 2019-03-16 15:52:19.608409
+Model ind 714 epoch 1 head A batch: 281 avg loss -1.104701 avg loss no lamb -1.104701 time 2019-03-16 15:52:23.257187
+Model ind 714 epoch 1 head A batch: 282 avg loss -1.040108 avg loss no lamb -1.040108 time 2019-03-16 15:52:26.908747
+Model ind 714 epoch 1 head A batch: 283 avg loss -1.110044 avg loss no lamb -1.110044 time 2019-03-16 15:52:30.529722
+Model ind 714 epoch 1 head A batch: 284 avg loss -1.049384 avg loss no lamb -1.049384 time 2019-03-16 15:52:34.149193
+Model ind 714 epoch 1 head A batch: 285 avg loss -1.028178 avg loss no lamb -1.028178 time 2019-03-16 15:52:37.758679
+Model ind 714 epoch 1 head A batch: 286 avg loss -1.033229 avg loss no lamb -1.033229 time 2019-03-16 15:52:41.357759
+Model ind 714 epoch 1 head A batch: 287 avg loss -1.070351 avg loss no lamb -1.070351 time 2019-03-16 15:52:45.001186
+Model ind 714 epoch 1 head A batch: 288 avg loss -1.089216 avg loss no lamb -1.089216 time 2019-03-16 15:52:48.678316
+Model ind 714 epoch 1 head A batch: 289 avg loss -1.022887 avg loss no lamb -1.022887 time 2019-03-16 15:52:52.324913
+Model ind 714 epoch 1 head A batch: 290 avg loss -1.082181 avg loss no lamb -1.082181 time 2019-03-16 15:52:55.972945
+Model ind 714 epoch 1 head A batch: 291 avg loss -1.009443 avg loss no lamb -1.009443 time 2019-03-16 15:52:59.607541
+Model ind 714 epoch 1 head A batch: 292 avg loss -1.073644 avg loss no lamb -1.073644 time 2019-03-16 15:53:03.235260
+Model ind 714 epoch 1 head A batch: 293 avg loss -1.053205 avg loss no lamb -1.053205 time 2019-03-16 15:53:06.874034
+Model ind 714 epoch 1 head A batch: 294 avg loss -1.069865 avg loss no lamb -1.069865 time 2019-03-16 15:53:10.527177
+Model ind 714 epoch 1 head A batch: 295 avg loss -1.060773 avg loss no lamb -1.060773 time 2019-03-16 15:53:14.178442
+Model ind 714 epoch 1 head A batch: 296 avg loss -1.082832 avg loss no lamb -1.082832 time 2019-03-16 15:53:17.792829
+Model ind 714 epoch 1 head A batch: 297 avg loss -1.092464 avg loss no lamb -1.092464 time 2019-03-16 15:53:21.445712
+Model ind 714 epoch 1 head A batch: 298 avg loss -1.050912 avg loss no lamb -1.050912 time 2019-03-16 15:53:25.090007
+Model ind 714 epoch 1 head A batch: 299 avg loss -1.061134 avg loss no lamb -1.061134 time 2019-03-16 15:53:28.733239
+Model ind 714 epoch 1 head A batch: 300 avg loss -1.023643 avg loss no lamb -1.023643 time 2019-03-16 15:53:32.344447
+Model ind 714 epoch 1 head A batch: 301 avg loss -1.103968 avg loss no lamb -1.103968 time 2019-03-16 15:53:35.953866
+Model ind 714 epoch 1 head A batch: 302 avg loss -0.995935 avg loss no lamb -0.995935 time 2019-03-16 15:53:39.602031
+Model ind 714 epoch 1 head A batch: 303 avg loss -1.092897 avg loss no lamb -1.092897 time 2019-03-16 15:53:43.249701
+Model ind 714 epoch 1 head A batch: 304 avg loss -1.120316 avg loss no lamb -1.120316 time 2019-03-16 15:53:46.864274
+last batch sz 60
+Model ind 714 epoch 1 head A batch: 305 avg loss -1.067785 avg loss no lamb -1.067785 time 2019-03-16 15:53:49.504436
+Pre: time 2019-03-16 15:59:38.121955: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.65253085]
+	train_accs: [0.65253085]
+	best_train_sub_head: 0
+	worst: 0.65253085
+	avg: 0.65253085
+	best: 0.65253085
+
+Starting e_i: 2 2019-03-16 15:59:40.069493
+Model ind 714 epoch 2 head B batch: 0 avg loss -0.350179 avg loss no lamb -0.350179 time 2019-03-16 15:59:42.445246
+Model ind 714 epoch 2 head B batch: 100 avg loss -0.570322 avg loss no lamb -0.570322 time 2019-03-16 16:06:14.569493
+Model ind 714 epoch 2 head B batch: 200 avg loss -0.607656 avg loss no lamb -0.607656 time 2019-03-16 16:12:46.466968
+Model ind 714 epoch 2 head B batch: 300 avg loss -0.622908 avg loss no lamb -0.622908 time 2019-03-16 16:19:18.342665
+Model ind 714 epoch 2 head A batch: 0 avg loss -0.942685 avg loss no lamb -0.942685 time 2019-03-16 16:19:39.670477
+Model ind 714 epoch 2 head A batch: 100 avg loss -1.076288 avg loss no lamb -1.076288 time 2019-03-16 16:25:39.744916
+Model ind 714 epoch 2 head A batch: 200 avg loss -1.085520 avg loss no lamb -1.085520 time 2019-03-16 16:31:41.133335
+Model ind 714 epoch 2 head A batch: 300 avg loss -1.155458 avg loss no lamb -1.155458 time 2019-03-16 16:37:42.186147
+Pre: time 2019-03-16 16:43:48.620238: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6393965]
+	train_accs: [0.6393965]
+	best_train_sub_head: 0
+	worst: 0.6393965
+	avg: 0.6393965
+	best: 0.6393965
+
+Starting e_i: 3 2019-03-16 16:43:49.338815
+Model ind 714 epoch 3 head B batch: 0 avg loss -0.526716 avg loss no lamb -0.526716 time 2019-03-16 16:43:51.675806
+Model ind 714 epoch 3 head B batch: 100 avg loss -0.619159 avg loss no lamb -0.619159 time 2019-03-16 16:50:26.604627
+Model ind 714 epoch 3 head B batch: 200 avg loss -0.598816 avg loss no lamb -0.598816 time 2019-03-16 16:57:01.585357
+Model ind 714 epoch 3 head B batch: 300 avg loss -0.639623 avg loss no lamb -0.639623 time 2019-03-16 17:03:35.434841
+Model ind 714 epoch 3 head A batch: 0 avg loss -1.074125 avg loss no lamb -1.074125 time 2019-03-16 17:03:56.869057
+Model ind 714 epoch 3 head A batch: 100 avg loss -1.113421 avg loss no lamb -1.113421 time 2019-03-16 17:10:04.177198
+Model ind 714 epoch 3 head A batch: 200 avg loss -1.127295 avg loss no lamb -1.127295 time 2019-03-16 17:16:11.756941
+Model ind 714 epoch 3 head A batch: 300 avg loss -1.164268 avg loss no lamb -1.164268 time 2019-03-16 17:22:31.748067
+Pre: time 2019-03-16 17:30:44.465538: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6592393]
+	train_accs: [0.6592393]
+	best_train_sub_head: 0
+	worst: 0.6592393
+	avg: 0.6592393
+	best: 0.6592393
+
+Starting e_i: 4 2019-03-16 17:30:47.054050
+Model ind 714 epoch 4 head B batch: 0 avg loss -0.555535 avg loss no lamb -0.555535 time 2019-03-16 17:30:51.242357
+Model ind 714 epoch 4 head B batch: 100 avg loss -0.582907 avg loss no lamb -0.582907 time 2019-03-16 17:40:18.566660
+Model ind 714 epoch 4 head B batch: 200 avg loss -0.626677 avg loss no lamb -0.626677 time 2019-03-16 17:49:44.467544
+Model ind 714 epoch 4 head B batch: 300 avg loss -0.567907 avg loss no lamb -0.567907 time 2019-03-16 17:59:35.174296
+Model ind 714 epoch 4 head A batch: 0 avg loss -1.054429 avg loss no lamb -1.054429 time 2019-03-16 18:00:16.217793
+Model ind 714 epoch 4 head A batch: 100 avg loss -1.113552 avg loss no lamb -1.113552 time 2019-03-16 18:14:50.029550
+Model ind 714 epoch 4 head A batch: 200 avg loss -1.155450 avg loss no lamb -1.155450 time 2019-03-16 18:31:48.801765
+Model ind 714 epoch 4 head A batch: 300 avg loss -1.123485 avg loss no lamb -1.123485 time 2019-03-16 18:48:56.474331
+Pre: time 2019-03-16 19:02:34.981927: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6424706]
+	train_accs: [0.6424706]
+	best_train_sub_head: 0
+	worst: 0.6424706
+	avg: 0.6424706
+	best: 0.6424706
+
+Starting e_i: 5 2019-03-16 19:02:36.050916
+Model ind 714 epoch 5 head B batch: 0 avg loss -0.571380 avg loss no lamb -0.571380 time 2019-03-16 19:02:45.821021
+Model ind 714 epoch 5 head B batch: 100 avg loss -0.614616 avg loss no lamb -0.614616 time 2019-03-16 19:20:22.270115
+Model ind 714 epoch 5 head B batch: 200 avg loss -0.589673 avg loss no lamb -0.589673 time 2019-03-16 19:38:03.952832
+Model ind 714 epoch 5 head B batch: 300 avg loss -0.636247 avg loss no lamb -0.636247 time 2019-03-16 19:52:18.894799
+Model ind 714 epoch 5 head A batch: 0 avg loss -1.076363 avg loss no lamb -1.076363 time 2019-03-16 19:52:54.511908
+Model ind 714 epoch 5 head A batch: 100 avg loss -1.178992 avg loss no lamb -1.178992 time 2019-03-16 20:00:22.773068
+Model ind 714 epoch 5 head A batch: 200 avg loss -1.182682 avg loss no lamb -1.182682 time 2019-03-16 20:06:28.248946
+Model ind 714 epoch 5 head A batch: 300 avg loss -1.186724 avg loss no lamb -1.186724 time 2019-03-16 20:12:32.320335
+Pre: time 2019-03-16 20:18:38.334163: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.65850717]
+	train_accs: [0.65850717]
+	best_train_sub_head: 0
+	worst: 0.65850717
+	avg: 0.65850717
+	best: 0.65850717
+
+Starting e_i: 6 2019-03-16 20:18:40.651284
+Model ind 714 epoch 6 head B batch: 0 avg loss -0.598798 avg loss no lamb -0.598798 time 2019-03-16 20:18:43.009797
+Model ind 714 epoch 6 head B batch: 100 avg loss -0.630746 avg loss no lamb -0.630746 time 2019-03-16 20:25:14.641226
+Model ind 714 epoch 6 head B batch: 200 avg loss -0.602497 avg loss no lamb -0.602497 time 2019-03-16 20:31:46.650175
+Model ind 714 epoch 6 head B batch: 300 avg loss -0.601170 avg loss no lamb -0.601170 time 2019-03-16 20:38:19.144156
+Model ind 714 epoch 6 head A batch: 0 avg loss -1.190392 avg loss no lamb -1.190392 time 2019-03-16 20:38:40.492915
+Model ind 714 epoch 6 head A batch: 100 avg loss -1.192310 avg loss no lamb -1.192310 time 2019-03-16 20:44:41.814046
+Model ind 714 epoch 6 head A batch: 200 avg loss -1.123043 avg loss no lamb -1.123043 time 2019-03-16 20:50:42.463504
+Model ind 714 epoch 6 head A batch: 300 avg loss -1.217507 avg loss no lamb -1.217507 time 2019-03-16 20:56:43.392311
+Pre: time 2019-03-16 21:02:46.914102: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.658167]
+	train_accs: [0.658167]
+	best_train_sub_head: 0
+	worst: 0.658167
+	avg: 0.658167
+	best: 0.658167
+
+Starting e_i: 7 2019-03-16 21:02:47.808653
+Model ind 714 epoch 7 head B batch: 0 avg loss -0.596020 avg loss no lamb -0.596020 time 2019-03-16 21:02:50.162300
+Model ind 714 epoch 7 head B batch: 100 avg loss -0.607186 avg loss no lamb -0.607186 time 2019-03-16 21:09:23.606613
+Model ind 714 epoch 7 head B batch: 200 avg loss -0.660555 avg loss no lamb -0.660555 time 2019-03-16 21:15:56.683324
+Model ind 714 epoch 7 head B batch: 300 avg loss -0.617006 avg loss no lamb -0.617006 time 2019-03-16 21:22:29.010081
+Model ind 714 epoch 7 head A batch: 0 avg loss -1.145110 avg loss no lamb -1.145110 time 2019-03-16 21:22:50.270280
+Model ind 714 epoch 7 head A batch: 100 avg loss -1.210539 avg loss no lamb -1.210539 time 2019-03-16 21:28:50.846118
+Model ind 714 epoch 7 head A batch: 200 avg loss -1.174297 avg loss no lamb -1.174297 time 2019-03-16 21:34:51.118739
+Model ind 714 epoch 7 head A batch: 300 avg loss -1.157923 avg loss no lamb -1.157923 time 2019-03-16 21:40:51.441647
+Pre: time 2019-03-16 21:46:55.657663: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6599632]
+	train_accs: [0.6599632]
+	best_train_sub_head: 0
+	worst: 0.6599632
+	avg: 0.6599632
+	best: 0.6599632
+
+Starting e_i: 8 2019-03-16 21:46:57.525592
+Model ind 714 epoch 8 head B batch: 0 avg loss -0.580123 avg loss no lamb -0.580123 time 2019-03-16 21:46:59.858065
+Model ind 714 epoch 8 head B batch: 100 avg loss -0.643625 avg loss no lamb -0.643625 time 2019-03-16 21:53:30.153740
+Model ind 714 epoch 8 head B batch: 200 avg loss -0.610319 avg loss no lamb -0.610319 time 2019-03-16 22:00:00.245960
+Model ind 714 epoch 8 head B batch: 300 avg loss -0.654665 avg loss no lamb -0.654665 time 2019-03-16 22:06:29.137531
+Model ind 714 epoch 8 head A batch: 0 avg loss -1.120285 avg loss no lamb -1.120285 time 2019-03-16 22:06:50.194654
+Model ind 714 epoch 8 head A batch: 100 avg loss -1.172021 avg loss no lamb -1.172021 time 2019-03-16 22:12:50.567152
+Model ind 714 epoch 8 head A batch: 200 avg loss -1.179700 avg loss no lamb -1.179700 time 2019-03-16 22:18:52.131186
+Model ind 714 epoch 8 head A batch: 300 avg loss -1.166769 avg loss no lamb -1.166769 time 2019-03-16 22:24:54.996397
+Pre: time 2019-03-16 22:30:58.444923: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.68749875]
+	train_accs: [0.68749875]
+	best_train_sub_head: 0
+	worst: 0.68749875
+	avg: 0.68749875
+	best: 0.68749875
+
+Starting e_i: 9 2019-03-16 22:31:00.338960
+Model ind 714 epoch 9 head B batch: 0 avg loss -0.604599 avg loss no lamb -0.604599 time 2019-03-16 22:31:02.657045
+Model ind 714 epoch 9 head B batch: 100 avg loss -0.638835 avg loss no lamb -0.638835 time 2019-03-16 22:37:33.479781
+Model ind 714 epoch 9 head B batch: 200 avg loss -0.602955 avg loss no lamb -0.602955 time 2019-03-16 22:44:03.446952
+Model ind 714 epoch 9 head B batch: 300 avg loss -0.603303 avg loss no lamb -0.603303 time 2019-03-16 22:50:33.484429
+Model ind 714 epoch 9 head A batch: 0 avg loss -1.202933 avg loss no lamb -1.202933 time 2019-03-16 22:50:54.743641
+Model ind 714 epoch 9 head A batch: 100 avg loss -1.252382 avg loss no lamb -1.252382 time 2019-03-16 22:56:57.733497
+Model ind 714 epoch 9 head A batch: 200 avg loss -1.216129 avg loss no lamb -1.216129 time 2019-03-16 23:03:01.109148
+Model ind 714 epoch 9 head A batch: 300 avg loss -1.231892 avg loss no lamb -1.231892 time 2019-03-16 23:09:03.903100
+Pre: time 2019-03-16 23:15:08.488290: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.69047266]
+	train_accs: [0.69047266]
+	best_train_sub_head: 0
+	worst: 0.69047266
+	avg: 0.69047266
+	best: 0.69047266
+
+Starting e_i: 10 2019-03-16 23:15:10.006850
+Model ind 714 epoch 10 head B batch: 0 avg loss -0.605045 avg loss no lamb -0.605045 time 2019-03-16 23:15:12.353769
+Model ind 714 epoch 10 head B batch: 100 avg loss -0.607988 avg loss no lamb -0.607988 time 2019-03-16 23:21:44.070487
+Model ind 714 epoch 10 head B batch: 200 avg loss -0.610303 avg loss no lamb -0.610303 time 2019-03-16 23:28:14.597720
+Model ind 714 epoch 10 head B batch: 300 avg loss -0.644724 avg loss no lamb -0.644724 time 2019-03-16 23:34:44.592067
+Model ind 714 epoch 10 head A batch: 0 avg loss -1.194938 avg loss no lamb -1.194938 time 2019-03-16 23:35:05.852954
+Model ind 714 epoch 10 head A batch: 100 avg loss -1.215678 avg loss no lamb -1.215678 time 2019-03-16 23:41:09.312354
+Model ind 714 epoch 10 head A batch: 200 avg loss -1.322312 avg loss no lamb -1.322312 time 2019-03-16 23:47:11.412156
+Model ind 714 epoch 10 head A batch: 300 avg loss -1.203376 avg loss no lamb -1.203376 time 2019-03-16 23:53:14.065073
+Pre: time 2019-03-16 23:59:16.737435: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6862363]
+	train_accs: [0.6862363]
+	best_train_sub_head: 0
+	worst: 0.6862363
+	avg: 0.6862363
+	best: 0.6862363
+
+Starting e_i: 11 2019-03-16 23:59:18.907819
+Model ind 714 epoch 11 head B batch: 0 avg loss -0.620235 avg loss no lamb -0.620235 time 2019-03-16 23:59:21.227347
+Model ind 714 epoch 11 head B batch: 100 avg loss -0.598706 avg loss no lamb -0.598706 time 2019-03-17 00:05:50.520127
+Model ind 714 epoch 11 head B batch: 200 avg loss -0.599633 avg loss no lamb -0.599633 time 2019-03-17 00:12:19.668267
+Model ind 714 epoch 11 head B batch: 300 avg loss -0.614952 avg loss no lamb -0.614952 time 2019-03-17 00:18:49.839765
+Model ind 714 epoch 11 head A batch: 0 avg loss -1.249186 avg loss no lamb -1.249186 time 2019-03-17 00:19:10.848968
+Model ind 714 epoch 11 head A batch: 100 avg loss -1.299046 avg loss no lamb -1.299046 time 2019-03-17 00:25:11.533582
+Model ind 714 epoch 11 head A batch: 200 avg loss -1.218441 avg loss no lamb -1.218441 time 2019-03-17 00:31:15.147312
+Model ind 714 epoch 11 head A batch: 300 avg loss -1.276502 avg loss no lamb -1.276502 time 2019-03-17 00:37:17.915698
+Pre: time 2019-03-17 00:43:20.448625: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6902667]
+	train_accs: [0.6902667]
+	best_train_sub_head: 0
+	worst: 0.6902667
+	avg: 0.6902667
+	best: 0.6902667
+
+Starting e_i: 12 2019-03-17 00:43:21.148263
+Model ind 714 epoch 12 head B batch: 0 avg loss -0.634530 avg loss no lamb -0.634530 time 2019-03-17 00:43:23.508590
+Model ind 714 epoch 12 head B batch: 100 avg loss -0.644905 avg loss no lamb -0.644905 time 2019-03-17 00:49:55.076819
+Model ind 714 epoch 12 head B batch: 200 avg loss -0.637548 avg loss no lamb -0.637548 time 2019-03-17 00:56:25.434333
+Model ind 714 epoch 12 head B batch: 300 avg loss -0.567767 avg loss no lamb -0.567767 time 2019-03-17 01:02:55.491154
+Model ind 714 epoch 12 head A batch: 0 avg loss -1.244072 avg loss no lamb -1.244072 time 2019-03-17 01:03:16.627021
+Model ind 714 epoch 12 head A batch: 100 avg loss -1.237409 avg loss no lamb -1.237409 time 2019-03-17 01:09:19.957429
+Model ind 714 epoch 12 head A batch: 200 avg loss -1.269459 avg loss no lamb -1.269459 time 2019-03-17 01:15:22.072890
+Model ind 714 epoch 12 head A batch: 300 avg loss -1.248716 avg loss no lamb -1.248716 time 2019-03-17 01:21:24.850865
+Pre: time 2019-03-17 01:27:27.467875: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.66800845]
+	train_accs: [0.66800845]
+	best_train_sub_head: 0
+	worst: 0.66800845
+	avg: 0.66800845
+	best: 0.66800845
+
+Starting e_i: 13 2019-03-17 01:27:28.167060
+Model ind 714 epoch 13 head B batch: 0 avg loss -0.626800 avg loss no lamb -0.626800 time 2019-03-17 01:27:30.504768
+Model ind 714 epoch 13 head B batch: 100 avg loss -0.624848 avg loss no lamb -0.624848 time 2019-03-17 01:33:59.348426
+Model ind 714 epoch 13 head B batch: 200 avg loss -0.662268 avg loss no lamb -0.662268 time 2019-03-17 01:40:28.294300
+Model ind 714 epoch 13 head B batch: 300 avg loss -0.646821 avg loss no lamb -0.646821 time 2019-03-17 01:46:57.099221
+Model ind 714 epoch 13 head A batch: 0 avg loss -1.212623 avg loss no lamb -1.212623 time 2019-03-17 01:47:18.302940
+Model ind 714 epoch 13 head A batch: 100 avg loss -1.242028 avg loss no lamb -1.242028 time 2019-03-17 01:53:18.902944
+Model ind 714 epoch 13 head A batch: 200 avg loss -1.319735 avg loss no lamb -1.319735 time 2019-03-17 01:59:20.073335
+Model ind 714 epoch 13 head A batch: 300 avg loss -1.287412 avg loss no lamb -1.287412 time 2019-03-17 02:05:22.719192
+Pre: time 2019-03-17 02:11:29.476568: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6648204]
+	train_accs: [0.6648204]
+	best_train_sub_head: 0
+	worst: 0.6648204
+	avg: 0.6648204
+	best: 0.6648204
+
+Starting e_i: 14 2019-03-17 02:11:30.191788
+Model ind 714 epoch 14 head B batch: 0 avg loss -0.639343 avg loss no lamb -0.639343 time 2019-03-17 02:11:32.538417
+Model ind 714 epoch 14 head B batch: 100 avg loss -0.631024 avg loss no lamb -0.631024 time 2019-03-17 02:18:03.286022
+Model ind 714 epoch 14 head B batch: 200 avg loss -0.624942 avg loss no lamb -0.624942 time 2019-03-17 02:24:32.821932
+Model ind 714 epoch 14 head B batch: 300 avg loss -0.622189 avg loss no lamb -0.622189 time 2019-03-17 02:31:01.692762
+Model ind 714 epoch 14 head A batch: 0 avg loss -1.318849 avg loss no lamb -1.318849 time 2019-03-17 02:31:22.905559
+Model ind 714 epoch 14 head A batch: 100 avg loss -1.346823 avg loss no lamb -1.346823 time 2019-03-17 02:37:24.278172
+Model ind 714 epoch 14 head A batch: 200 avg loss -1.329778 avg loss no lamb -1.329778 time 2019-03-17 02:43:27.022123
+Model ind 714 epoch 14 head A batch: 300 avg loss -1.341187 avg loss no lamb -1.341187 time 2019-03-17 02:49:28.643990
+Pre: time 2019-03-17 02:55:33.521573: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6841151]
+	train_accs: [0.6841151]
+	best_train_sub_head: 0
+	worst: 0.6841151
+	avg: 0.6841151
+	best: 0.6841151
+
+Starting e_i: 15 2019-03-17 02:55:34.231375
+Model ind 714 epoch 15 head B batch: 0 avg loss -0.603595 avg loss no lamb -0.603595 time 2019-03-17 02:55:36.596442
+Model ind 714 epoch 15 head B batch: 100 avg loss -0.639643 avg loss no lamb -0.639643 time 2019-03-17 03:02:05.923567
+Model ind 714 epoch 15 head B batch: 200 avg loss -0.614433 avg loss no lamb -0.614433 time 2019-03-17 03:08:36.497968
+Model ind 714 epoch 15 head B batch: 300 avg loss -0.643990 avg loss no lamb -0.643990 time 2019-03-17 03:15:06.756694
+Model ind 714 epoch 15 head A batch: 0 avg loss -1.286591 avg loss no lamb -1.286591 time 2019-03-17 03:15:28.101564
+Model ind 714 epoch 15 head A batch: 100 avg loss -1.289127 avg loss no lamb -1.289127 time 2019-03-17 03:21:32.044065
+Model ind 714 epoch 15 head A batch: 200 avg loss -1.244914 avg loss no lamb -1.244914 time 2019-03-17 03:27:33.746717
+Model ind 714 epoch 15 head A batch: 300 avg loss -1.340849 avg loss no lamb -1.340849 time 2019-03-17 03:33:35.105448
+Pre: time 2019-03-17 03:39:39.185670: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6728333]
+	train_accs: [0.6728333]
+	best_train_sub_head: 0
+	worst: 0.6728333
+	avg: 0.6728333
+	best: 0.6728333
+
+Starting e_i: 16 2019-03-17 03:39:40.908932
+Model ind 714 epoch 16 head B batch: 0 avg loss -0.634838 avg loss no lamb -0.634838 time 2019-03-17 03:39:43.304749
+Model ind 714 epoch 16 head B batch: 100 avg loss -0.639387 avg loss no lamb -0.639387 time 2019-03-17 03:46:15.461184
+Model ind 714 epoch 16 head B batch: 200 avg loss -0.619262 avg loss no lamb -0.619262 time 2019-03-17 03:52:47.279893
+Model ind 714 epoch 16 head B batch: 300 avg loss -0.632699 avg loss no lamb -0.632699 time 2019-03-17 03:59:19.143816
+Model ind 714 epoch 16 head A batch: 0 avg loss -1.318911 avg loss no lamb -1.318911 time 2019-03-17 03:59:40.426778
+Model ind 714 epoch 16 head A batch: 100 avg loss -1.251766 avg loss no lamb -1.251766 time 2019-03-17 04:05:43.559748
+Model ind 714 epoch 16 head A batch: 200 avg loss -1.338847 avg loss no lamb -1.338847 time 2019-03-17 04:11:46.788646
+Model ind 714 epoch 16 head A batch: 300 avg loss -1.292945 avg loss no lamb -1.292945 time 2019-03-17 04:17:49.466254
+Pre: time 2019-03-17 04:23:54.024632: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6829642]
+	train_accs: [0.6829642]
+	best_train_sub_head: 0
+	worst: 0.6829642
+	avg: 0.6829642
+	best: 0.6829642
+
+Starting e_i: 17 2019-03-17 04:23:54.801567
+Model ind 714 epoch 17 head B batch: 0 avg loss -0.601838 avg loss no lamb -0.601838 time 2019-03-17 04:23:57.179262
+Model ind 714 epoch 17 head B batch: 100 avg loss -0.645175 avg loss no lamb -0.645175 time 2019-03-17 04:30:29.036115
+Model ind 714 epoch 17 head B batch: 200 avg loss -0.646666 avg loss no lamb -0.646666 time 2019-03-17 04:37:01.931804
+Model ind 714 epoch 17 head B batch: 300 avg loss -0.616394 avg loss no lamb -0.616394 time 2019-03-17 04:43:34.537682
+Model ind 714 epoch 17 head A batch: 0 avg loss -1.297848 avg loss no lamb -1.297848 time 2019-03-17 04:43:56.006368
+Model ind 714 epoch 17 head A batch: 100 avg loss -1.373741 avg loss no lamb -1.373741 time 2019-03-17 04:49:59.262534
+Model ind 714 epoch 17 head A batch: 200 avg loss -1.327678 avg loss no lamb -1.327678 time 2019-03-17 04:56:02.661335
+Model ind 714 epoch 17 head A batch: 300 avg loss -1.282877 avg loss no lamb -1.282877 time 2019-03-17 05:02:05.972410
+Pre: time 2019-03-17 05:08:11.244628: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6746702]
+	train_accs: [0.6746702]
+	best_train_sub_head: 0
+	worst: 0.6746702
+	avg: 0.6746702
+	best: 0.6746702
+
+Starting e_i: 18 2019-03-17 05:08:12.044003
+Model ind 714 epoch 18 head B batch: 0 avg loss -0.630704 avg loss no lamb -0.630704 time 2019-03-17 05:08:14.414609
+Model ind 714 epoch 18 head B batch: 100 avg loss -0.610404 avg loss no lamb -0.610404 time 2019-03-17 05:14:46.239272
+Model ind 714 epoch 18 head B batch: 200 avg loss -0.625561 avg loss no lamb -0.625561 time 2019-03-17 05:21:17.973820
+Model ind 714 epoch 18 head B batch: 300 avg loss -0.621988 avg loss no lamb -0.621988 time 2019-03-17 05:27:50.751693
+Model ind 714 epoch 18 head A batch: 0 avg loss -1.333954 avg loss no lamb -1.333954 time 2019-03-17 05:28:12.080966
+Model ind 714 epoch 18 head A batch: 100 avg loss -1.332293 avg loss no lamb -1.332293 time 2019-03-17 05:34:16.910268
+Model ind 714 epoch 18 head A batch: 200 avg loss -1.354196 avg loss no lamb -1.354196 time 2019-03-17 05:40:21.598112
+Model ind 714 epoch 18 head A batch: 300 avg loss -1.390577 avg loss no lamb -1.390577 time 2019-03-17 05:46:26.243741
+Pre: time 2019-03-17 05:52:31.338122: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.67212564]
+	train_accs: [0.67212564]
+	best_train_sub_head: 0
+	worst: 0.67212564
+	avg: 0.67212564
+	best: 0.67212564
+
+Starting e_i: 19 2019-03-17 05:52:32.096097
+Model ind 714 epoch 19 head B batch: 0 avg loss -0.653722 avg loss no lamb -0.653722 time 2019-03-17 05:52:34.450794
+Model ind 714 epoch 19 head B batch: 100 avg loss -0.633240 avg loss no lamb -0.633240 time 2019-03-17 05:59:08.011664
+Model ind 714 epoch 19 head B batch: 200 avg loss -0.641109 avg loss no lamb -0.641109 time 2019-03-17 06:05:40.915646
+Model ind 714 epoch 19 head B batch: 300 avg loss -0.616924 avg loss no lamb -0.616924 time 2019-03-17 06:12:13.780062
+Model ind 714 epoch 19 head A batch: 0 avg loss -1.388161 avg loss no lamb -1.388161 time 2019-03-17 06:12:35.273656
+Model ind 714 epoch 19 head A batch: 100 avg loss -1.405468 avg loss no lamb -1.405468 time 2019-03-17 06:18:40.273812
+Model ind 714 epoch 19 head A batch: 200 avg loss -1.344574 avg loss no lamb -1.344574 time 2019-03-17 06:24:44.356112
+Model ind 714 epoch 19 head A batch: 300 avg loss -1.375403 avg loss no lamb -1.375403 time 2019-03-17 06:30:48.829242
+Pre: time 2019-03-17 06:36:56.278738: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.63662213]
+	train_accs: [0.63662213]
+	best_train_sub_head: 0
+	worst: 0.63662213
+	avg: 0.63662213
+	best: 0.63662213
+
+Starting e_i: 20 2019-03-17 06:36:57.009148
+Model ind 714 epoch 20 head B batch: 0 avg loss -0.625893 avg loss no lamb -0.625893 time 2019-03-17 06:36:59.379341
+Model ind 714 epoch 20 head B batch: 100 avg loss -0.637920 avg loss no lamb -0.637920 time 2019-03-17 06:43:32.731260
+Model ind 714 epoch 20 head B batch: 200 avg loss -0.612527 avg loss no lamb -0.612527 time 2019-03-17 06:50:05.917699
+Model ind 714 epoch 20 head B batch: 300 avg loss -0.651204 avg loss no lamb -0.651204 time 2019-03-17 06:56:38.573031
+Model ind 714 epoch 20 head A batch: 0 avg loss -1.405396 avg loss no lamb -1.405396 time 2019-03-17 06:56:59.933443
+Model ind 714 epoch 20 head A batch: 100 avg loss -1.389802 avg loss no lamb -1.389802 time 2019-03-17 07:03:03.236385
+Model ind 714 epoch 20 head A batch: 200 avg loss -1.369782 avg loss no lamb -1.369782 time 2019-03-17 07:09:06.661744
+Model ind 714 epoch 20 head A batch: 300 avg loss -1.392449 avg loss no lamb -1.392449 time 2019-03-17 07:15:09.818586
+Pre: time 2019-03-17 07:21:17.540931: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.63479465]
+	train_accs: [0.63479465]
+	best_train_sub_head: 0
+	worst: 0.63479465
+	avg: 0.63479465
+	best: 0.63479465
+
+Starting e_i: 21 2019-03-17 07:21:19.309218
+Model ind 714 epoch 21 head B batch: 0 avg loss -0.632929 avg loss no lamb -0.632929 time 2019-03-17 07:21:21.672764
+Model ind 714 epoch 21 head B batch: 100 avg loss -0.644803 avg loss no lamb -0.644803 time 2019-03-17 07:27:53.620005
+Model ind 714 epoch 21 head B batch: 200 avg loss -0.612874 avg loss no lamb -0.612874 time 2019-03-17 07:34:25.553635
+Model ind 714 epoch 21 head B batch: 300 avg loss -0.657258 avg loss no lamb -0.657258 time 2019-03-17 07:40:57.686565
+Model ind 714 epoch 21 head A batch: 0 avg loss -1.357576 avg loss no lamb -1.357576 time 2019-03-17 07:41:19.084387
+Model ind 714 epoch 21 head A batch: 100 avg loss -1.395165 avg loss no lamb -1.395165 time 2019-03-17 07:47:22.565287
+Model ind 714 epoch 21 head A batch: 200 avg loss -1.404246 avg loss no lamb -1.404246 time 2019-03-17 07:53:26.595996
+Model ind 714 epoch 21 head A batch: 300 avg loss -1.366691 avg loss no lamb -1.366691 time 2019-03-17 07:59:31.640970
+Pre: time 2019-03-17 08:05:37.670754: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6608483]
+	train_accs: [0.6608483]
+	best_train_sub_head: 0
+	worst: 0.6608483
+	avg: 0.6608483
+	best: 0.6608483
+
+Starting e_i: 22 2019-03-17 08:05:38.435798
+Model ind 714 epoch 22 head B batch: 0 avg loss -0.621043 avg loss no lamb -0.621043 time 2019-03-17 08:05:40.825370
+Model ind 714 epoch 22 head B batch: 100 avg loss -0.640349 avg loss no lamb -0.640349 time 2019-03-17 08:12:12.641911
+Model ind 714 epoch 22 head B batch: 200 avg loss -0.637801 avg loss no lamb -0.637801 time 2019-03-17 08:18:44.850692
+Model ind 714 epoch 22 head B batch: 300 avg loss -0.606045 avg loss no lamb -0.606045 time 2019-03-17 08:25:16.651434
+Model ind 714 epoch 22 head A batch: 0 avg loss -1.353469 avg loss no lamb -1.353469 time 2019-03-17 08:25:37.974085
+Model ind 714 epoch 22 head A batch: 100 avg loss -1.376382 avg loss no lamb -1.376382 time 2019-03-17 08:31:42.382180
+Model ind 714 epoch 22 head A batch: 200 avg loss -1.405430 avg loss no lamb -1.405430 time 2019-03-17 08:37:46.690298
+Model ind 714 epoch 22 head A batch: 300 avg loss -1.424708 avg loss no lamb -1.424708 time 2019-03-17 08:43:50.908178
+Pre: time 2019-03-17 08:49:56.165574: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6361043]
+	train_accs: [0.6361043]
+	best_train_sub_head: 0
+	worst: 0.6361043
+	avg: 0.6361043
+	best: 0.6361043
+
+Starting e_i: 23 2019-03-17 08:49:56.920025
+Model ind 714 epoch 23 head B batch: 0 avg loss -0.631192 avg loss no lamb -0.631192 time 2019-03-17 08:49:59.298561
+Model ind 714 epoch 23 head B batch: 100 avg loss -0.643265 avg loss no lamb -0.643265 time 2019-03-17 08:56:31.676994
+Model ind 714 epoch 23 head B batch: 200 avg loss -0.659131 avg loss no lamb -0.659131 time 2019-03-17 09:03:03.303918
+Model ind 714 epoch 23 head B batch: 300 avg loss -0.631018 avg loss no lamb -0.631018 time 2019-03-17 09:09:35.162578
+Model ind 714 epoch 23 head A batch: 0 avg loss -1.400892 avg loss no lamb -1.400892 time 2019-03-17 09:09:56.431769
+Model ind 714 epoch 23 head A batch: 100 avg loss -1.405503 avg loss no lamb -1.405503 time 2019-03-17 09:16:00.452179
+Model ind 714 epoch 23 head A batch: 200 avg loss -1.416010 avg loss no lamb -1.416010 time 2019-03-17 09:22:04.595506
+Model ind 714 epoch 23 head A batch: 300 avg loss -1.415823 avg loss no lamb -1.415823 time 2019-03-17 09:28:08.515846
+Pre: time 2019-03-17 09:34:14.281705: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6504842]
+	train_accs: [0.6504842]
+	best_train_sub_head: 0
+	worst: 0.6504842
+	avg: 0.6504842
+	best: 0.6504842
+
+Starting e_i: 24 2019-03-17 09:34:15.057930
+Model ind 714 epoch 24 head B batch: 0 avg loss -0.650905 avg loss no lamb -0.650905 time 2019-03-17 09:34:17.422213
+Model ind 714 epoch 24 head B batch: 100 avg loss -0.630943 avg loss no lamb -0.630943 time 2019-03-17 09:40:49.537140
+Model ind 714 epoch 24 head B batch: 200 avg loss -0.645090 avg loss no lamb -0.645090 time 2019-03-17 09:47:20.930079
+Model ind 714 epoch 24 head B batch: 300 avg loss -0.647890 avg loss no lamb -0.647890 time 2019-03-17 09:53:52.942358
+Model ind 714 epoch 24 head A batch: 0 avg loss -1.403368 avg loss no lamb -1.403368 time 2019-03-17 09:54:14.250817
+Model ind 714 epoch 24 head A batch: 100 avg loss -1.426185 avg loss no lamb -1.426185 time 2019-03-17 10:00:17.914141
+Model ind 714 epoch 24 head A batch: 200 avg loss -1.467330 avg loss no lamb -1.467330 time 2019-03-17 10:06:21.245355
+Model ind 714 epoch 24 head A batch: 300 avg loss -1.448390 avg loss no lamb -1.448390 time 2019-03-17 10:12:25.617253
+Pre: time 2019-03-17 10:18:31.082314: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6506171]
+	train_accs: [0.6506171]
+	best_train_sub_head: 0
+	worst: 0.6506171
+	avg: 0.6506171
+	best: 0.6506171
+
+Starting e_i: 25 2019-03-17 10:18:31.836327
+Model ind 714 epoch 25 head B batch: 0 avg loss -0.634793 avg loss no lamb -0.634793 time 2019-03-17 10:18:34.307117
+Model ind 714 epoch 25 head B batch: 100 avg loss -0.644079 avg loss no lamb -0.644079 time 2019-03-17 10:25:07.196120
+Model ind 714 epoch 25 head B batch: 200 avg loss -0.645387 avg loss no lamb -0.645387 time 2019-03-17 10:31:39.499116
+Model ind 714 epoch 25 head B batch: 300 avg loss -0.642409 avg loss no lamb -0.642409 time 2019-03-17 10:38:11.927293
+Model ind 714 epoch 25 head A batch: 0 avg loss -1.335812 avg loss no lamb -1.335812 time 2019-03-17 10:38:33.340251
+Model ind 714 epoch 25 head A batch: 100 avg loss -1.401798 avg loss no lamb -1.401798 time 2019-03-17 10:44:37.692270
+Model ind 714 epoch 25 head A batch: 200 avg loss -1.433059 avg loss no lamb -1.433059 time 2019-03-17 10:50:42.563673
+Model ind 714 epoch 25 head A batch: 300 avg loss -1.420215 avg loss no lamb -1.420215 time 2019-03-17 10:56:47.144486
+Pre: time 2019-03-17 11:02:53.085848: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6564727]
+	train_accs: [0.6564727]
+	best_train_sub_head: 0
+	worst: 0.6564727
+	avg: 0.6564727
+	best: 0.6564727
+
+Starting e_i: 26 2019-03-17 11:02:55.363766
+Model ind 714 epoch 26 head B batch: 0 avg loss -0.640466 avg loss no lamb -0.640466 time 2019-03-17 11:02:57.751735
+Model ind 714 epoch 26 head B batch: 100 avg loss -0.636652 avg loss no lamb -0.636652 time 2019-03-17 11:09:30.196182
+Model ind 714 epoch 26 head B batch: 200 avg loss -0.663899 avg loss no lamb -0.663899 time 2019-03-17 11:16:02.854200
+Model ind 714 epoch 26 head B batch: 300 avg loss -0.641459 avg loss no lamb -0.641459 time 2019-03-17 11:22:35.037172
+Model ind 714 epoch 26 head A batch: 0 avg loss -1.468130 avg loss no lamb -1.468130 time 2019-03-17 11:22:56.347153
+Model ind 714 epoch 26 head A batch: 100 avg loss -1.503016 avg loss no lamb -1.503016 time 2019-03-17 11:29:00.683798
+Model ind 714 epoch 26 head A batch: 200 avg loss -1.391172 avg loss no lamb -1.391172 time 2019-03-17 11:35:05.658807
+Model ind 714 epoch 26 head A batch: 300 avg loss -1.444987 avg loss no lamb -1.444987 time 2019-03-17 11:41:10.372557
+Pre: time 2019-03-17 11:47:15.070193: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.62757856]
+	train_accs: [0.62757856]
+	best_train_sub_head: 0
+	worst: 0.62757856
+	avg: 0.62757856
+	best: 0.62757856
+
+Starting e_i: 27 2019-03-17 11:47:15.928997
+Model ind 714 epoch 27 head B batch: 0 avg loss -0.636184 avg loss no lamb -0.636184 time 2019-03-17 11:47:18.290554
+Model ind 714 epoch 27 head B batch: 100 avg loss -0.632064 avg loss no lamb -0.632064 time 2019-03-17 11:53:50.905085
+Model ind 714 epoch 27 head B batch: 200 avg loss -0.658422 avg loss no lamb -0.658422 time 2019-03-17 12:00:23.170767
+Model ind 714 epoch 27 head B batch: 300 avg loss -0.616030 avg loss no lamb -0.616030 time 2019-03-17 12:06:55.550481
+Model ind 714 epoch 27 head A batch: 0 avg loss -1.462984 avg loss no lamb -1.462984 time 2019-03-17 12:07:16.838464
+Model ind 714 epoch 27 head A batch: 100 avg loss -1.383770 avg loss no lamb -1.383770 time 2019-03-17 12:13:21.120524
+Model ind 714 epoch 27 head A batch: 200 avg loss -1.469654 avg loss no lamb -1.469654 time 2019-03-17 12:19:25.137449
+Model ind 714 epoch 27 head A batch: 300 avg loss -1.418326 avg loss no lamb -1.418326 time 2019-03-17 12:25:29.051271
+Pre: time 2019-03-17 12:31:34.399726: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6414946]
+	train_accs: [0.6414946]
+	best_train_sub_head: 0
+	worst: 0.6414946
+	avg: 0.6414946
+	best: 0.6414946
+
+Starting e_i: 28 2019-03-17 12:31:35.278321
+Model ind 714 epoch 28 head B batch: 0 avg loss -0.636284 avg loss no lamb -0.636284 time 2019-03-17 12:31:37.670954
+Model ind 714 epoch 28 head B batch: 100 avg loss -0.659601 avg loss no lamb -0.659601 time 2019-03-17 12:38:09.937990
+Model ind 714 epoch 28 head B batch: 200 avg loss -0.672816 avg loss no lamb -0.672816 time 2019-03-17 12:44:42.510754
+Model ind 714 epoch 28 head B batch: 300 avg loss -0.657586 avg loss no lamb -0.657586 time 2019-03-17 12:51:15.671306
+Model ind 714 epoch 28 head A batch: 0 avg loss -1.370799 avg loss no lamb -1.370799 time 2019-03-17 12:51:37.104391
+Model ind 714 epoch 28 head A batch: 100 avg loss -1.479475 avg loss no lamb -1.479475 time 2019-03-17 12:57:41.085267
+Model ind 714 epoch 28 head A batch: 200 avg loss -1.375313 avg loss no lamb -1.375313 time 2019-03-17 13:03:45.841286
+Model ind 714 epoch 28 head A batch: 300 avg loss -1.450839 avg loss no lamb -1.450839 time 2019-03-17 13:09:50.497711
+Pre: time 2019-03-17 13:15:55.501767: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6485623]
+	train_accs: [0.6485623]
+	best_train_sub_head: 0
+	worst: 0.6485623
+	avg: 0.6485623
+	best: 0.6485623
+
+Starting e_i: 29 2019-03-17 13:15:56.295342
+Model ind 714 epoch 29 head B batch: 0 avg loss -0.645849 avg loss no lamb -0.645849 time 2019-03-17 13:15:58.701844
+Model ind 714 epoch 29 head B batch: 100 avg loss -0.657311 avg loss no lamb -0.657311 time 2019-03-17 13:22:30.811116
+Model ind 714 epoch 29 head B batch: 200 avg loss -0.635887 avg loss no lamb -0.635887 time 2019-03-17 13:29:01.885949
+Model ind 714 epoch 29 head B batch: 300 avg loss -0.594863 avg loss no lamb -0.594863 time 2019-03-17 13:35:33.073337
+Model ind 714 epoch 29 head A batch: 0 avg loss -1.444054 avg loss no lamb -1.444054 time 2019-03-17 13:35:54.331769
+Model ind 714 epoch 29 head A batch: 100 avg loss -1.465099 avg loss no lamb -1.465099 time 2019-03-17 13:41:58.060832
+Model ind 714 epoch 29 head A batch: 200 avg loss -1.448465 avg loss no lamb -1.448465 time 2019-03-17 13:48:02.494438
+Model ind 714 epoch 29 head A batch: 300 avg loss -1.388621 avg loss no lamb -1.388621 time 2019-03-17 13:54:06.243071
+Pre: time 2019-03-17 14:00:11.383924: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.63034946]
+	train_accs: [0.63034946]
+	best_train_sub_head: 0
+	worst: 0.63034946
+	avg: 0.63034946
+	best: 0.63034946
+
+Starting e_i: 30 2019-03-17 14:00:12.241924
+Model ind 714 epoch 30 head B batch: 0 avg loss -0.654158 avg loss no lamb -0.654158 time 2019-03-17 14:00:14.711867
+Model ind 714 epoch 30 head B batch: 100 avg loss -0.668163 avg loss no lamb -0.668163 time 2019-03-17 14:06:46.389165
+Model ind 714 epoch 30 head B batch: 200 avg loss -0.643084 avg loss no lamb -0.643084 time 2019-03-17 14:13:18.563216
+Model ind 714 epoch 30 head B batch: 300 avg loss -0.670621 avg loss no lamb -0.670621 time 2019-03-17 14:19:50.812418
+Model ind 714 epoch 30 head A batch: 0 avg loss -1.397354 avg loss no lamb -1.397354 time 2019-03-17 14:20:12.206438
+Model ind 714 epoch 30 head A batch: 100 avg loss -1.408856 avg loss no lamb -1.408856 time 2019-03-17 14:26:16.697525
+Model ind 714 epoch 30 head A batch: 200 avg loss -1.556942 avg loss no lamb -1.556942 time 2019-03-17 14:32:20.881302
+Model ind 714 epoch 30 head A batch: 300 avg loss -1.390291 avg loss no lamb -1.390291 time 2019-03-17 14:38:25.327433
+Pre: time 2019-03-17 14:44:30.167645: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6431896]
+	train_accs: [0.6431896]
+	best_train_sub_head: 0
+	worst: 0.6431896
+	avg: 0.6431896
+	best: 0.6431896
+
+Starting e_i: 31 2019-03-17 14:44:31.974367
+Model ind 714 epoch 31 head B batch: 0 avg loss -0.638738 avg loss no lamb -0.638738 time 2019-03-17 14:44:34.336544
+Model ind 714 epoch 31 head B batch: 100 avg loss -0.625337 avg loss no lamb -0.625337 time 2019-03-17 14:51:06.112896
+Model ind 714 epoch 31 head B batch: 200 avg loss -0.680442 avg loss no lamb -0.680442 time 2019-03-17 14:57:37.647047
+Model ind 714 epoch 31 head B batch: 300 avg loss -0.683519 avg loss no lamb -0.683519 time 2019-03-17 15:04:09.652259
+Model ind 714 epoch 31 head A batch: 0 avg loss -1.480147 avg loss no lamb -1.480147 time 2019-03-17 15:04:30.988972
+Model ind 714 epoch 31 head A batch: 100 avg loss -1.454907 avg loss no lamb -1.454907 time 2019-03-17 15:10:34.995898
+Model ind 714 epoch 31 head A batch: 200 avg loss -1.415605 avg loss no lamb -1.415605 time 2019-03-17 15:16:38.854270
+Model ind 714 epoch 31 head A batch: 300 avg loss -1.446395 avg loss no lamb -1.446395 time 2019-03-17 15:22:42.944668
+Pre: time 2019-03-17 15:28:48.843810: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6513217]
+	train_accs: [0.6513217]
+	best_train_sub_head: 0
+	worst: 0.6513217
+	avg: 0.6513217
+	best: 0.6513217
+
+Starting e_i: 32 2019-03-17 15:28:49.594067
+Model ind 714 epoch 32 head B batch: 0 avg loss -0.662451 avg loss no lamb -0.662451 time 2019-03-17 15:28:51.992989
+Model ind 714 epoch 32 head B batch: 100 avg loss -0.642059 avg loss no lamb -0.642059 time 2019-03-17 15:35:23.897906
+Model ind 714 epoch 32 head B batch: 200 avg loss -0.631545 avg loss no lamb -0.631545 time 2019-03-17 15:41:55.712395
+Model ind 714 epoch 32 head B batch: 300 avg loss -0.660729 avg loss no lamb -0.660729 time 2019-03-17 15:48:28.051829
+Model ind 714 epoch 32 head A batch: 0 avg loss -1.436074 avg loss no lamb -1.436074 time 2019-03-17 15:48:49.330696
+Model ind 714 epoch 32 head A batch: 100 avg loss -1.421414 avg loss no lamb -1.421414 time 2019-03-17 15:54:52.835164
+Model ind 714 epoch 32 head A batch: 200 avg loss -1.503749 avg loss no lamb -1.503749 time 2019-03-17 16:00:56.995814
+Model ind 714 epoch 32 head A batch: 300 avg loss -1.426188 avg loss no lamb -1.426188 time 2019-03-17 16:07:01.348766
+Pre: time 2019-03-17 16:13:06.419754: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6477319]
+	train_accs: [0.6477319]
+	best_train_sub_head: 0
+	worst: 0.6477319
+	avg: 0.6477319
+	best: 0.6477319
+
+Starting e_i: 33 2019-03-17 16:13:07.316083
+Model ind 714 epoch 33 head B batch: 0 avg loss -0.617778 avg loss no lamb -0.617778 time 2019-03-17 16:13:09.660734
+Model ind 714 epoch 33 head B batch: 100 avg loss -0.648665 avg loss no lamb -0.648665 time 2019-03-17 16:19:41.006746
+Model ind 714 epoch 33 head B batch: 200 avg loss -0.612294 avg loss no lamb -0.612294 time 2019-03-17 16:26:12.769471
+Model ind 714 epoch 33 head B batch: 300 avg loss -0.671320 avg loss no lamb -0.671320 time 2019-03-17 16:32:44.608750
+Model ind 714 epoch 33 head A batch: 0 avg loss -1.507789 avg loss no lamb -1.507789 time 2019-03-17 16:33:05.919638
+Model ind 714 epoch 33 head A batch: 100 avg loss -1.506678 avg loss no lamb -1.506678 time 2019-03-17 16:39:08.987222
+Model ind 714 epoch 33 head A batch: 200 avg loss -1.387194 avg loss no lamb -1.387194 time 2019-03-17 16:45:12.207906
+Model ind 714 epoch 33 head A batch: 300 avg loss -1.503235 avg loss no lamb -1.503235 time 2019-03-17 16:51:15.907750
+Pre: time 2019-03-17 16:57:20.950773: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6571921]
+	train_accs: [0.6571921]
+	best_train_sub_head: 0
+	worst: 0.6571921
+	avg: 0.6571921
+	best: 0.6571921
+
+Starting e_i: 34 2019-03-17 16:57:22.037253
+Model ind 714 epoch 34 head B batch: 0 avg loss -0.639640 avg loss no lamb -0.639640 time 2019-03-17 16:57:24.374908
+Model ind 714 epoch 34 head B batch: 100 avg loss -0.670227 avg loss no lamb -0.670227 time 2019-03-17 17:03:56.414136
+Model ind 714 epoch 34 head B batch: 200 avg loss -0.631898 avg loss no lamb -0.631898 time 2019-03-17 17:10:28.949975
+Model ind 714 epoch 34 head B batch: 300 avg loss -0.654501 avg loss no lamb -0.654501 time 2019-03-17 17:17:01.193040
+Model ind 714 epoch 34 head A batch: 0 avg loss -1.448109 avg loss no lamb -1.448109 time 2019-03-17 17:17:22.507542
+Model ind 714 epoch 34 head A batch: 100 avg loss -1.440717 avg loss no lamb -1.440717 time 2019-03-17 17:23:27.154040
+Model ind 714 epoch 34 head A batch: 200 avg loss -1.470200 avg loss no lamb -1.470200 time 2019-03-17 17:29:31.307091
+Model ind 714 epoch 34 head A batch: 300 avg loss -1.491145 avg loss no lamb -1.491145 time 2019-03-17 17:35:35.911528
+Pre: time 2019-03-17 17:41:41.203679: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6350461]
+	train_accs: [0.6350461]
+	best_train_sub_head: 0
+	worst: 0.6350461
+	avg: 0.6350461
+	best: 0.6350461
+
+Starting e_i: 35 2019-03-17 17:41:42.389372
+Model ind 714 epoch 35 head B batch: 0 avg loss -0.643519 avg loss no lamb -0.643519 time 2019-03-17 17:41:44.754501
+Model ind 714 epoch 35 head B batch: 100 avg loss -0.625977 avg loss no lamb -0.625977 time 2019-03-17 17:48:17.369147
+Model ind 714 epoch 35 head B batch: 200 avg loss -0.646157 avg loss no lamb -0.646157 time 2019-03-17 17:54:49.491891
+Model ind 714 epoch 35 head B batch: 300 avg loss -0.637745 avg loss no lamb -0.637745 time 2019-03-17 18:01:21.733673
+Model ind 714 epoch 35 head A batch: 0 avg loss -1.438008 avg loss no lamb -1.438008 time 2019-03-17 18:01:43.112332
+Model ind 714 epoch 35 head A batch: 100 avg loss -1.447451 avg loss no lamb -1.447451 time 2019-03-17 18:07:47.508252
+Model ind 714 epoch 35 head A batch: 200 avg loss -1.468009 avg loss no lamb -1.468009 time 2019-03-17 18:13:52.368140
+Model ind 714 epoch 35 head A batch: 300 avg loss -1.435385 avg loss no lamb -1.435385 time 2019-03-17 18:19:57.054364
+Pre: time 2019-03-17 18:26:03.706156: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6503657]
+	train_accs: [0.6503657]
+	best_train_sub_head: 0
+	worst: 0.6503657
+	avg: 0.6503657
+	best: 0.6503657
+
+Starting e_i: 36 2019-03-17 18:26:06.183837
+Model ind 714 epoch 36 head B batch: 0 avg loss -0.622259 avg loss no lamb -0.622259 time 2019-03-17 18:26:08.553470
+Model ind 714 epoch 36 head B batch: 100 avg loss -0.678986 avg loss no lamb -0.678986 time 2019-03-17 18:32:40.243291
+Model ind 714 epoch 36 head B batch: 200 avg loss -0.672338 avg loss no lamb -0.672338 time 2019-03-17 18:39:12.125648
+Model ind 714 epoch 36 head B batch: 300 avg loss -0.661993 avg loss no lamb -0.661993 time 2019-03-17 18:45:44.064627
+Model ind 714 epoch 36 head A batch: 0 avg loss -1.489190 avg loss no lamb -1.489190 time 2019-03-17 18:46:05.511581
+Model ind 714 epoch 36 head A batch: 100 avg loss -1.501460 avg loss no lamb -1.501460 time 2019-03-17 18:52:08.978582
+Model ind 714 epoch 36 head A batch: 200 avg loss -1.404093 avg loss no lamb -1.404093 time 2019-03-17 18:58:12.376624
+Model ind 714 epoch 36 head A batch: 300 avg loss -1.502661 avg loss no lamb -1.502661 time 2019-03-17 19:04:16.419775
+Pre: time 2019-03-17 19:10:20.704792: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6544191]
+	train_accs: [0.6544191]
+	best_train_sub_head: 0
+	worst: 0.6544191
+	avg: 0.6544191
+	best: 0.6544191
+
+Starting e_i: 37 2019-03-17 19:10:21.455788
+Model ind 714 epoch 37 head B batch: 0 avg loss -0.669163 avg loss no lamb -0.669163 time 2019-03-17 19:10:23.787709
+Model ind 714 epoch 37 head B batch: 100 avg loss -0.639841 avg loss no lamb -0.639841 time 2019-03-17 19:16:56.030823
+Model ind 714 epoch 37 head B batch: 200 avg loss -0.670062 avg loss no lamb -0.670062 time 2019-03-17 19:23:27.384291
+Model ind 714 epoch 37 head B batch: 300 avg loss -0.671040 avg loss no lamb -0.671040 time 2019-03-17 19:29:58.298416
+Model ind 714 epoch 37 head A batch: 0 avg loss -1.511918 avg loss no lamb -1.511918 time 2019-03-17 19:30:19.715386
+Model ind 714 epoch 37 head A batch: 100 avg loss -1.480818 avg loss no lamb -1.480818 time 2019-03-17 19:36:22.199345
+Model ind 714 epoch 37 head A batch: 200 avg loss -1.477545 avg loss no lamb -1.477545 time 2019-03-17 19:42:25.722568
+Model ind 714 epoch 37 head A batch: 300 avg loss -1.470902 avg loss no lamb -1.470902 time 2019-03-17 19:48:29.545443
+Pre: time 2019-03-17 19:54:35.401564: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6375598]
+	train_accs: [0.6375598]
+	best_train_sub_head: 0
+	worst: 0.6375598
+	avg: 0.6375598
+	best: 0.6375598
+
+Starting e_i: 38 2019-03-17 19:54:36.240886
+Model ind 714 epoch 38 head B batch: 0 avg loss -0.661437 avg loss no lamb -0.661437 time 2019-03-17 19:54:38.648840
+Model ind 714 epoch 38 head B batch: 100 avg loss -0.669405 avg loss no lamb -0.669405 time 2019-03-17 20:01:10.455915
+Model ind 714 epoch 38 head B batch: 200 avg loss -0.637717 avg loss no lamb -0.637717 time 2019-03-17 20:07:41.989023
+Model ind 714 epoch 38 head B batch: 300 avg loss -0.667438 avg loss no lamb -0.667438 time 2019-03-17 20:14:13.726290
+Model ind 714 epoch 38 head A batch: 0 avg loss -1.474021 avg loss no lamb -1.474021 time 2019-03-17 20:14:35.130779
+Model ind 714 epoch 38 head A batch: 100 avg loss -1.500069 avg loss no lamb -1.500069 time 2019-03-17 20:20:39.160778
+Model ind 714 epoch 38 head A batch: 200 avg loss -1.436678 avg loss no lamb -1.436678 time 2019-03-17 20:26:43.372246
+Model ind 714 epoch 38 head A batch: 300 avg loss -1.495423 avg loss no lamb -1.495423 time 2019-03-17 20:32:47.589331
+Pre: time 2019-03-17 20:38:52.341012: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6476405]
+	train_accs: [0.6476405]
+	best_train_sub_head: 0
+	worst: 0.6476405
+	avg: 0.6476405
+	best: 0.6476405
+
+Starting e_i: 39 2019-03-17 20:38:53.114572
+Model ind 714 epoch 39 head B batch: 0 avg loss -0.613667 avg loss no lamb -0.613667 time 2019-03-17 20:38:55.425289
+Model ind 714 epoch 39 head B batch: 100 avg loss -0.640939 avg loss no lamb -0.640939 time 2019-03-17 20:45:27.014605
+Model ind 714 epoch 39 head B batch: 200 avg loss -0.651450 avg loss no lamb -0.651450 time 2019-03-17 20:51:58.656327
+Model ind 714 epoch 39 head B batch: 300 avg loss -0.648312 avg loss no lamb -0.648312 time 2019-03-17 20:58:30.930470
+Model ind 714 epoch 39 head A batch: 0 avg loss -1.434761 avg loss no lamb -1.434761 time 2019-03-17 20:58:52.364579
+Model ind 714 epoch 39 head A batch: 100 avg loss -1.484159 avg loss no lamb -1.484159 time 2019-03-17 21:04:57.233463
+Model ind 714 epoch 39 head A batch: 200 avg loss -1.479938 avg loss no lamb -1.479938 time 2019-03-17 21:11:01.927392
+Model ind 714 epoch 39 head A batch: 300 avg loss -1.451604 avg loss no lamb -1.451604 time 2019-03-17 21:17:06.896705
+Pre: time 2019-03-17 21:23:12.510377: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.65435874]
+	train_accs: [0.65435874]
+	best_train_sub_head: 0
+	worst: 0.65435874
+	avg: 0.65435874
+	best: 0.65435874
+
+Starting e_i: 40 2019-03-17 21:23:13.249441
+Model ind 714 epoch 40 head B batch: 0 avg loss -0.675636 avg loss no lamb -0.675636 time 2019-03-17 21:23:15.614372
+Model ind 714 epoch 40 head B batch: 100 avg loss -0.646196 avg loss no lamb -0.646196 time 2019-03-17 21:29:48.350964
+Model ind 714 epoch 40 head B batch: 200 avg loss -0.666672 avg loss no lamb -0.666672 time 2019-03-17 21:36:21.785119
+Model ind 714 epoch 40 head B batch: 300 avg loss -0.661949 avg loss no lamb -0.661949 time 2019-03-17 21:42:54.992734
+Model ind 714 epoch 40 head A batch: 0 avg loss -1.478239 avg loss no lamb -1.478239 time 2019-03-17 21:43:16.427472
+Model ind 714 epoch 40 head A batch: 100 avg loss -1.464970 avg loss no lamb -1.464970 time 2019-03-17 21:49:21.740998
+Model ind 714 epoch 40 head A batch: 200 avg loss -1.467300 avg loss no lamb -1.467300 time 2019-03-17 21:55:27.012433
+Model ind 714 epoch 40 head A batch: 300 avg loss -1.441687 avg loss no lamb -1.441687 time 2019-03-17 22:01:31.887371
+Pre: time 2019-03-17 22:07:36.993602: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6338654]
+	train_accs: [0.6338654]
+	best_train_sub_head: 0
+	worst: 0.6338654
+	avg: 0.6338654
+	best: 0.6338654
+
+Starting e_i: 41 2019-03-17 22:07:38.874935
+Model ind 714 epoch 41 head B batch: 0 avg loss -0.654922 avg loss no lamb -0.654922 time 2019-03-17 22:07:41.219574
+Model ind 714 epoch 41 head B batch: 100 avg loss -0.674560 avg loss no lamb -0.674560 time 2019-03-17 22:14:13.399236
+Model ind 714 epoch 41 head B batch: 200 avg loss -0.633782 avg loss no lamb -0.633782 time 2019-03-17 22:20:45.210339
+Model ind 714 epoch 41 head B batch: 300 avg loss -0.645356 avg loss no lamb -0.645356 time 2019-03-17 22:27:16.755094
+Model ind 714 epoch 41 head A batch: 0 avg loss -1.480680 avg loss no lamb -1.480680 time 2019-03-17 22:27:38.066040
+Model ind 714 epoch 41 head A batch: 100 avg loss -1.391994 avg loss no lamb -1.391994 time 2019-03-17 22:33:41.930852
+Model ind 714 epoch 41 head A batch: 200 avg loss -1.434296 avg loss no lamb -1.434296 time 2019-03-17 22:39:46.318848
+Model ind 714 epoch 41 head A batch: 300 avg loss -1.442475 avg loss no lamb -1.442475 time 2019-03-17 22:45:50.930627
+Pre: time 2019-03-17 22:51:56.868477: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6305396]
+	train_accs: [0.6305396]
+	best_train_sub_head: 0
+	worst: 0.6305396
+	avg: 0.6305396
+	best: 0.6305396
+
+Starting e_i: 42 2019-03-17 22:51:57.609573
+Model ind 714 epoch 42 head B batch: 0 avg loss -0.652902 avg loss no lamb -0.652902 time 2019-03-17 22:51:59.980365
+Model ind 714 epoch 42 head B batch: 100 avg loss -0.657608 avg loss no lamb -0.657608 time 2019-03-17 22:58:31.700700
+Model ind 714 epoch 42 head B batch: 200 avg loss -0.620799 avg loss no lamb -0.620799 time 2019-03-17 23:05:03.460192
+Model ind 714 epoch 42 head B batch: 300 avg loss -0.643108 avg loss no lamb -0.643108 time 2019-03-17 23:11:35.544051
+Model ind 714 epoch 42 head A batch: 0 avg loss -1.501037 avg loss no lamb -1.501037 time 2019-03-17 23:11:56.981950
+Model ind 714 epoch 42 head A batch: 100 avg loss -1.452149 avg loss no lamb -1.452149 time 2019-03-17 23:18:00.720978
+Model ind 714 epoch 42 head A batch: 200 avg loss -1.520305 avg loss no lamb -1.520305 time 2019-03-17 23:24:04.547810
+Model ind 714 epoch 42 head A batch: 300 avg loss -1.450250 avg loss no lamb -1.450250 time 2019-03-17 23:30:08.527268
+Pre: time 2019-03-17 23:36:15.295738: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6548312]
+	train_accs: [0.6548312]
+	best_train_sub_head: 0
+	worst: 0.6548312
+	avg: 0.6548312
+	best: 0.6548312
+
+Starting e_i: 43 2019-03-17 23:36:16.034837
+Model ind 714 epoch 43 head B batch: 0 avg loss -0.673492 avg loss no lamb -0.673492 time 2019-03-17 23:36:18.424729
+Model ind 714 epoch 43 head B batch: 100 avg loss -0.639747 avg loss no lamb -0.639747 time 2019-03-17 23:42:51.688894
+Model ind 714 epoch 43 head B batch: 200 avg loss -0.620656 avg loss no lamb -0.620656 time 2019-03-17 23:49:24.851031
+Model ind 714 epoch 43 head B batch: 300 avg loss -0.672960 avg loss no lamb -0.672960 time 2019-03-17 23:55:58.006712
+Model ind 714 epoch 43 head A batch: 0 avg loss -1.456010 avg loss no lamb -1.456010 time 2019-03-17 23:56:19.283102
+Model ind 714 epoch 43 head A batch: 100 avg loss -1.499991 avg loss no lamb -1.499991 time 2019-03-18 00:02:24.403965
+Model ind 714 epoch 43 head A batch: 200 avg loss -1.431585 avg loss no lamb -1.431585 time 2019-03-18 00:08:29.362831
+Model ind 714 epoch 43 head A batch: 300 avg loss -1.425647 avg loss no lamb -1.425647 time 2019-03-18 00:14:34.220818
+Pre: time 2019-03-18 00:20:40.313559: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.6432594]
+	train_accs: [0.6432594]
+	best_train_sub_head: 0
+	worst: 0.6432594
+	avg: 0.6432594
+	best: 0.6432594
+
+Starting e_i: 44 2019-03-18 00:20:41.073842
+Model ind 714 epoch 44 head B batch: 0 avg loss -0.677454 avg loss no lamb -0.677454 time 2019-03-18 00:20:43.449838
+Model ind 714 epoch 44 head B batch: 100 avg loss -0.669648 avg loss no lamb -0.669648 time 2019-03-18 00:27:15.669333
+Model ind 714 epoch 44 head B batch: 200 avg loss -0.644649 avg loss no lamb -0.644649 time 2019-03-18 00:33:47.527824
+Model ind 714 epoch 44 head B batch: 300 avg loss -0.596595 avg loss no lamb -0.596595 time 2019-03-18 00:40:19.036437
+Model ind 714 epoch 44 head A batch: 0 avg loss -1.491998 avg loss no lamb -1.491998 time 2019-03-18 00:40:40.381215
+Model ind 714 epoch 44 head A batch: 100 avg loss -1.478799 avg loss no lamb -1.478799 time 2019-03-18 00:46:44.056485
+Model ind 714 epoch 44 head A batch: 200 avg loss -1.538493 avg loss no lamb -1.538493 time 2019-03-18 00:52:48.223736
+Model ind 714 epoch 44 head A batch: 300 avg loss -1.413334 avg loss no lamb -1.413334 time 2019-03-18 00:58:51.903225
+Pre: time 2019-03-18 01:04:58.258304: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.64790773]
+	train_accs: [0.64790773]
+	best_train_sub_head: 0
+	worst: 0.64790773
+	avg: 0.64790773
+	best: 0.64790773
+
+Starting e_i: 45 2019-03-18 01:04:59.012260
+Model ind 714 epoch 45 head B batch: 0 avg loss -0.625190 avg loss no lamb -0.625190 time 2019-03-18 01:05:01.395652
+Model ind 714 epoch 45 head B batch: 100 avg loss -0.657587 avg loss no lamb -0.657587 time 2019-03-18 01:11:32.965721
+Model ind 714 epoch 45 head B batch: 200 avg loss -0.642162 avg loss no lamb -0.642162 time 2019-03-18 01:18:04.037889
+Model ind 714 epoch 45 head B batch: 300 avg loss -0.641629 avg loss no lamb -0.641629 time 2019-03-18 01:24:36.070645
+Model ind 714 epoch 45 head A batch: 0 avg loss -1.485458 avg loss no lamb -1.485458 time 2019-03-18 01:24:57.427737
+Model ind 714 epoch 45 head A batch: 100 avg loss -1.472625 avg loss no lamb -1.472625 time 2019-03-18 01:31:01.254669
+Model ind 714 epoch 45 head A batch: 200 avg loss -1.466404 avg loss no lamb -1.466404 time 2019-03-18 01:37:05.201243
+Model ind 714 epoch 45 head A batch: 300 avg loss -1.423197 avg loss no lamb -1.423197 time 2019-03-18 01:43:09.344771
+Pre: time 2019-03-18 01:49:14.810863: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.62341934]
+	train_accs: [0.62341934]
+	best_train_sub_head: 0
+	worst: 0.62341934
+	avg: 0.62341934
+	best: 0.62341934
+
+Starting e_i: 46 2019-03-18 01:49:16.676946
+Model ind 714 epoch 46 head B batch: 0 avg loss -0.664416 avg loss no lamb -0.664416 time 2019-03-18 01:49:19.111391
+Model ind 714 epoch 46 head B batch: 100 avg loss -0.660241 avg loss no lamb -0.660241 time 2019-03-18 01:55:52.629997
+Model ind 714 epoch 46 head B batch: 200 avg loss -0.646429 avg loss no lamb -0.646429 time 2019-03-18 02:02:25.650561
+Model ind 714 epoch 46 head B batch: 300 avg loss -0.649928 avg loss no lamb -0.649928 time 2019-03-18 02:08:58.243759
+Model ind 714 epoch 46 head A batch: 0 avg loss -1.472120 avg loss no lamb -1.472120 time 2019-03-18 02:09:19.654604
+Model ind 714 epoch 46 head A batch: 100 avg loss -1.458557 avg loss no lamb -1.458557 time 2019-03-18 02:15:24.620838
+Model ind 714 epoch 46 head A batch: 200 avg loss -1.463117 avg loss no lamb -1.463117 time 2019-03-18 02:21:29.354787
+Model ind 714 epoch 46 head A batch: 300 avg loss -1.498847 avg loss no lamb -1.498847 time 2019-03-18 02:27:34.515364
+Pre: time 2019-03-18 02:33:41.955275: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.64358175]
+	train_accs: [0.64358175]
+	best_train_sub_head: 0
+	worst: 0.64358175
+	avg: 0.64358175
+	best: 0.64358175
+
+Starting e_i: 47 2019-03-18 02:33:42.822345
+Model ind 714 epoch 47 head B batch: 0 avg loss -0.662135 avg loss no lamb -0.662135 time 2019-03-18 02:33:45.237147
+Model ind 714 epoch 47 head B batch: 100 avg loss -0.659613 avg loss no lamb -0.659613 time 2019-03-18 02:40:18.280603
+Model ind 714 epoch 47 head B batch: 200 avg loss -0.666317 avg loss no lamb -0.666317 time 2019-03-18 02:46:51.131710
+Model ind 714 epoch 47 head B batch: 300 avg loss -0.640163 avg loss no lamb -0.640163 time 2019-03-18 02:53:23.648459
+Model ind 714 epoch 47 head A batch: 0 avg loss -1.444644 avg loss no lamb -1.444644 time 2019-03-18 02:53:45.092344
+Model ind 714 epoch 47 head A batch: 100 avg loss -1.461433 avg loss no lamb -1.461433 time 2019-03-18 02:59:49.964891
+Model ind 714 epoch 47 head A batch: 200 avg loss -1.483201 avg loss no lamb -1.483201 time 2019-03-18 03:05:54.704732
+Model ind 714 epoch 47 head A batch: 300 avg loss -1.433944 avg loss no lamb -1.433944 time 2019-03-18 03:11:59.587733
+Pre: time 2019-03-18 03:18:06.537760: 
+ 	std: 0.0
+	best_train_sub_head_match: [(0, 1), (1, 2), (2, 0)]
+	test_accs: [0.64359033]
+	train_accs: [0.64359033]
+	best_train_sub_head: 0
+	worst: 0.64359033
+	avg: 0.64359033
+	best: 0.64359033
+
+Starting e_i: 48 2019-03-18 03:18:07.345279
+Model ind 714 epoch 48 head B batch: 0 avg loss -0.677617 avg loss no lamb -0.677617 time 2019-03-18 03:18:09.706899
+Model ind 714 epoch 48 head B batch: 100 avg loss -0.648426 avg loss no lamb -0.648426 time 2019-03-18 03:24:43.065236

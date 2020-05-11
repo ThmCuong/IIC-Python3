@@ -1,0 +1,265 @@
+Debug: False
+Given config: Config: -----
+use_random_affine: False
+pre_scale_factor: 0.5
+jitter_saturation: 0.1
+eval_mode: hung
+out_dir: /scratch/shared/slow/xuji/iid_private/544
+flip_p: 0.5
+incl_animal_things: False
+use_random_scale: False
+use_coarse_labels: False
+dataset: Potsdam
+using_IR: True
+include_rgb: True
+mapping_test_partitions: ['labelled_train', 'labelled_test']
+num_epochs: 4800
+lr_schedule: []
+use_uncollapsed_loss: True
+half_T_side_sparse_min: 0
+lamb_B: 1.0
+lamb_A: 1.0
+output_k_B: 6
+coco_164k_curated_version: -1
+output_k_A: 36
+lr_mult: 0.1
+aff_max_scale: 1.2
+dataloader_batch_sz: 60
+num_heads: 1
+in_channels: 4
+lr: 1e-06
+aff_min_scale: 0.8
+aff_min_shear: -10.0
+gt_k: 6
+opt: Adam
+jitter_brightness: 0.1
+output_k: 6
+num_dataloaders: 1
+half_T_side_sparse_max: 0
+aff_min_rot: -30.0
+include_things_labels: False
+jitter_hue: 0.1
+no_pre_eval: False
+no_sobel: True
+half_T_side_dense: 5
+fine_to_coarse_dict: /users/xuji/iid/iid_private/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
+input_sz: 200
+dataset_root: /scratch/local/ssd/xuji/POTSDAM
+arch: SegmentationNet10aTwoHead
+train_partitions: ['unlabelled_train', 'labelled_train', 'labelled_test']
+restart: True
+batch_sz: 60
+pre_scale_all: False
+scale_min: 0.6
+out_root: /scratch/shared/slow/xuji/iid_private
+model_ind: 544
+aff_max_shear: 10.0
+scale_max: 1.4
+use_doersch_datasets: False
+mask_input: False
+mode: IID
+aff_max_rot: 30.0
+jitter_contrast: 0.1
+save_multiple: False
+mapping_assignment_partitions: ['labelled_train', 'labelled_test']
+----------
+Loading restarting config from: /scratch/shared/slow/xuji/iid_private/544/config.pickle
+Creating paired dataloader 0 out of 1 time 2018-11-09 11:00:00.112332
+Length of paired datasets vector 1
+Number of batches per epoch: 143
+length of train dataloaders 143
+length of mapping assign dataloader 90
+length of mapping test dataloader 90
+starting from epoch 12
+using uncollapsed loss!
+Starting e_i: 12 2018-11-09 11:00:05.131704
+/users/xuji/iid/iid_env/lib/python2.7/site-packages/torch/nn/functional.py:1961: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+Model ind 544 epoch 12 head B batch: 0 avg loss -0.679137 avg loss no lamb -0.679137 time 2018-11-09 11:00:13.057440
+Model ind 544 epoch 12 head B batch: 1 avg loss -0.681329 avg loss no lamb -0.681329 time 2018-11-09 11:00:16.179968
+Model ind 544 epoch 12 head B batch: 2 avg loss -0.663687 avg loss no lamb -0.663687 time 2018-11-09 11:00:19.306190
+Model ind 544 epoch 12 head B batch: 3 avg loss -0.671369 avg loss no lamb -0.671369 time 2018-11-09 11:00:22.427767
+Model ind 544 epoch 12 head B batch: 4 avg loss -0.666740 avg loss no lamb -0.666740 time 2018-11-09 11:00:25.554020
+Model ind 544 epoch 12 head B batch: 5 avg loss -0.659003 avg loss no lamb -0.659003 time 2018-11-09 11:00:28.691107
+Model ind 544 epoch 12 head B batch: 6 avg loss -0.704741 avg loss no lamb -0.704741 time 2018-11-09 11:00:31.817143
+Model ind 544 epoch 12 head B batch: 7 avg loss -0.681253 avg loss no lamb -0.681253 time 2018-11-09 11:00:34.947908
+Model ind 544 epoch 12 head B batch: 8 avg loss -0.666648 avg loss no lamb -0.666648 time 2018-11-09 11:00:38.073310
+Model ind 544 epoch 12 head B batch: 9 avg loss -0.678126 avg loss no lamb -0.678126 time 2018-11-09 11:00:41.188647
+Model ind 544 epoch 12 head B batch: 10 avg loss -0.709388 avg loss no lamb -0.709388 time 2018-11-09 11:00:44.302232
+Model ind 544 epoch 12 head B batch: 11 avg loss -0.669495 avg loss no lamb -0.669495 time 2018-11-09 11:00:47.427618
+Model ind 544 epoch 12 head B batch: 12 avg loss -0.676420 avg loss no lamb -0.676420 time 2018-11-09 11:00:50.546597
+Model ind 544 epoch 12 head B batch: 13 avg loss -0.684478 avg loss no lamb -0.684478 time 2018-11-09 11:00:53.667111
+Model ind 544 epoch 12 head B batch: 14 avg loss -0.680055 avg loss no lamb -0.680055 time 2018-11-09 11:00:56.780100
+Model ind 544 epoch 12 head B batch: 15 avg loss -0.671137 avg loss no lamb -0.671137 time 2018-11-09 11:00:59.894391
+Model ind 544 epoch 12 head B batch: 16 avg loss -0.696033 avg loss no lamb -0.696033 time 2018-11-09 11:01:03.023473
+Model ind 544 epoch 12 head B batch: 17 avg loss -0.694497 avg loss no lamb -0.694497 time 2018-11-09 11:01:06.107450
+Model ind 544 epoch 12 head B batch: 18 avg loss -0.672469 avg loss no lamb -0.672469 time 2018-11-09 11:01:09.182647
+Model ind 544 epoch 12 head B batch: 19 avg loss -0.655914 avg loss no lamb -0.655914 time 2018-11-09 11:01:12.317838
+Model ind 544 epoch 12 head B batch: 20 avg loss -0.684135 avg loss no lamb -0.684135 time 2018-11-09 11:01:15.435598
+Model ind 544 epoch 12 head B batch: 21 avg loss -0.696619 avg loss no lamb -0.696619 time 2018-11-09 11:01:18.557885
+Model ind 544 epoch 12 head B batch: 22 avg loss -0.706765 avg loss no lamb -0.706765 time 2018-11-09 11:01:21.657252
+Model ind 544 epoch 12 head B batch: 23 avg loss -0.668717 avg loss no lamb -0.668717 time 2018-11-09 11:01:24.767575
+Model ind 544 epoch 12 head B batch: 24 avg loss -0.674717 avg loss no lamb -0.674717 time 2018-11-09 11:01:27.903082
+Model ind 544 epoch 12 head B batch: 25 avg loss -0.705012 avg loss no lamb -0.705012 time 2018-11-09 11:01:31.019311
+Model ind 544 epoch 12 head B batch: 26 avg loss -0.710183 avg loss no lamb -0.710183 time 2018-11-09 11:01:34.144726
+Model ind 544 epoch 12 head B batch: 27 avg loss -0.664371 avg loss no lamb -0.664371 time 2018-11-09 11:01:37.282249
+Model ind 544 epoch 12 head B batch: 28 avg loss -0.690278 avg loss no lamb -0.690278 time 2018-11-09 11:01:40.405392
+Model ind 544 epoch 12 head B batch: 29 avg loss -0.657720 avg loss no lamb -0.657720 time 2018-11-09 11:01:43.521474
+Model ind 544 epoch 12 head B batch: 30 avg loss -0.684504 avg loss no lamb -0.684504 time 2018-11-09 11:01:46.657824
+Model ind 544 epoch 12 head B batch: 31 avg loss -0.712348 avg loss no lamb -0.712348 time 2018-11-09 11:01:49.808118
+Model ind 544 epoch 12 head B batch: 32 avg loss -0.702140 avg loss no lamb -0.702140 time 2018-11-09 11:01:52.900809
+Model ind 544 epoch 12 head B batch: 33 avg loss -0.694339 avg loss no lamb -0.694339 time 2018-11-09 11:01:55.998245
+Model ind 544 epoch 12 head B batch: 34 avg loss -0.695118 avg loss no lamb -0.695118 time 2018-11-09 11:01:59.130351
+Model ind 544 epoch 12 head B batch: 35 avg loss -0.694696 avg loss no lamb -0.694696 time 2018-11-09 11:02:02.268402
+Model ind 544 epoch 12 head B batch: 36 avg loss -0.682791 avg loss no lamb -0.682791 time 2018-11-09 11:02:05.389942
+Model ind 544 epoch 12 head B batch: 37 avg loss -0.710611 avg loss no lamb -0.710611 time 2018-11-09 11:02:08.540285
+Model ind 544 epoch 12 head B batch: 38 avg loss -0.691467 avg loss no lamb -0.691467 time 2018-11-09 11:02:11.646568
+Model ind 544 epoch 12 head B batch: 39 avg loss -0.702660 avg loss no lamb -0.702660 time 2018-11-09 11:02:14.742964
+Model ind 544 epoch 12 head B batch: 40 avg loss -0.692431 avg loss no lamb -0.692431 time 2018-11-09 11:02:17.863288
+Model ind 544 epoch 12 head B batch: 41 avg loss -0.662430 avg loss no lamb -0.662430 time 2018-11-09 11:02:20.991673
+Model ind 544 epoch 12 head B batch: 42 avg loss -0.675197 avg loss no lamb -0.675197 time 2018-11-09 11:02:24.112908
+Model ind 544 epoch 12 head B batch: 43 avg loss -0.680606 avg loss no lamb -0.680606 time 2018-11-09 11:02:27.244484
+Model ind 544 epoch 12 head B batch: 44 avg loss -0.717849 avg loss no lamb -0.717849 time 2018-11-09 11:02:30.348077
+Model ind 544 epoch 12 head B batch: 45 avg loss -0.698401 avg loss no lamb -0.698401 time 2018-11-09 11:02:33.472973
+Model ind 544 epoch 12 head B batch: 46 avg loss -0.702741 avg loss no lamb -0.702741 time 2018-11-09 11:02:36.604907
+Model ind 544 epoch 12 head B batch: 47 avg loss -0.692290 avg loss no lamb -0.692290 time 2018-11-09 11:02:39.723769
+Model ind 544 epoch 12 head B batch: 48 avg loss -0.696236 avg loss no lamb -0.696236 time 2018-11-09 11:02:42.849239
+Model ind 544 epoch 12 head B batch: 49 avg loss -0.717375 avg loss no lamb -0.717375 time 2018-11-09 11:02:45.964093
+Model ind 544 epoch 12 head B batch: 50 avg loss -0.690006 avg loss no lamb -0.690006 time 2018-11-09 11:02:49.093411
+Model ind 544 epoch 12 head B batch: 51 avg loss -0.688816 avg loss no lamb -0.688816 time 2018-11-09 11:02:52.208811
+Model ind 544 epoch 12 head B batch: 52 avg loss -0.694414 avg loss no lamb -0.694414 time 2018-11-09 11:02:55.311734
+Model ind 544 epoch 12 head B batch: 53 avg loss -0.677545 avg loss no lamb -0.677545 time 2018-11-09 11:02:58.417330
+Model ind 544 epoch 12 head B batch: 54 avg loss -0.699764 avg loss no lamb -0.699764 time 2018-11-09 11:03:01.556893
+Model ind 544 epoch 12 head B batch: 55 avg loss -0.692564 avg loss no lamb -0.692564 time 2018-11-09 11:03:04.678999
+Model ind 544 epoch 12 head B batch: 56 avg loss -0.693096 avg loss no lamb -0.693096 time 2018-11-09 11:03:07.799665
+Model ind 544 epoch 12 head B batch: 57 avg loss -0.709368 avg loss no lamb -0.709368 time 2018-11-09 11:03:10.910651
+Model ind 544 epoch 12 head B batch: 58 avg loss -0.707212 avg loss no lamb -0.707212 time 2018-11-09 11:03:14.016656
+Model ind 544 epoch 12 head B batch: 59 avg loss -0.683380 avg loss no lamb -0.683380 time 2018-11-09 11:03:17.141083
+Model ind 544 epoch 12 head B batch: 60 avg loss -0.676071 avg loss no lamb -0.676071 time 2018-11-09 11:03:20.260228
+Model ind 544 epoch 12 head B batch: 61 avg loss -0.693316 avg loss no lamb -0.693316 time 2018-11-09 11:03:23.357087
+Model ind 544 epoch 12 head B batch: 62 avg loss -0.697145 avg loss no lamb -0.697145 time 2018-11-09 11:03:26.446964
+Model ind 544 epoch 12 head B batch: 63 avg loss -0.700630 avg loss no lamb -0.700630 time 2018-11-09 11:03:29.564635
+Model ind 544 epoch 12 head B batch: 64 avg loss -0.681852 avg loss no lamb -0.681852 time 2018-11-09 11:03:32.681103
+Model ind 544 epoch 12 head B batch: 65 avg loss -0.711328 avg loss no lamb -0.711328 time 2018-11-09 11:03:35.797788
+Model ind 544 epoch 12 head B batch: 66 avg loss -0.681973 avg loss no lamb -0.681973 time 2018-11-09 11:03:38.946700
+Model ind 544 epoch 12 head B batch: 67 avg loss -0.679213 avg loss no lamb -0.679213 time 2018-11-09 11:03:42.077208
+Model ind 544 epoch 12 head B batch: 68 avg loss -0.726043 avg loss no lamb -0.726043 time 2018-11-09 11:03:45.194497
+Model ind 544 epoch 12 head B batch: 69 avg loss -0.707157 avg loss no lamb -0.707157 time 2018-11-09 11:03:48.312188
+Model ind 544 epoch 12 head B batch: 70 avg loss -0.723490 avg loss no lamb -0.723490 time 2018-11-09 11:03:51.432257
+Model ind 544 epoch 12 head B batch: 71 avg loss -0.706199 avg loss no lamb -0.706199 time 2018-11-09 11:03:54.521119
+Model ind 544 epoch 12 head B batch: 72 avg loss -0.712601 avg loss no lamb -0.712601 time 2018-11-09 11:03:57.623359
+Model ind 544 epoch 12 head B batch: 73 avg loss -0.702189 avg loss no lamb -0.702189 time 2018-11-09 11:04:00.749840
+Model ind 544 epoch 12 head B batch: 74 avg loss -0.716034 avg loss no lamb -0.716034 time 2018-11-09 11:04:03.848428
+Model ind 544 epoch 12 head B batch: 75 avg loss -0.702097 avg loss no lamb -0.702097 time 2018-11-09 11:04:06.952370
+Model ind 544 epoch 12 head B batch: 76 avg loss -0.714583 avg loss no lamb -0.714583 time 2018-11-09 11:04:10.071435
+Model ind 544 epoch 12 head B batch: 77 avg loss -0.703274 avg loss no lamb -0.703274 time 2018-11-09 11:04:13.205206
+Model ind 544 epoch 12 head B batch: 78 avg loss -0.729535 avg loss no lamb -0.729535 time 2018-11-09 11:04:16.332143
+Model ind 544 epoch 12 head B batch: 79 avg loss -0.692909 avg loss no lamb -0.692909 time 2018-11-09 11:04:19.435127
+Model ind 544 epoch 12 head B batch: 80 avg loss -0.693167 avg loss no lamb -0.693167 time 2018-11-09 11:04:22.552758
+Model ind 544 epoch 12 head B batch: 81 avg loss -0.712002 avg loss no lamb -0.712002 time 2018-11-09 11:04:25.669585
+Model ind 544 epoch 12 head B batch: 82 avg loss -0.700229 avg loss no lamb -0.700229 time 2018-11-09 11:04:28.759199
+Model ind 544 epoch 12 head B batch: 83 avg loss -0.708406 avg loss no lamb -0.708406 time 2018-11-09 11:04:31.862129
+Model ind 544 epoch 12 head B batch: 84 avg loss -0.716333 avg loss no lamb -0.716333 time 2018-11-09 11:04:34.980441
+Model ind 544 epoch 12 head B batch: 85 avg loss -0.689429 avg loss no lamb -0.689429 time 2018-11-09 11:04:38.072431
+Model ind 544 epoch 12 head B batch: 86 avg loss -0.731623 avg loss no lamb -0.731623 time 2018-11-09 11:04:41.160275
+Model ind 544 epoch 12 head B batch: 87 avg loss -0.705081 avg loss no lamb -0.705081 time 2018-11-09 11:04:44.279985
+Model ind 544 epoch 12 head B batch: 88 avg loss -0.696816 avg loss no lamb -0.696816 time 2018-11-09 11:04:47.390036
+Model ind 544 epoch 12 head B batch: 89 avg loss -0.713474 avg loss no lamb -0.713474 time 2018-11-09 11:04:50.516390
+Model ind 544 epoch 12 head B batch: 90 avg loss -0.695666 avg loss no lamb -0.695666 time 2018-11-09 11:04:53.635598
+Model ind 544 epoch 12 head B batch: 91 avg loss -0.710074 avg loss no lamb -0.710074 time 2018-11-09 11:04:56.733470
+Model ind 544 epoch 12 head B batch: 92 avg loss -0.705013 avg loss no lamb -0.705013 time 2018-11-09 11:04:59.828011
+Model ind 544 epoch 12 head B batch: 93 avg loss -0.701213 avg loss no lamb -0.701213 time 2018-11-09 11:05:02.943724
+Model ind 544 epoch 12 head B batch: 94 avg loss -0.713535 avg loss no lamb -0.713535 time 2018-11-09 11:05:06.062011
+Model ind 544 epoch 12 head B batch: 95 avg loss -0.724635 avg loss no lamb -0.724635 time 2018-11-09 11:05:09.155594
+Model ind 544 epoch 12 head B batch: 96 avg loss -0.724200 avg loss no lamb -0.724200 time 2018-11-09 11:05:12.278638
+Model ind 544 epoch 12 head B batch: 97 avg loss -0.720329 avg loss no lamb -0.720329 time 2018-11-09 11:05:15.399907
+Model ind 544 epoch 12 head B batch: 98 avg loss -0.731178 avg loss no lamb -0.731178 time 2018-11-09 11:05:18.499333
+Model ind 544 epoch 12 head B batch: 99 avg loss -0.720358 avg loss no lamb -0.720358 time 2018-11-09 11:05:21.618696
+Model ind 544 epoch 12 head B batch: 100 avg loss -0.696660 avg loss no lamb -0.696660 time 2018-11-09 11:05:24.744491
+Model ind 544 epoch 12 head B batch: 101 avg loss -0.717554 avg loss no lamb -0.717554 time 2018-11-09 11:05:27.859744
+Model ind 544 epoch 12 head B batch: 102 avg loss -0.735831 avg loss no lamb -0.735831 time 2018-11-09 11:05:30.947928
+Model ind 544 epoch 12 head B batch: 103 avg loss -0.708582 avg loss no lamb -0.708582 time 2018-11-09 11:05:34.071237
+Model ind 544 epoch 12 head B batch: 104 avg loss -0.719896 avg loss no lamb -0.719896 time 2018-11-09 11:05:37.199232
+Model ind 544 epoch 12 head B batch: 105 avg loss -0.708215 avg loss no lamb -0.708215 time 2018-11-09 11:05:40.306258
+Model ind 544 epoch 12 head B batch: 106 avg loss -0.741969 avg loss no lamb -0.741969 time 2018-11-09 11:05:43.429568
+Model ind 544 epoch 12 head B batch: 107 avg loss -0.687480 avg loss no lamb -0.687480 time 2018-11-09 11:05:46.555866
+Model ind 544 epoch 12 head B batch: 108 avg loss -0.708093 avg loss no lamb -0.708093 time 2018-11-09 11:05:49.697468
+Model ind 544 epoch 12 head B batch: 109 avg loss -0.750810 avg loss no lamb -0.750810 time 2018-11-09 11:05:52.838774
+Model ind 544 epoch 12 head B batch: 110 avg loss -0.737500 avg loss no lamb -0.737500 time 2018-11-09 11:05:55.962284
+Model ind 544 epoch 12 head B batch: 111 avg loss -0.748037 avg loss no lamb -0.748037 time 2018-11-09 11:05:59.097082
+Model ind 544 epoch 12 head B batch: 112 avg loss -0.710581 avg loss no lamb -0.710581 time 2018-11-09 11:06:02.225894
+Model ind 544 epoch 12 head B batch: 113 avg loss -0.704081 avg loss no lamb -0.704081 time 2018-11-09 11:06:05.340678
+Model ind 544 epoch 12 head B batch: 114 avg loss -0.709886 avg loss no lamb -0.709886 time 2018-11-09 11:06:08.464546
+Model ind 544 epoch 12 head B batch: 115 avg loss -0.749775 avg loss no lamb -0.749775 time 2018-11-09 11:06:11.598988
+Model ind 544 epoch 12 head B batch: 116 avg loss -0.706760 avg loss no lamb -0.706760 time 2018-11-09 11:06:14.704206
+Model ind 544 epoch 12 head B batch: 117 avg loss -0.727183 avg loss no lamb -0.727183 time 2018-11-09 11:06:17.810383
+Model ind 544 epoch 12 head B batch: 118 avg loss -0.725288 avg loss no lamb -0.725288 time 2018-11-09 11:06:20.927247
+Model ind 544 epoch 12 head B batch: 119 avg loss -0.711612 avg loss no lamb -0.711612 time 2018-11-09 11:06:24.057708
+Model ind 544 epoch 12 head B batch: 120 avg loss -0.689687 avg loss no lamb -0.689687 time 2018-11-09 11:06:27.188032
+Model ind 544 epoch 12 head B batch: 121 avg loss -0.721145 avg loss no lamb -0.721145 time 2018-11-09 11:06:30.325530
+Model ind 544 epoch 12 head B batch: 122 avg loss -0.706829 avg loss no lamb -0.706829 time 2018-11-09 11:06:33.451218
+Model ind 544 epoch 12 head B batch: 123 avg loss -0.719918 avg loss no lamb -0.719918 time 2018-11-09 11:06:36.567126
+Model ind 544 epoch 12 head B batch: 124 avg loss -0.727364 avg loss no lamb -0.727364 time 2018-11-09 11:06:39.666878
+Model ind 544 epoch 12 head B batch: 125 avg loss -0.716151 avg loss no lamb -0.716151 time 2018-11-09 11:06:42.802034
+Model ind 544 epoch 12 head B batch: 126 avg loss -0.708449 avg loss no lamb -0.708449 time 2018-11-09 11:06:45.934584
+Model ind 544 epoch 12 head B batch: 127 avg loss -0.752399 avg loss no lamb -0.752399 time 2018-11-09 11:06:49.056041
+Model ind 544 epoch 12 head B batch: 128 avg loss -0.716028 avg loss no lamb -0.716028 time 2018-11-09 11:06:52.181937
+Model ind 544 epoch 12 head B batch: 129 avg loss -0.713638 avg loss no lamb -0.713638 time 2018-11-09 11:06:55.321544
+Model ind 544 epoch 12 head B batch: 130 avg loss -0.713473 avg loss no lamb -0.713473 time 2018-11-09 11:06:58.455502
+Model ind 544 epoch 12 head B batch: 131 avg loss -0.721122 avg loss no lamb -0.721122 time 2018-11-09 11:07:01.584832
+Model ind 544 epoch 12 head B batch: 132 avg loss -0.718210 avg loss no lamb -0.718210 time 2018-11-09 11:07:04.712791
+Model ind 544 epoch 12 head B batch: 133 avg loss -0.732459 avg loss no lamb -0.732459 time 2018-11-09 11:07:07.850268
+Model ind 544 epoch 12 head B batch: 134 avg loss -0.716887 avg loss no lamb -0.716887 time 2018-11-09 11:07:10.975227
+Model ind 544 epoch 12 head B batch: 135 avg loss -0.707492 avg loss no lamb -0.707492 time 2018-11-09 11:07:14.102674
+Model ind 544 epoch 12 head B batch: 136 avg loss -0.721766 avg loss no lamb -0.721766 time 2018-11-09 11:07:17.197653
+Model ind 544 epoch 12 head B batch: 137 avg loss -0.740917 avg loss no lamb -0.740917 time 2018-11-09 11:07:20.328750
+Model ind 544 epoch 12 head B batch: 138 avg loss -0.707552 avg loss no lamb -0.707552 time 2018-11-09 11:07:23.510320
+Model ind 544 epoch 12 head B batch: 139 avg loss -0.721589 avg loss no lamb -0.721589 time 2018-11-09 11:07:26.608324
+Model ind 544 epoch 12 head B batch: 140 avg loss -0.713184 avg loss no lamb -0.713184 time 2018-11-09 11:07:29.727533
+Model ind 544 epoch 12 head B batch: 141 avg loss -0.705743 avg loss no lamb -0.705743 time 2018-11-09 11:07:32.836314
+last batch sz 30
+Model ind 544 epoch 12 head B batch: 142 avg loss -0.706230 avg loss no lamb -0.706230 time 2018-11-09 11:07:35.308982
+(multioutput_cluster_eval) best head: 0 2018-11-09 11:08:03.008589
+... metrics acc 0.430691 nmi -1.000000 ari -1.000000 time 2018-11-09 11:08:29.248893
+Starting e_i: 13 2018-11-09 11:08:30.990670
+Model ind 544 epoch 13 head A batch: 0 avg loss -0.919737 avg loss no lamb -0.919737 time 2018-11-09 11:08:32.177919
+Model ind 544 epoch 13 head A batch: 100 avg loss -0.954795 avg loss no lamb -0.954795 time 2018-11-09 11:41:52.451177
+(multioutput_cluster_eval) best head: 0 2018-11-09 11:56:20.314615
+... metrics acc 0.422952 nmi -1.000000 ari -1.000000 time 2018-11-09 11:56:46.514163
+Starting e_i: 14 2018-11-09 11:56:48.135073
+Model ind 544 epoch 14 head B batch: 0 avg loss -0.704463 avg loss no lamb -0.704463 time 2018-11-09 11:56:49.456144
+Model ind 544 epoch 14 head B batch: 100 avg loss -0.780510 avg loss no lamb -0.780510 time 2018-11-09 12:01:57.864322
+(multioutput_cluster_eval) best head: 0 2018-11-09 12:04:34.727389
+... metrics acc 0.404069 nmi -1.000000 ari -1.000000 time 2018-11-09 12:05:01.023833
+Starting e_i: 15 2018-11-09 12:05:02.751180
+Model ind 544 epoch 15 head A batch: 0 avg loss -0.975728 avg loss no lamb -0.975728 time 2018-11-09 12:05:03.914729
+Model ind 544 epoch 15 head A batch: 100 avg loss -0.999513 avg loss no lamb -0.999513 time 2018-11-09 12:38:25.362077
+(multioutput_cluster_eval) best head: 0 2018-11-09 12:52:53.895594
+... metrics acc 0.401043 nmi -1.000000 ari -1.000000 time 2018-11-09 12:53:20.178655
+Starting e_i: 16 2018-11-09 12:53:21.862424
+Model ind 544 epoch 16 head B batch: 0 avg loss -0.809164 avg loss no lamb -0.809164 time 2018-11-09 12:53:23.190326
+Model ind 544 epoch 16 head B batch: 100 avg loss -0.874994 avg loss no lamb -0.874994 time 2018-11-09 12:58:31.657215
+(multioutput_cluster_eval) best head: 0 2018-11-09 13:01:08.199035
+... metrics acc 0.384736 nmi -1.000000 ari -1.000000 time 2018-11-09 13:01:34.192561
+Starting e_i: 17 2018-11-09 13:01:35.835818
+Model ind 544 epoch 17 head A batch: 0 avg loss -1.015672 avg loss no lamb -1.015672 time 2018-11-09 13:01:36.944441
+Model ind 544 epoch 17 head A batch: 100 avg loss -0.993387 avg loss no lamb -0.993387 time 2018-11-09 13:34:57.392498
+(multioutput_cluster_eval) best head: 0 2018-11-09 13:49:25.658150
+... metrics acc 0.384237 nmi -1.000000 ari -1.000000 time 2018-11-09 13:49:52.101281
+Starting e_i: 18 2018-11-09 13:49:53.733182
+Model ind 544 epoch 18 head B batch: 0 avg loss -0.879380 avg loss no lamb -0.879380 time 2018-11-09 13:49:55.079036
+Model ind 544 epoch 18 head B batch: 100 avg loss -0.911367 avg loss no lamb -0.911367 time 2018-11-09 13:55:04.128990
+(multioutput_cluster_eval) best head: 0 2018-11-09 13:57:41.483798
+... metrics acc 0.377727 nmi -1.000000 ari -1.000000 time 2018-11-09 13:58:07.981792
+Starting e_i: 19 2018-11-09 13:58:09.620076
+Model ind 544 epoch 19 head A batch: 0 avg loss -1.029943 avg loss no lamb -1.029943 time 2018-11-09 13:58:10.737765
+Model ind 544 epoch 19 head A batch: 100 avg loss -1.036077 avg loss no lamb -1.036077 time 2018-11-09 14:31:31.613772
+(multioutput_cluster_eval) best head: 0 2018-11-09 14:45:59.906587
+... metrics acc 0.380152 nmi -1.000000 ari -1.000000 time 2018-11-09 14:46:26.249172
+Starting e_i: 20 2018-11-09 14:46:28.142024
+Model ind 544 epoch 20 head B batch: 0 avg loss -0.906679 avg loss no lamb -0.906679 time 2018-11-09 14:46:29.475800
+Model ind 544 epoch 20 head B batch: 100 avg loss -0.958021 avg loss no lamb -0.958021 time 2018-11-09 14:51:38.507504
+(multioutput_cluster_eval) best head: 0 2018-11-09 14:54:15.784331
+... metrics acc 0.373687 nmi -1.000000 ari -1.000000 time 2018-11-09 14:54:42.200322
+Starting e_i: 21 2018-11-09 14:54:44.265939
+Model ind 544 epoch 21 head A batch: 0 avg loss -1.086569 avg loss no lamb -1.086569 time 2018-11-09 14:54:45.370377

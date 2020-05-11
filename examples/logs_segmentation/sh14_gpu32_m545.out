@@ -1,0 +1,326 @@
+Debug: False
+Given config: Config: -----
+use_random_affine: False
+pre_scale_factor: 0.5
+jitter_saturation: 0.1
+eval_mode: hung
+out_dir: /scratch/shared/slow/xuji/iid_private/545
+flip_p: 0.5
+incl_animal_things: False
+use_random_scale: False
+use_coarse_labels: True
+dataset: Potsdam
+using_IR: True
+include_rgb: True
+mapping_test_partitions: ['labelled_train', 'labelled_test']
+num_epochs: 4800
+lr_schedule: []
+use_uncollapsed_loss: True
+half_T_side_sparse_min: 0
+lamb_B: 1.5
+lamb_A: 1.0
+output_k_B: 3
+coco_164k_curated_version: -1
+output_k_A: 24
+lr_mult: 0.1
+aff_max_scale: 1.2
+dataloader_batch_sz: 75
+num_heads: 1
+in_channels: 4
+lr: 1e-05
+aff_min_scale: 0.8
+aff_min_shear: -10.0
+gt_k: 3
+opt: Adam
+jitter_brightness: 0.1
+output_k: 3
+num_dataloaders: 1
+half_T_side_sparse_max: 0
+aff_min_rot: -30.0
+include_things_labels: False
+jitter_hue: 0.1
+no_pre_eval: False
+no_sobel: True
+half_T_side_dense: 10
+fine_to_coarse_dict: /users/xuji/iid/iid_private/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle
+input_sz: 200
+dataset_root: /scratch/local/ssd/xuji/POTSDAM
+arch: SegmentationNet10aTwoHead
+train_partitions: ['unlabelled_train', 'labelled_train', 'labelled_test']
+restart: False
+batch_sz: 75
+pre_scale_all: False
+scale_min: 0.6
+out_root: /scratch/shared/slow/xuji/iid_private
+model_ind: 545
+aff_max_shear: 10.0
+scale_max: 1.4
+use_doersch_datasets: False
+mask_input: False
+mode: IID
+aff_max_rot: 30.0
+jitter_contrast: 0.1
+save_multiple: False
+mapping_assignment_partitions: ['labelled_train', 'labelled_test']
+----------
+Creating paired dataloader 0 out of 1 time 2018-11-09 01:05:22.081225
+Length of paired datasets vector 1
+Number of batches per epoch: 114
+length of train dataloaders 114
+length of mapping assign dataloader 72
+length of mapping test dataloader 72
+Doing evaluation...
+/users/xuji/iid/iid_env/lib/python2.7/site-packages/torch/nn/functional.py:1961: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+(multioutput_cluster_eval) best head: 0 2018-11-09 01:06:38.579537
+Pre: acc 0.378869 nmi -1.000000 ari -1.000000 time 2018-11-09 01:07:49.780742
+using uncollapsed loss!
+Starting e_i: 1 2018-11-09 01:07:49.979901
+Model ind 545 epoch 1 head A batch: 0 avg loss -0.002460 avg loss no lamb -0.002460 time 2018-11-09 01:07:52.891282
+Model ind 545 epoch 1 head A batch: 1 avg loss -0.004164 avg loss no lamb -0.004164 time 2018-11-09 01:08:03.758480
+Model ind 545 epoch 1 head A batch: 2 avg loss -0.007231 avg loss no lamb -0.007231 time 2018-11-09 01:08:14.613162
+Model ind 545 epoch 1 head A batch: 3 avg loss -0.009918 avg loss no lamb -0.009918 time 2018-11-09 01:08:25.458894
+Model ind 545 epoch 1 head A batch: 4 avg loss -0.016878 avg loss no lamb -0.016878 time 2018-11-09 01:08:36.249878
+Model ind 545 epoch 1 head A batch: 5 avg loss -0.025193 avg loss no lamb -0.025193 time 2018-11-09 01:08:47.079373
+Model ind 545 epoch 1 head A batch: 6 avg loss -0.032602 avg loss no lamb -0.032602 time 2018-11-09 01:08:57.965153
+Model ind 545 epoch 1 head A batch: 7 avg loss -0.043196 avg loss no lamb -0.043196 time 2018-11-09 01:09:08.791839
+Model ind 545 epoch 1 head A batch: 8 avg loss -0.060190 avg loss no lamb -0.060190 time 2018-11-09 01:09:19.569103
+Model ind 545 epoch 1 head A batch: 9 avg loss -0.064571 avg loss no lamb -0.064571 time 2018-11-09 01:09:30.365242
+Model ind 545 epoch 1 head A batch: 10 avg loss -0.072668 avg loss no lamb -0.072668 time 2018-11-09 01:09:41.241263
+Model ind 545 epoch 1 head A batch: 11 avg loss -0.106069 avg loss no lamb -0.106069 time 2018-11-09 01:09:52.088202
+Model ind 545 epoch 1 head A batch: 12 avg loss -0.097869 avg loss no lamb -0.097869 time 2018-11-09 01:10:02.964765
+Model ind 545 epoch 1 head A batch: 13 avg loss -0.111310 avg loss no lamb -0.111310 time 2018-11-09 01:10:13.928698
+Model ind 545 epoch 1 head A batch: 14 avg loss -0.116453 avg loss no lamb -0.116453 time 2018-11-09 01:10:24.827367
+Model ind 545 epoch 1 head A batch: 15 avg loss -0.160208 avg loss no lamb -0.160208 time 2018-11-09 01:10:35.698634
+Model ind 545 epoch 1 head A batch: 16 avg loss -0.148295 avg loss no lamb -0.148295 time 2018-11-09 01:10:46.546617
+Model ind 545 epoch 1 head A batch: 17 avg loss -0.149268 avg loss no lamb -0.149268 time 2018-11-09 01:10:57.348253
+Model ind 545 epoch 1 head A batch: 18 avg loss -0.181882 avg loss no lamb -0.181882 time 2018-11-09 01:11:08.285863
+Model ind 545 epoch 1 head A batch: 19 avg loss -0.172590 avg loss no lamb -0.172590 time 2018-11-09 01:11:19.188681
+Model ind 545 epoch 1 head A batch: 20 avg loss -0.216064 avg loss no lamb -0.216064 time 2018-11-09 01:11:30.153797
+Model ind 545 epoch 1 head A batch: 21 avg loss -0.218621 avg loss no lamb -0.218621 time 2018-11-09 01:11:40.937361
+Model ind 545 epoch 1 head A batch: 22 avg loss -0.232934 avg loss no lamb -0.232934 time 2018-11-09 01:11:51.708341
+Model ind 545 epoch 1 head A batch: 23 avg loss -0.238411 avg loss no lamb -0.238411 time 2018-11-09 01:12:02.443812
+Model ind 545 epoch 1 head A batch: 24 avg loss -0.279081 avg loss no lamb -0.279081 time 2018-11-09 01:12:13.257578
+Model ind 545 epoch 1 head A batch: 25 avg loss -0.295876 avg loss no lamb -0.295876 time 2018-11-09 01:12:24.048967
+Model ind 545 epoch 1 head A batch: 26 avg loss -0.270731 avg loss no lamb -0.270731 time 2018-11-09 01:12:34.855210
+Model ind 545 epoch 1 head A batch: 27 avg loss -0.310585 avg loss no lamb -0.310585 time 2018-11-09 01:12:45.736458
+Model ind 545 epoch 1 head A batch: 28 avg loss -0.317270 avg loss no lamb -0.317270 time 2018-11-09 01:12:56.556752
+Model ind 545 epoch 1 head A batch: 29 avg loss -0.347263 avg loss no lamb -0.347263 time 2018-11-09 01:13:07.371469
+Model ind 545 epoch 1 head A batch: 30 avg loss -0.316344 avg loss no lamb -0.316344 time 2018-11-09 01:13:18.171832
+Model ind 545 epoch 1 head A batch: 31 avg loss -0.391165 avg loss no lamb -0.391165 time 2018-11-09 01:13:28.956209
+Model ind 545 epoch 1 head A batch: 32 avg loss -0.399177 avg loss no lamb -0.399177 time 2018-11-09 01:13:39.692827
+Model ind 545 epoch 1 head A batch: 33 avg loss -0.404729 avg loss no lamb -0.404729 time 2018-11-09 01:13:50.545901
+Model ind 545 epoch 1 head A batch: 34 avg loss -0.444406 avg loss no lamb -0.444406 time 2018-11-09 01:14:01.348338
+Model ind 545 epoch 1 head A batch: 35 avg loss -0.446168 avg loss no lamb -0.446168 time 2018-11-09 01:14:12.160317
+Model ind 545 epoch 1 head A batch: 36 avg loss -0.460751 avg loss no lamb -0.460751 time 2018-11-09 01:14:22.945683
+Model ind 545 epoch 1 head A batch: 37 avg loss -0.445364 avg loss no lamb -0.445364 time 2018-11-09 01:14:33.758020
+Model ind 545 epoch 1 head A batch: 38 avg loss -0.475429 avg loss no lamb -0.475429 time 2018-11-09 01:14:44.559890
+Model ind 545 epoch 1 head A batch: 39 avg loss -0.494806 avg loss no lamb -0.494806 time 2018-11-09 01:14:55.364086
+Model ind 545 epoch 1 head A batch: 40 avg loss -0.518750 avg loss no lamb -0.518750 time 2018-11-09 01:15:06.162368
+Model ind 545 epoch 1 head A batch: 41 avg loss -0.529302 avg loss no lamb -0.529302 time 2018-11-09 01:15:16.988106
+Model ind 545 epoch 1 head A batch: 42 avg loss -0.551438 avg loss no lamb -0.551438 time 2018-11-09 01:15:27.852501
+Model ind 545 epoch 1 head A batch: 43 avg loss -0.540651 avg loss no lamb -0.540651 time 2018-11-09 01:15:38.627859
+Model ind 545 epoch 1 head A batch: 44 avg loss -0.575476 avg loss no lamb -0.575476 time 2018-11-09 01:15:49.396774
+Model ind 545 epoch 1 head A batch: 45 avg loss -0.582047 avg loss no lamb -0.582047 time 2018-11-09 01:16:00.151532
+Model ind 545 epoch 1 head A batch: 46 avg loss -0.628725 avg loss no lamb -0.628725 time 2018-11-09 01:16:10.923866
+Model ind 545 epoch 1 head A batch: 47 avg loss -0.629178 avg loss no lamb -0.629178 time 2018-11-09 01:16:21.665064
+Model ind 545 epoch 1 head A batch: 48 avg loss -0.616535 avg loss no lamb -0.616535 time 2018-11-09 01:16:32.667766
+Model ind 545 epoch 1 head A batch: 49 avg loss -0.645511 avg loss no lamb -0.645511 time 2018-11-09 01:16:43.532088
+Model ind 545 epoch 1 head A batch: 50 avg loss -0.687130 avg loss no lamb -0.687130 time 2018-11-09 01:16:54.460864
+Model ind 545 epoch 1 head A batch: 51 avg loss -0.679714 avg loss no lamb -0.679714 time 2018-11-09 01:17:05.330126
+Model ind 545 epoch 1 head A batch: 52 avg loss -0.645196 avg loss no lamb -0.645196 time 2018-11-09 01:17:16.188294
+Model ind 545 epoch 1 head A batch: 53 avg loss -0.677983 avg loss no lamb -0.677983 time 2018-11-09 01:17:26.974328
+Model ind 545 epoch 1 head A batch: 54 avg loss -0.703627 avg loss no lamb -0.703627 time 2018-11-09 01:17:37.944880
+Model ind 545 epoch 1 head A batch: 55 avg loss -0.746607 avg loss no lamb -0.746607 time 2018-11-09 01:17:48.799589
+Model ind 545 epoch 1 head A batch: 56 avg loss -0.688794 avg loss no lamb -0.688794 time 2018-11-09 01:17:59.680464
+Model ind 545 epoch 1 head A batch: 57 avg loss -0.716589 avg loss no lamb -0.716589 time 2018-11-09 01:18:10.579268
+Model ind 545 epoch 1 head A batch: 58 avg loss -0.771161 avg loss no lamb -0.771161 time 2018-11-09 01:18:21.498424
+Model ind 545 epoch 1 head A batch: 59 avg loss -0.728902 avg loss no lamb -0.728902 time 2018-11-09 01:18:32.332356
+Model ind 545 epoch 1 head A batch: 60 avg loss -0.722413 avg loss no lamb -0.722413 time 2018-11-09 01:18:43.293581
+Model ind 545 epoch 1 head A batch: 61 avg loss -0.794346 avg loss no lamb -0.794346 time 2018-11-09 01:18:54.274981
+Model ind 545 epoch 1 head A batch: 62 avg loss -0.763965 avg loss no lamb -0.763965 time 2018-11-09 01:19:05.195344
+Model ind 545 epoch 1 head A batch: 63 avg loss -0.777004 avg loss no lamb -0.777004 time 2018-11-09 01:19:16.032599
+Model ind 545 epoch 1 head A batch: 64 avg loss -0.773143 avg loss no lamb -0.773143 time 2018-11-09 01:19:26.871138
+Model ind 545 epoch 1 head A batch: 65 avg loss -0.829735 avg loss no lamb -0.829735 time 2018-11-09 01:19:37.745539
+Model ind 545 epoch 1 head A batch: 66 avg loss -0.798792 avg loss no lamb -0.798792 time 2018-11-09 01:19:48.557690
+Model ind 545 epoch 1 head A batch: 67 avg loss -0.830438 avg loss no lamb -0.830438 time 2018-11-09 01:19:59.375622
+Model ind 545 epoch 1 head A batch: 68 avg loss -0.835619 avg loss no lamb -0.835619 time 2018-11-09 01:20:10.201305
+Model ind 545 epoch 1 head A batch: 69 avg loss -0.818376 avg loss no lamb -0.818376 time 2018-11-09 01:20:21.000209
+Model ind 545 epoch 1 head A batch: 70 avg loss -0.801571 avg loss no lamb -0.801571 time 2018-11-09 01:20:31.909682
+Model ind 545 epoch 1 head A batch: 71 avg loss -0.865043 avg loss no lamb -0.865043 time 2018-11-09 01:20:42.840972
+Model ind 545 epoch 1 head A batch: 72 avg loss -0.832738 avg loss no lamb -0.832738 time 2018-11-09 01:20:53.648617
+Model ind 545 epoch 1 head A batch: 73 avg loss -0.835758 avg loss no lamb -0.835758 time 2018-11-09 01:21:04.431023
+Model ind 545 epoch 1 head A batch: 74 avg loss -0.844657 avg loss no lamb -0.844657 time 2018-11-09 01:21:15.209327
+Model ind 545 epoch 1 head A batch: 75 avg loss -0.845046 avg loss no lamb -0.845046 time 2018-11-09 01:21:25.988776
+Model ind 545 epoch 1 head A batch: 76 avg loss -0.837926 avg loss no lamb -0.837926 time 2018-11-09 01:21:36.825880
+Model ind 545 epoch 1 head A batch: 77 avg loss -0.875886 avg loss no lamb -0.875886 time 2018-11-09 01:21:47.647330
+Model ind 545 epoch 1 head A batch: 78 avg loss -0.873140 avg loss no lamb -0.873140 time 2018-11-09 01:21:58.549689
+Model ind 545 epoch 1 head A batch: 79 avg loss -0.876715 avg loss no lamb -0.876715 time 2018-11-09 01:22:09.280845
+Model ind 545 epoch 1 head A batch: 80 avg loss -0.872543 avg loss no lamb -0.872543 time 2018-11-09 01:22:20.050699
+Model ind 545 epoch 1 head A batch: 81 avg loss -0.848717 avg loss no lamb -0.848717 time 2018-11-09 01:22:30.809286
+Model ind 545 epoch 1 head A batch: 82 avg loss -0.919833 avg loss no lamb -0.919833 time 2018-11-09 01:22:41.576135
+Model ind 545 epoch 1 head A batch: 83 avg loss -0.880281 avg loss no lamb -0.880281 time 2018-11-09 01:22:52.342624
+Model ind 545 epoch 1 head A batch: 84 avg loss -0.901624 avg loss no lamb -0.901624 time 2018-11-09 01:23:03.161624
+Model ind 545 epoch 1 head A batch: 85 avg loss -0.911563 avg loss no lamb -0.911563 time 2018-11-09 01:23:13.954306
+Model ind 545 epoch 1 head A batch: 86 avg loss -0.927158 avg loss no lamb -0.927158 time 2018-11-09 01:23:24.784766
+Model ind 545 epoch 1 head A batch: 87 avg loss -0.888117 avg loss no lamb -0.888117 time 2018-11-09 01:23:35.683340
+Model ind 545 epoch 1 head A batch: 88 avg loss -0.880885 avg loss no lamb -0.880885 time 2018-11-09 01:23:46.432335
+Model ind 545 epoch 1 head A batch: 89 avg loss -0.893763 avg loss no lamb -0.893763 time 2018-11-09 01:23:57.238399
+Model ind 545 epoch 1 head A batch: 90 avg loss -0.888018 avg loss no lamb -0.888018 time 2018-11-09 01:24:08.040956
+Model ind 545 epoch 1 head A batch: 91 avg loss -0.887471 avg loss no lamb -0.887471 time 2018-11-09 01:24:18.838171
+Model ind 545 epoch 1 head A batch: 92 avg loss -0.898906 avg loss no lamb -0.898906 time 2018-11-09 01:24:29.643183
+Model ind 545 epoch 1 head A batch: 93 avg loss -0.929724 avg loss no lamb -0.929724 time 2018-11-09 01:24:40.490170
+Model ind 545 epoch 1 head A batch: 94 avg loss -0.895180 avg loss no lamb -0.895180 time 2018-11-09 01:24:51.263171
+Model ind 545 epoch 1 head A batch: 95 avg loss -0.876613 avg loss no lamb -0.876613 time 2018-11-09 01:25:02.167155
+Model ind 545 epoch 1 head A batch: 96 avg loss -0.931101 avg loss no lamb -0.931101 time 2018-11-09 01:25:12.968141
+Model ind 545 epoch 1 head A batch: 97 avg loss -0.927218 avg loss no lamb -0.927218 time 2018-11-09 01:25:23.765174
+Model ind 545 epoch 1 head A batch: 98 avg loss -0.952659 avg loss no lamb -0.952659 time 2018-11-09 01:25:34.600170
+Model ind 545 epoch 1 head A batch: 99 avg loss -0.892710 avg loss no lamb -0.892710 time 2018-11-09 01:25:45.459422
+Model ind 545 epoch 1 head A batch: 100 avg loss -0.904559 avg loss no lamb -0.904559 time 2018-11-09 01:25:56.375150
+Model ind 545 epoch 1 head A batch: 101 avg loss -0.926314 avg loss no lamb -0.926314 time 2018-11-09 01:26:07.332537
+Model ind 545 epoch 1 head A batch: 102 avg loss -0.890814 avg loss no lamb -0.890814 time 2018-11-09 01:26:18.144847
+Model ind 545 epoch 1 head A batch: 103 avg loss -0.941130 avg loss no lamb -0.941130 time 2018-11-09 01:26:28.922886
+Model ind 545 epoch 1 head A batch: 104 avg loss -0.951947 avg loss no lamb -0.951947 time 2018-11-09 01:26:39.741214
+Model ind 545 epoch 1 head A batch: 105 avg loss -0.941145 avg loss no lamb -0.941145 time 2018-11-09 01:26:50.583340
+Model ind 545 epoch 1 head A batch: 106 avg loss -0.945923 avg loss no lamb -0.945923 time 2018-11-09 01:27:01.509714
+Model ind 545 epoch 1 head A batch: 107 avg loss -0.963561 avg loss no lamb -0.963561 time 2018-11-09 01:27:12.384749
+Model ind 545 epoch 1 head A batch: 108 avg loss -0.933801 avg loss no lamb -0.933801 time 2018-11-09 01:27:23.276943
+Model ind 545 epoch 1 head A batch: 109 avg loss -0.914108 avg loss no lamb -0.914108 time 2018-11-09 01:27:34.102631
+Model ind 545 epoch 1 head A batch: 110 avg loss -0.945740 avg loss no lamb -0.945740 time 2018-11-09 01:27:44.926591
+Model ind 545 epoch 1 head A batch: 111 avg loss -0.986856 avg loss no lamb -0.986856 time 2018-11-09 01:27:55.775455
+Model ind 545 epoch 1 head A batch: 112 avg loss -0.956139 avg loss no lamb -0.956139 time 2018-11-09 01:28:06.682532
+Model ind 545 epoch 1 head A batch: 113 avg loss -0.964415 avg loss no lamb -0.964415 time 2018-11-09 01:28:17.556340
+(multioutput_cluster_eval) best head: 0 2018-11-09 01:29:37.351298
+... metrics acc 0.499846 nmi -1.000000 ari -1.000000 time 2018-11-09 01:30:48.895134
+Starting e_i: 2 2018-11-09 01:30:51.859707
+Model ind 545 epoch 2 head B batch: 0 avg loss -0.998926 avg loss no lamb -0.008156 time 2018-11-09 01:30:55.282004
+Model ind 545 epoch 2 head B batch: 100 avg loss -1.655110 avg loss no lamb -0.557118 time 2018-11-09 01:46:29.969200
+(multioutput_cluster_eval) best head: 0 2018-11-09 01:49:50.102168
+... metrics acc 0.618124 nmi -1.000000 ari -1.000000 time 2018-11-09 01:51:01.820859
+Starting e_i: 3 2018-11-09 01:51:04.869103
+Model ind 545 epoch 3 head A batch: 0 avg loss -0.935241 avg loss no lamb -0.935241 time 2018-11-09 01:51:07.717787
+Model ind 545 epoch 3 head A batch: 100 avg loss -1.052578 avg loss no lamb -1.052578 time 2018-11-09 02:09:11.007332
+(multioutput_cluster_eval) best head: 0 2018-11-09 02:12:53.366841
+... metrics acc 0.640062 nmi -1.000000 ari -1.000000 time 2018-11-09 02:14:05.498573
+Starting e_i: 4 2018-11-09 02:14:08.798014
+Model ind 545 epoch 4 head B batch: 0 avg loss -1.664685 avg loss no lamb -0.567933 time 2018-11-09 02:14:12.153279
+Model ind 545 epoch 4 head B batch: 100 avg loss -1.701273 avg loss no lamb -0.603381 time 2018-11-09 02:29:48.835482
+(multioutput_cluster_eval) best head: 0 2018-11-09 02:33:07.889695
+... metrics acc 0.631507 nmi -1.000000 ari -1.000000 time 2018-11-09 02:34:19.733313
+Starting e_i: 5 2018-11-09 02:34:21.887290
+Model ind 545 epoch 5 head A batch: 0 avg loss -1.026855 avg loss no lamb -1.026855 time 2018-11-09 02:34:24.736759
+Model ind 545 epoch 5 head A batch: 100 avg loss -1.105454 avg loss no lamb -1.105454 time 2018-11-09 02:52:29.504180
+(multioutput_cluster_eval) best head: 0 2018-11-09 02:56:11.100706
+... metrics acc 0.650871 nmi -1.000000 ari -1.000000 time 2018-11-09 02:57:23.328083
+Starting e_i: 6 2018-11-09 02:57:26.027725
+Model ind 545 epoch 6 head B batch: 0 avg loss -1.713698 avg loss no lamb -0.615756 time 2018-11-09 02:57:29.337002
+Model ind 545 epoch 6 head B batch: 100 avg loss -1.731730 avg loss no lamb -0.634571 time 2018-11-09 03:12:59.062714
+(multioutput_cluster_eval) best head: 0 2018-11-09 03:16:16.558233
+... metrics acc 0.624655 nmi -1.000000 ari -1.000000 time 2018-11-09 03:17:28.572092
+Starting e_i: 7 2018-11-09 03:17:30.553791
+Model ind 545 epoch 7 head A batch: 0 avg loss -1.103250 avg loss no lamb -1.103250 time 2018-11-09 03:17:33.501442
+Model ind 545 epoch 7 head A batch: 100 avg loss -1.241647 avg loss no lamb -1.241647 time 2018-11-09 03:35:37.549079
+(multioutput_cluster_eval) best head: 0 2018-11-09 03:39:19.183661
+... metrics acc 0.643032 nmi -1.000000 ari -1.000000 time 2018-11-09 03:40:31.241196
+Starting e_i: 8 2018-11-09 03:40:33.207752
+Model ind 545 epoch 8 head B batch: 0 avg loss -1.727216 avg loss no lamb -0.628932 time 2018-11-09 03:40:36.497264
+Model ind 545 epoch 8 head B batch: 100 avg loss -1.718327 avg loss no lamb -0.620032 time 2018-11-09 03:56:16.159039
+(multioutput_cluster_eval) best head: 0 2018-11-09 03:59:34.496400
+... metrics acc 0.633913 nmi -1.000000 ari -1.000000 time 2018-11-09 04:00:46.580703
+Starting e_i: 9 2018-11-09 04:00:48.554370
+Model ind 545 epoch 9 head A batch: 0 avg loss -1.240098 avg loss no lamb -1.240098 time 2018-11-09 04:00:51.403594
+Model ind 545 epoch 9 head A batch: 100 avg loss -1.279349 avg loss no lamb -1.279349 time 2018-11-09 04:18:57.882949
+(multioutput_cluster_eval) best head: 0 2018-11-09 04:22:39.908200
+... metrics acc 0.649022 nmi -1.000000 ari -1.000000 time 2018-11-09 04:23:53.196165
+Starting e_i: 10 2018-11-09 04:23:55.257857
+Model ind 545 epoch 10 head B batch: 0 avg loss -1.729183 avg loss no lamb -0.632117 time 2018-11-09 04:23:58.547268
+Model ind 545 epoch 10 head B batch: 100 avg loss -1.773640 avg loss no lamb -0.676178 time 2018-11-09 04:39:43.406941
+(multioutput_cluster_eval) best head: 0 2018-11-09 04:43:04.082451
+... metrics acc 0.634068 nmi -1.000000 ari -1.000000 time 2018-11-09 04:44:16.504890
+Starting e_i: 11 2018-11-09 04:44:18.495849
+Model ind 545 epoch 11 head A batch: 0 avg loss -1.224608 avg loss no lamb -1.224608 time 2018-11-09 04:44:21.310844
+Model ind 545 epoch 11 head A batch: 100 avg loss -1.320190 avg loss no lamb -1.320190 time 2018-11-09 05:02:29.953293
+(multioutput_cluster_eval) best head: 0 2018-11-09 05:06:11.785001
+... metrics acc 0.638989 nmi -1.000000 ari -1.000000 time 2018-11-09 05:07:24.735391
+Starting e_i: 12 2018-11-09 05:07:26.821703
+Model ind 545 epoch 12 head B batch: 0 avg loss -1.719893 avg loss no lamb -0.623872 time 2018-11-09 05:07:30.130510
+Model ind 545 epoch 12 head B batch: 100 avg loss -1.771669 avg loss no lamb -0.674086 time 2018-11-09 05:23:05.160349
+(multioutput_cluster_eval) best head: 0 2018-11-09 05:26:25.461044
+... metrics acc 0.633783 nmi -1.000000 ari -1.000000 time 2018-11-09 05:27:38.182683
+Starting e_i: 13 2018-11-09 05:27:40.237968
+Model ind 545 epoch 13 head A batch: 0 avg loss -1.304767 avg loss no lamb -1.304767 time 2018-11-09 05:27:43.066062
+Model ind 545 epoch 13 head A batch: 100 avg loss -1.313076 avg loss no lamb -1.313076 time 2018-11-09 05:45:48.492605
+(multioutput_cluster_eval) best head: 0 2018-11-09 05:49:29.569027
+... metrics acc 0.637523 nmi -1.000000 ari -1.000000 time 2018-11-09 05:50:41.543781
+Starting e_i: 14 2018-11-09 05:50:43.726846
+Model ind 545 epoch 14 head B batch: 0 avg loss -1.748813 avg loss no lamb -0.651324 time 2018-11-09 05:50:47.019634
+Model ind 545 epoch 14 head B batch: 100 avg loss -1.759071 avg loss no lamb -0.661341 time 2018-11-09 06:06:32.402618
+(multioutput_cluster_eval) best head: 0 2018-11-09 06:09:54.338802
+... metrics acc 0.620738 nmi -1.000000 ari -1.000000 time 2018-11-09 06:11:07.262980
+Starting e_i: 15 2018-11-09 06:11:09.593120
+Model ind 545 epoch 15 head A batch: 0 avg loss -1.344009 avg loss no lamb -1.344009 time 2018-11-09 06:11:12.446358
+Model ind 545 epoch 15 head A batch: 100 avg loss -1.363916 avg loss no lamb -1.363916 time 2018-11-09 06:29:19.293171
+(multioutput_cluster_eval) best head: 0 2018-11-09 06:33:01.804373
+... metrics acc 0.628411 nmi -1.000000 ari -1.000000 time 2018-11-09 06:34:14.517364
+Starting e_i: 16 2018-11-09 06:34:16.643881
+Model ind 545 epoch 16 head B batch: 0 avg loss -1.732401 avg loss no lamb -0.634220 time 2018-11-09 06:34:19.977254
+Model ind 545 epoch 16 head B batch: 100 avg loss -1.792352 avg loss no lamb -0.693967 time 2018-11-09 06:49:58.338164
+(multioutput_cluster_eval) best head: 0 2018-11-09 06:53:17.716482
+... metrics acc 0.622160 nmi -1.000000 ari -1.000000 time 2018-11-09 06:54:29.886315
+Starting e_i: 17 2018-11-09 06:54:31.916413
+Model ind 545 epoch 17 head A batch: 0 avg loss -1.345971 avg loss no lamb -1.345971 time 2018-11-09 06:54:34.824976
+Model ind 545 epoch 17 head A batch: 100 avg loss -1.340635 avg loss no lamb -1.340635 time 2018-11-09 07:12:40.402663
+(multioutput_cluster_eval) best head: 0 2018-11-09 07:16:22.031817
+... metrics acc 0.625373 nmi -1.000000 ari -1.000000 time 2018-11-09 07:17:34.589642
+Starting e_i: 18 2018-11-09 07:17:36.651861
+Model ind 545 epoch 18 head B batch: 0 avg loss -1.724355 avg loss no lamb -0.629238 time 2018-11-09 07:17:39.976265
+Model ind 545 epoch 18 head B batch: 100 avg loss -1.769868 avg loss no lamb -0.672004 time 2018-11-09 07:33:36.944245
+(multioutput_cluster_eval) best head: 0 2018-11-09 07:36:58.190117
+... metrics acc 0.628989 nmi -1.000000 ari -1.000000 time 2018-11-09 07:38:10.955574
+Starting e_i: 19 2018-11-09 07:38:12.969704
+Model ind 545 epoch 19 head A batch: 0 avg loss -1.336069 avg loss no lamb -1.336069 time 2018-11-09 07:38:15.817836
+Model ind 545 epoch 19 head A batch: 100 avg loss -1.327145 avg loss no lamb -1.327145 time 2018-11-09 07:56:18.682012
+(multioutput_cluster_eval) best head: 0 2018-11-09 07:59:59.220866
+... metrics acc 0.635811 nmi -1.000000 ari -1.000000 time 2018-11-09 08:01:10.720683
+Starting e_i: 20 2018-11-09 08:01:12.695836
+Model ind 545 epoch 20 head B batch: 0 avg loss -1.760136 avg loss no lamb -0.661833 time 2018-11-09 08:01:16.017239
+Model ind 545 epoch 20 head B batch: 100 avg loss -1.780921 avg loss no lamb -0.682359 time 2018-11-09 08:16:54.677949
+(multioutput_cluster_eval) best head: 0 2018-11-09 08:20:15.641376
+... metrics acc 0.627106 nmi -1.000000 ari -1.000000 time 2018-11-09 08:21:28.441230
+Starting e_i: 21 2018-11-09 08:21:30.534348
+Model ind 545 epoch 21 head A batch: 0 avg loss -1.363165 avg loss no lamb -1.363165 time 2018-11-09 08:21:33.383204
+Model ind 545 epoch 21 head A batch: 100 avg loss -1.374055 avg loss no lamb -1.374055 time 2018-11-09 08:39:41.424192
+(multioutput_cluster_eval) best head: 0 2018-11-09 08:43:23.108748
+... metrics acc 0.622242 nmi -1.000000 ari -1.000000 time 2018-11-09 08:44:35.356848
+Starting e_i: 22 2018-11-09 08:44:37.391599
+Model ind 545 epoch 22 head B batch: 0 avg loss -1.729140 avg loss no lamb -0.630883 time 2018-11-09 08:44:40.770517
+Model ind 545 epoch 22 head B batch: 100 avg loss -1.772934 avg loss no lamb -0.675189 time 2018-11-09 09:00:39.880550
+(multioutput_cluster_eval) best head: 0 2018-11-09 09:04:02.308317
+... metrics acc 0.628677 nmi -1.000000 ari -1.000000 time 2018-11-09 09:05:14.847131
+Starting e_i: 23 2018-11-09 09:05:16.956777
+Model ind 545 epoch 23 head A batch: 0 avg loss -1.321373 avg loss no lamb -1.321373 time 2018-11-09 09:05:19.818325
+Model ind 545 epoch 23 head A batch: 100 avg loss -1.378123 avg loss no lamb -1.378123 time 2018-11-09 09:23:28.551851
+(multioutput_cluster_eval) best head: 0 2018-11-09 09:27:10.677242
+... metrics acc 0.629512 nmi -1.000000 ari -1.000000 time 2018-11-09 09:28:23.809116
+Starting e_i: 24 2018-11-09 09:28:25.843560
+Model ind 545 epoch 24 head B batch: 0 avg loss -1.749601 avg loss no lamb -0.651248 time 2018-11-09 09:28:29.136949
+Model ind 545 epoch 24 head B batch: 100 avg loss -1.815928 avg loss no lamb -0.717444 time 2018-11-09 09:44:06.434363
+(multioutput_cluster_eval) best head: 0 2018-11-09 09:47:26.708256
+... metrics acc 0.624191 nmi -1.000000 ari -1.000000 time 2018-11-09 09:48:38.548314
+Starting e_i: 25 2018-11-09 09:48:40.560821
+Model ind 545 epoch 25 head A batch: 0 avg loss -1.360068 avg loss no lamb -1.360068 time 2018-11-09 09:48:43.451110
+Model ind 545 epoch 25 head A batch: 100 avg loss -1.429977 avg loss no lamb -1.429977 time 2018-11-09 10:06:51.674464
+(multioutput_cluster_eval) best head: 0 2018-11-09 10:10:33.259619
+... metrics acc 0.632862 nmi -1.000000 ari -1.000000 time 2018-11-09 10:11:45.154977
+Starting e_i: 26 2018-11-09 10:11:47.225138
+Model ind 545 epoch 26 head B batch: 0 avg loss -1.748329 avg loss no lamb -0.650221 time 2018-11-09 10:11:50.586546
+Model ind 545 epoch 26 head B batch: 100 avg loss -1.771065 avg loss no lamb -0.673026 time 2018-11-09 10:27:44.985093
+(multioutput_cluster_eval) best head: 0 2018-11-09 10:31:05.393764
+... metrics acc 0.625398 nmi -1.000000 ari -1.000000 time 2018-11-09 10:32:17.660676
+Starting e_i: 27 2018-11-09 10:32:19.721552
+Model ind 545 epoch 27 head A batch: 0 avg loss -1.354963 avg loss no lamb -1.354963 time 2018-11-09 10:32:22.569823
+Model ind 545 epoch 27 head A batch: 100 avg loss -1.407557 avg loss no lamb -1.407557 time 2018-11-09 10:50:34.346132
+(multioutput_cluster_eval) best head: 0 2018-11-09 10:54:15.555221
+... metrics acc 0.628742 nmi -1.000000 ari -1.000000 time 2018-11-09 10:55:27.635955
+Starting e_i: 28 2018-11-09 10:55:30.449583
+Model ind 545 epoch 28 head B batch: 0 avg loss -1.796377 avg loss no lamb -0.697825 time 2018-11-09 10:55:33.753412
