@@ -30,9 +30,14 @@ _datasets_to_coarse = {"Coco164kFull_Stuff_Coarse": range(12, 27),
                        "Coco164kFew_Stuff_People_Animals": [23, 22, 21, 9, 7],
                        "Coco164kFew_Stuff_Animals": [23, 22, 21, 7]}
 
-with open("/home/thmcuong/Documents/CodeRoam/SegmentUn/IIC-Xuji/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle", "rb") as dict_f:
+# with open("/home/thmcuong/Documents/CodeRoam/SegmentUn/IIC-Xuji/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle", "rb") as dict_f:
+#   d = pickle.load(dict_f)
+#   _fine_to_coarse_dict = d["fine_index_to_coarse_index"]
+
+with open("/content/code/code/datasets/segmentation/util/out/fine_to_coarse_dict.pickle", "rb") as dict_f:
   d = pickle.load(dict_f)
   _fine_to_coarse_dict = d["fine_index_to_coarse_index"]
+
 
 
 def main():
