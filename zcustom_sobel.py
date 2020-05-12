@@ -113,11 +113,13 @@ config = parser.parse_args()
 
 config.twohead = True
 
+# if image in rgb we turn channel to 5
 if not config.include_rgb:
   config.in_channels = 2
 else:
   config.in_channels = 5
 
+#default="/scratch/shared/slow/xuji/iid_private"
 config.out_dir = os.path.join(config.out_root, str(config.model_ind))
 assert (config.batch_sz % config.num_dataloaders == 0)
 config.dataloader_batch_sz = config.batch_sz / config.num_dataloaders
@@ -144,6 +146,7 @@ if config.restart:
     opt_name = "best_optimiser.pytorch"
 
   given_config = config
+  #default="/scratch/shared/slow/xuji/iid_private"
   reloaded_config_path = os.path.join(given_config.out_dir, config_name)
   print("Loading restarting config from: %s" % reloaded_config_path)
   with open(reloaded_config_path, "rb") as config_f:
