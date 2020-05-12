@@ -34,7 +34,7 @@ with open("/home/thmcuong/Documents/CodeRoam/SegmentUn/IIC-Xuji/code_icc/dataset
   d = pickle.load(dict_f)
   _fine_to_coarse_dict = d["fine_index_to_coarse_index"]
 
-# with open("/content/code_icc/code_icc/datasets/segmentation/util/out/fine_to_coarse_dict.pickle", "rb") as dict_f:
+# with open("/content/code1/code_icc/datasets/segmentation/util/out/fine_to_coarse_dict.pickle", "rb") as dict_f:
 #   d = pickle.load(dict_f)
 #   _fine_to_coarse_dict = d["fine_index_to_coarse_index"]
 
